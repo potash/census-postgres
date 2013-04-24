@@ -48,3 +48,10 @@ filetype varchar(6),
 stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
+logrecno int,
+""" % (sqn,))
+sql_file.write(',\n'.join(cell_names))
+cell_names = []
+sql_file.write("""
+)
+WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
