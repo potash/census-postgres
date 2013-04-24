@@ -21,7 +21,7 @@ logrecno int,
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 
     # A tiny hack to append "_moe" to the name of the column
-    cell_moe_columns = ["%s_moe" % (t,) for t in cell_columns]
+    cell_moe_columns = [t.replace(' v', '_moe v') for t in cell_columns]
 
     sql_file.write("""CREATE TABLE tmp_seq%04d_moe (
 fileid varchar(6),
