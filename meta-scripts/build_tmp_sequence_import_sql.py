@@ -16,12 +16,12 @@ for root, dirs, files in os.walk(acs_root):
 
         if fname.startswith('e') and fname.endswith('.txt'):
             # Write out the estimate COPY lines
-            sqn = int(fname[9:13])
+            sqn = int(fname[8:12])
             sql_file.write(
                 "COPY tmp_seq%04d FROM '%s' WITH CSV;\n" % (sqn, fpath))
         elif fname.startswith('m') and fname.endswith('.txt'):
             # Write out the MOE COPY lines
-            sqn = int(fname[9:13])
+            sqn = int(fname[8:12])
             sql_file.write(
                 "COPY tmp_seq%04d_moe FROM '%s' WITH CSV;\n" % (sqn, fpath))
 
