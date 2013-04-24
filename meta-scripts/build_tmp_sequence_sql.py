@@ -20,6 +20,22 @@ logrecno int,
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 
+    # A tiny hack to append "_moe" to the name of the column
+    cell_moe_columns = ["%s_moe" % (t,) for t in cell_columns]
+
+    sql_file.write("""CREATE TABLE tmp_seq%04d_moe (
+fileid varchar(6),
+filetype varchar(6),
+stusab varchar(2),
+chariter varchar(3),
+seq varchar(4),
+logrecno int,
+""" % (sqn,))
+    sql_file.write(',\n'.join(cell_moe_columns))
+    sql_file.write("""
+)
+WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
+
 sql_file = open("%s/create_import_tables.sql" % (tmp_sequence_tables_sql_root,), 'w')
 
 prev_sqn = None
