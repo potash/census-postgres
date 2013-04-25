@@ -9,7 +9,7 @@ def run(data_root, working_dir, config):
 
     for root, dirs, files in os.walk(data_root):
         for fname in files:
-            if fname.startswith('g') and fname.endswith('.csv'):
+            if fname.startswith('g') and fname.endswith('.txt'):
                 fpath = join(root, fname)
                 geo_file.write("COPY tmp_geoheader FROM '%s';\n" % (fpath,))
 
