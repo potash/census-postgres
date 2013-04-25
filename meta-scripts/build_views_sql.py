@@ -5,7 +5,7 @@ from itertools import groupby
 
 
 def write_one_seq_view(sql_file, table_id, sqn, cell_columns):
-    sql_file.write("""CREATE VIEW %s
+    sql_file.write("""CREATE VIEW %s AS SELECT
 stusab, logrecno,
 """ % (table_id,))
     sql_file.write(',\n'.join(cell_columns))
@@ -14,7 +14,7 @@ stusab, logrecno,
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = ["%s, %s_moe" % (t, t) for t in cell_columns]
 
-    sql_file.write("""CREATE VIEW %s_moe
+    sql_file.write("""CREATE VIEW %s_moe AS SELECT
 stusab, logrecno,
 """ % (table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
