@@ -26,12 +26,14 @@ SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
 FROM tmp_seq%04d_moe;\n\n""" % (sqn,))
 
 
-def run(data_root, working_dir):
+def run(data_root, working_dir, config):
+    sqn_col_name = config['sequence_number_column_name']
+
     sql_file = open("%s/insert_into_tables.sql" % (working_dir,), 'w')
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
-    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row['Sequence Number'])):
+    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
             table_id = row['Table ID']
             line_number = row['Line Number']

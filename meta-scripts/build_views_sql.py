@@ -21,7 +21,7 @@ stusab, logrecno,
     sql_file.write("\nFROM seq%04d_moe;\n\n" % sqn)
 
 
-def run(data_root, working_dir):
+def run(data_root, working_dir, config):
     sql_file = open("%s/view_stored_by_tables.sql" % (working_dir,), 'w')
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))

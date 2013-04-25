@@ -37,12 +37,14 @@ PRIMARY KEY (stusab, logrecno)
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 
 
-def run(data_root, working_dir):
+def run(data_root, working_dir, config):
+    sqn_col_name = config['sequence_number_column_name']
+
     sql_file = open("%s/store_by_tables.sql" % (data_root,), 'w')
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % working_dir, 'rU'))
     cell_names = []
-    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row['Sequence Number'])):
+    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
             table_id = row['Table ID']
             line_number = row['Line Number']

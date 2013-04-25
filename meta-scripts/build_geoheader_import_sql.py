@@ -4,7 +4,7 @@ import os
 from os.path import join
 
 
-def run(data_root, working_dir):
+def run(data_root, working_dir, config):
     geo_file = open(join(working_dir, 'import_geoheader.sql'), 'w')
 
     for root, dirs, files in os.walk(data_root):
