@@ -40,9 +40,9 @@ WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 def run(data_root, working_dir, config):
     sqn_col_name = config['sequence_number_column_name']
 
-    sql_file = open("%s/store_by_tables.sql" % (data_root,), 'w')
+    sql_file = open("%s/store_by_tables.sql" % (working_dir,), 'w')
 
-    sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % working_dir, 'rU'))
+    sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
     for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
