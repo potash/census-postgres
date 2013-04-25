@@ -11,7 +11,7 @@
 # The comments below that begin with ... represent the various SQL files that need
 # to be generated to complete the import and how they're built in this script.
 
-acs_root = '/mnt/acs2011_1yr'
+acs_root = '/mnt/tmp/acs2011_1yr'
 working_dir = '.'
 
 ##
