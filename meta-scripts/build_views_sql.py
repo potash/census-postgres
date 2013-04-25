@@ -12,13 +12,13 @@ stusab, logrecno,
     sql_file.write("\nFROM seq%04d;\n\n" % sqn)
 
     # A tiny hack to append "_moe" to the name of the column
-    cell_moe_columns = ["%s_moe" % t for t in cell_columns]
+    cell_moe_columns = ["%s, %s_moe" % (t, t) for t in cell_columns]
 
     sql_file.write("""CREATE VIEW %s_moe (
 stusab, logrecno,
 """ % (table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
-    sql_file.write("\nFROM seq%04d_moe;\n\n" % sqn)
+    sql_file.write("\nFROM seq%04d JOIN seq%04d_moe USING (stusab, logrecno);\n\n" % sqn)
 
 
 def run(data_root, working_dir, config):
