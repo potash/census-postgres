@@ -18,7 +18,7 @@ stusab, logrecno,
 stusab, logrecno,
 """ % (table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
-    sql_file.write("\nFROM seq%04d JOIN seq%04d_moe USING (stusab, logrecno);\n\n" % sqn)
+    sql_file.write("\nFROM seq%04d JOIN seq%04d_moe USING (stusab, logrecno);\n\n" % (sqn, sqn))
 
 
 def run(data_root, working_dir, config):
