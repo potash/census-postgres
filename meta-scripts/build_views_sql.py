@@ -22,7 +22,7 @@ stusab, logrecno,
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write("\nFROM seq%04d_moe;\n\n" % sqn)
 
-sql_file = open("%s/create_import_tables.sql" % (views_sql_root,), 'w')
+sql_file = open("%s/view_stored_by_tables.sql" % (views_sql_root,), 'w')
 
 prev_table_id = None
 prev_sqn = None
