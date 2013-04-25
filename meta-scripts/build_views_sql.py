@@ -22,13 +22,15 @@ stusab, logrecno,
 
 
 def run(data_root, working_dir, config):
+    sqn_col_name = config['sequence_number_column_name']
+
     sql_file = open("%s/view_stored_by_tables.sql" % (working_dir,), 'w')
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
     for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
         for row in rows:
-            sqn = int(row['Sequence Number'])
+            sqn = int(row[sqn_col_name])
             line_number = row['Line Number']
 
             if not line_number or line_number.endswith('.5'):
@@ -38,5 +40,5 @@ def run(data_root, working_dir, config):
 
             cell_names.append("%s%04d" % (table_id, int(line_number)))
 
-    write_one_seq_view(sql_file, table_id, sqn, cell_names)
-    cell_names = []
+        write_one_seq_view(sql_file, table_id, sqn, cell_names)
+        cell_names = []
