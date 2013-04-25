@@ -1,6 +1,7 @@
 #!/bin/python
 
 import csv
+from itertools import groupby
 
 acs_root = '/mnt/tmp/acs2010_1yr'
 views_sql_root = '.'
@@ -24,25 +25,19 @@ stusab, logrecno,
 
 sql_file = open("%s/view_stored_by_tables.sql" % (views_sql_root,), 'w')
 
-prev_table_id = None
-prev_sqn = None
+sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % acs_root, 'rU'))
 cell_names = []
-for row in csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % acs_root, 'rU')):
-    table_id = row['Table ID']
-    sqn = int(row['Sequence Number'])
-    line_number = row['Line Number']
+for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
+    for row in rows:
+        sqn = int(row['Sequence Number'])
+        line_number = row['Line Number']
 
-    if not line_number or line_number.endswith('.5'):
-        # Skip over entries that don't have line numbers because they won't have data in the sequences
-        # Also skip over lines ending in .5 because they're labels
-        continue
+        if not line_number or line_number.endswith('.5'):
+            # Skip over entries that don't have line numbers because they won't have data in the sequences
+            # Also skip over lines ending in .5 because they're labels
+            continue
 
-    cell_names.append("%s%04d" % (table_id, int(line_number)))
+        cell_names.append("%s%04d" % (table_id, int(line_number)))
 
-    if prev_table_id is not None and prev_table_id != table_id:
-        write_one_seq_view(sql_file, prev_table_id, prev_sqn, cell_names)
-        cell_names = []
-        prev_table_id = table_id
-        prev_sqn = sqn
-
-write_one_seq_view(sql_file, table_id, sqn, cell_names)
+    write_one_seq_view(sql_file, table_id, sqn, cell_names)
+    cell_names = []
