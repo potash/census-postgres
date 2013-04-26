@@ -1,4 +1,3 @@
-SET search_path = acs2011_3yr, public;
 INSERT INTO geoheader SELECT
 	btrim(substring(all_fields from 1 for 6)) AS fileid,
 	btrim(substring(all_fields from 7 for 2)) AS stusab,

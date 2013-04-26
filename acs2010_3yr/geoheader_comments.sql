@@ -1,4 +1,3 @@
-SET search_path = acs2011_3yr, public;
 COMMENT ON COLUMN geoheader.fileid IS 'Always equal to ACS Summary File identification';
 COMMENT ON COLUMN geoheader.stusab IS 'State Postal Abbreviation';
 COMMENT ON COLUMN geoheader.sumlevel IS 'Summary Level';

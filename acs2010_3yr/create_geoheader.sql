@@ -1,4 +1,3 @@
-SET search_path = acs2011_3yr, public;
 CREATE TABLE geoheader (
 	fileid varchar(6),
 	stusab varchar(2),
