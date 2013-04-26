@@ -20,9 +20,11 @@ working_dir = '.'
 config = {
     'acs2011_1yr': {
         'sequence_number_column_name': 'seq',
+        'line_number_column_name': 'Line Number Decimal M Lines'
     },
     'acs2010_1yr': {
         'sequence_number_column_name': 'Sequence Number',
+        'line_number_column_name': 'Line Number'
     }
 }
 

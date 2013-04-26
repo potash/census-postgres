@@ -23,6 +23,7 @@ stusab, logrecno,
 
 def run(data_root, working_dir, config):
     sqn_col_name = config['sequence_number_column_name']
+    line_no_col_name = config['line_number_column_name']
 
     sql_file = open("%s/view_stored_by_tables.sql" % (working_dir,), 'w')
 
@@ -31,7 +32,7 @@ def run(data_root, working_dir, config):
     for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
         for row in rows:
             sqn = int(row[sqn_col_name])
-            line_number = row['Line Number']
+            line_number = row[line_no_col_name]
 
             if not line_number or line_number.endswith('.5'):
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
