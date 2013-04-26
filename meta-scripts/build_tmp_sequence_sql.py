@@ -48,7 +48,7 @@ def run(data_root, working_dir, config):
             table_id = row['Table ID']
             line_number = row[line_no_col_name]
 
-            if not line_number or line_number.endswith('.5') or line_number == '.' or row['Table Title'].endswith(' --'):
+            if not line_number or line_number.endswith('.5') or line_number == '.' or (row['Table Title'].endswith('--') and line_number.endswith('5')):
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
                 # Also skip over lines ending in .5 because they're labels
                 # In 2009 it looks like they screwed up the .5 label thing
