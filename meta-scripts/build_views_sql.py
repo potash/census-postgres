@@ -34,9 +34,11 @@ def run(data_root, working_dir, config):
             sqn = int(row[sqn_col_name])
             line_number = row[line_no_col_name]
 
-            if not line_number or line_number.endswith('.5') or line_number == '.':
+            if not line_number or line_number.endswith('.5') or line_number == '.' or row['Table Title'].endswith(' --'):
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
                 # Also skip over lines ending in .5 because they're labels
+                # In 2009 it looks like they screwed up the .5 label thing
+                #   and the only way to detect it is with a '-- ' at the end of the title
                 continue
 
             cell_names.append("%s%04d" % (table_id, int(line_number)))
