@@ -45,12 +45,12 @@ def run(data_root, working_dir, config):
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
-    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name]) if row['File ID'] else None):
+    for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
             table_id = row['Table ID']
             line_number = row[line_no_col_name]
 
-            if not sqn or not line_number or line_number.endswith('.5') or line_number == '.':
+            if not line_number or line_number.endswith('.5') or line_number == '.':
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
                 # Also skip over lines ending in .5 because they're labels
                 continue
