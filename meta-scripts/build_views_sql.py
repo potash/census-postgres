@@ -34,7 +34,7 @@ def run(data_root, working_dir, config):
             sqn = int(row[sqn_col_name])
             line_number = row[line_no_col_name]
 
-            if not line_number or line_number.endswith('.5'):
+            if not line_number or line_number.endswith('.5') or line_number == '.':
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
                 # Also skip over lines ending in .5 because they're labels
                 continue
