@@ -45,23 +45,28 @@ def run(data_root, working_dir, config):
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
+    prev_line_number = 0
     for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
             table_id = row['Table ID']
             line_number = row[line_no_col_name]
 
-            if not line_number or \
-               line_number.endswith('.5') or \
-               line_number == '.' or \
-               (row['Table Title'].endswith('--') and line_number.endswith('5')) or \
-               (row['Table Title'].endswith(':') and line_number.endswith('5')):
+            if not line_number or line_number.endswith('.5') or line_number == '.':
                 # Skip over entries that don't have line numbers because they won't have data in the sequences
                 # Also skip over lines ending in .5 because they're labels
-                # In 2009 it looks like they screwed up the .5 label thing
-                #   and the only way to detect it is with a '-- ' at the end of the title
                 continue
 
-            cell_names.append("%s%04d double precision" % (table_id, int(line_number)))
+            line_number = int(line_number)
+
+            if (line_number - prev_line_number) != 1:
+                # In 2009 it looks like they screwed up the .5 label thing
+                #   and the only way to detect a label is to ensure the line
+                #   number increments by one
+                continue
+
+            cell_names.append("%s%04d double precision" % (table_id, line_number))
+            prev_line_number = line_number
 
         write_one_seq_table(sql_file, sqn, cell_names)
         cell_names = []
+        prev_line_number = 0
