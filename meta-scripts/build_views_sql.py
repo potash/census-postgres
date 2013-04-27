@@ -42,10 +42,11 @@ def run(data_root, working_dir, config):
 
             line_number = int(line_number)
 
-            if (line_number - prev_line_number) != 1:
+            if (line_number - prev_line_number) != 1 and (line_number != 1):
                 # In 2009 it looks like they screwed up the .5 label thing
                 #   and the only way to detect a label is to ensure the line
                 #   number increments by one
+                # We also want to let the line number reset back to 1 mid-sequence
                 continue
 
             cell_names.append("%s%04d" % (table_id, line_number))
