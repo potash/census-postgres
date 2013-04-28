@@ -70,4 +70,3 @@ def run(data_root, working_dir, config):
 
         write_one_seq_table(sql_file, sqn, cell_names)
         cell_names = []
-        prev_line_number = 0
