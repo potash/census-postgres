@@ -49,7 +49,7 @@ def run(data_root, working_dir, config):
                 # We also want to let the line number reset back to 1 mid-sequence
                 continue
 
-            cell_names.append("%s%04d" % (table_id, line_number))
+            cell_names.append("%s%03d" % (table_id, line_number))
             prev_line_number = line_number
 
         write_one_seq_view(sql_file, table_id, sqn, cell_names)
