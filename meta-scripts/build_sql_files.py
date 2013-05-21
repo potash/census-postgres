@@ -18,6 +18,19 @@ working_dir = '.'
 # Each ACS release tends to do things just a bit differently,
 # so we'll throw that stuff in here.
 config = {
+    'acs2007_1yr': {
+        'sequence_number_column_name': ' Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+    'acs2007_3yr': {
+        'sequence_number_column_name': ' Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+    'acs2007_5yr': {
+        'sequence_number_column_name': ' Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+
     'acs2008_1yr': {
         'sequence_number_column_name': 'seq',
         'line_number_column_name': 'order'
