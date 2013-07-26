@@ -28,4 +28,31 @@ The Census Reporter project's EBS snapshot also contains [TIGER 2012](http://www
 data in a PostGIS database. This allows you to make maps and correlate the ACS
 data with physical areas in the country.
 
+ACS Data Tables
+---------------
 
+Data is retrieved by fetching the summary file, the table "shells" XLS, and "lookup"
+XLS from the Census website (e.g. the [2011 1-year sumamry file](http://www2.census.gov/acs2011_1yr/summaryfile/)).
+[Scripts](https://github.com/censusreporter/census-postgres/tree/master/meta-scripts)
+are used to consume this raw data and turn it into consistent SQL statements for
+import into a PostgreSQL database.
+
+Each ACS sequence contains at least one ACS table. Each ACS table contains one or more
+columns of data along with a matching "measurement of error" (MOE) column. The
+scripts create PostgreSQL tables for each ACS sequence and then creates views for
+each ACS table, pulling the sequences apart into the tables. Each table is keyed
+with a `stusab` (state abbreviation) and `logrecno` (a record number). These two values
+are found in the `geoheader` for the area you're interested in.
+
+ACS Metadata Table
+------------------
+
+The scripts that create the data tables also store informaton about the tables and columns
+themselves in the `census_table_metadata` table. You can get table and column names along
+with column heirarchy information out of this table. It is keyed off of the column ID.
+
+TIGER 2012 Tables
+-----------------
+
+The Census tabulation-related data from TIGER 2012 is loaded in the `tiger2012` schema
+using PostGIS.
