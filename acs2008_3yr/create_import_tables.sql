@@ -1,4 +1,4 @@
-CREATE TABLE tmp_seq0001 (
+CREATE TABLE acs2008_3yr.tmp_seq0001 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -228,7 +228,7 @@ C07401050 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0001_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0001_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -458,7 +458,7 @@ C07401050_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0002 (
+CREATE TABLE acs2008_3yr.tmp_seq0002 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -648,7 +648,7 @@ C07408025 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0002_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0002_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -838,7 +838,7 @@ C07408025_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0003 (
+CREATE TABLE acs2008_3yr.tmp_seq0003 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1066,7 +1066,7 @@ C08511030 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0003_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0003_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1294,7 +1294,7 @@ C08511030_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0004 (
+CREATE TABLE acs2008_3yr.tmp_seq0004 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1526,7 +1526,7 @@ C08505I006 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0004_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0004_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1758,7 +1758,7 @@ C08505I006_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0005 (
+CREATE TABLE acs2008_3yr.tmp_seq0005 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1971,7 +1971,7 @@ C08519054 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0005_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0005_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2184,7 +2184,7 @@ C08519054_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0006 (
+CREATE TABLE acs2008_3yr.tmp_seq0006 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2357,7 +2357,7 @@ C08524048 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0006_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0006_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2530,7 +2530,7 @@ C08524048_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0007 (
+CREATE TABLE acs2008_3yr.tmp_seq0007 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2729,7 +2729,7 @@ C08526084 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0007_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0007_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2928,7 +2928,7 @@ C08526084_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0008 (
+CREATE TABLE acs2008_3yr.tmp_seq0008 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3183,7 +3183,7 @@ C08532055 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0008_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0008_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3438,7 +3438,7 @@ C08532055_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0009 (
+CREATE TABLE acs2008_3yr.tmp_seq0009 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3674,7 +3674,7 @@ C08537018 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0009_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0009_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3910,7 +3910,7 @@ C08537018_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0010 (
+CREATE TABLE acs2008_3yr.tmp_seq0010 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4066,7 +4066,7 @@ C08603010 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0010_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0010_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4222,7 +4222,7 @@ C08603010_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0011 (
+CREATE TABLE acs2008_3yr.tmp_seq0011 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4248,7 +4248,7 @@ B99089003 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0011_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0011_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4274,7 +4274,7 @@ B99089003_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0012 (
+CREATE TABLE acs2008_3yr.tmp_seq0012 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4286,7 +4286,7 @@ B00002001 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0012_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0012_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4298,7 +4298,7 @@ B00002001_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0013 (
+CREATE TABLE acs2008_3yr.tmp_seq0013 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4517,7 +4517,7 @@ C01001D009 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0013_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0013_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4736,7 +4736,7 @@ C01001D009_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0014 (
+CREATE TABLE acs2008_3yr.tmp_seq0014 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4977,7 +4977,7 @@ C01001I009 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0014_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0014_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5218,7 +5218,7 @@ C01001I009_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0015 (
+CREATE TABLE acs2008_3yr.tmp_seq0015 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5436,7 +5436,7 @@ C02007005 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0015_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0015_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5654,7 +5654,7 @@ C02007005_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0016 (
+CREATE TABLE acs2008_3yr.tmp_seq0016 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5738,7 +5738,7 @@ C03002012 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0016_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0016_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5822,7 +5822,7 @@ C03002012_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0017 (
+CREATE TABLE acs2008_3yr.tmp_seq0017 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5973,7 +5973,7 @@ C04001032 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0017_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0017_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6124,7 +6124,7 @@ C04001032_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0018 (
+CREATE TABLE acs2008_3yr.tmp_seq0018 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6275,7 +6275,7 @@ C04002032 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0018_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0018_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6426,7 +6426,7 @@ C04002032_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0019 (
+CREATE TABLE acs2008_3yr.tmp_seq0019 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6575,7 +6575,7 @@ C04003031 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0019_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0019_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6724,7 +6724,7 @@ C04003031_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0020 (
+CREATE TABLE acs2008_3yr.tmp_seq0020 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6873,7 +6873,7 @@ C04004031 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0020_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0020_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7022,7 +7022,7 @@ C04004031_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0021 (
+CREATE TABLE acs2008_3yr.tmp_seq0021 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7171,7 +7171,7 @@ C04005031 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0021_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0021_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7320,7 +7320,7 @@ C04005031_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0022 (
+CREATE TABLE acs2008_3yr.tmp_seq0022 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7483,7 +7483,7 @@ C04007005 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0022_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0022_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7646,7 +7646,7 @@ C04007005_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0023 (
+CREATE TABLE acs2008_3yr.tmp_seq0023 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7880,7 +7880,7 @@ C05003D015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0023_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0023_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8114,7 +8114,7 @@ C05003D015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0024 (
+CREATE TABLE acs2008_3yr.tmp_seq0024 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8363,7 +8363,7 @@ C05005013 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0024_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0024_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8612,7 +8612,7 @@ C05005013_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0025 (
+CREATE TABLE acs2008_3yr.tmp_seq0025 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8813,7 +8813,7 @@ C05006068 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0025_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0025_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9014,7 +9014,7 @@ C05006068_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0026 (
+CREATE TABLE acs2008_3yr.tmp_seq0026 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9175,7 +9175,7 @@ C05007057 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0026_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0026_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9336,7 +9336,7 @@ C05007057_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0027 (
+CREATE TABLE acs2008_3yr.tmp_seq0027 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9550,7 +9550,7 @@ C05010007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0027_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0027_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9764,7 +9764,7 @@ C05010007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0028 (
+CREATE TABLE acs2008_3yr.tmp_seq0028 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9957,7 +9957,7 @@ C06003013 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0028_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0028_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10150,7 +10150,7 @@ C06003013_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0029 (
+CREATE TABLE acs2008_3yr.tmp_seq0029 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10390,7 +10390,7 @@ C06008025 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0029_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0029_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10630,7 +10630,7 @@ C06008025_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0030 (
+CREATE TABLE acs2008_3yr.tmp_seq0030 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10874,7 +10874,7 @@ C07001060 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0030_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0030_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11118,7 +11118,7 @@ C07001060_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0031 (
+CREATE TABLE acs2008_3yr.tmp_seq0031 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11356,7 +11356,7 @@ C07008030 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0031_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0031_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11594,7 +11594,7 @@ C07008030_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0032 (
+CREATE TABLE acs2008_3yr.tmp_seq0032 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11785,7 +11785,7 @@ C07204012 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0032_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0032_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11976,7 +11976,7 @@ C07204012_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0033 (
+CREATE TABLE acs2008_3yr.tmp_seq0033 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12205,7 +12205,7 @@ C08011033 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0033_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0033_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12434,7 +12434,7 @@ C08011033_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0034 (
+CREATE TABLE acs2008_3yr.tmp_seq0034 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12633,7 +12633,7 @@ C08018006 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0034_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0034_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12832,7 +12832,7 @@ C08018006_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0035 (
+CREATE TABLE acs2008_3yr.tmp_seq0035 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13064,7 +13064,7 @@ C08105I006 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0035_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0035_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13296,7 +13296,7 @@ C08105I006_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0036 (
+CREATE TABLE acs2008_3yr.tmp_seq0036 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13457,7 +13457,7 @@ C08113030 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0036_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0036_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13618,7 +13618,7 @@ C08113030_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0037 (
+CREATE TABLE acs2008_3yr.tmp_seq0037 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13804,7 +13804,7 @@ C08122024 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0037_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0037_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13990,7 +13990,7 @@ C08122024_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0038 (
+CREATE TABLE acs2008_3yr.tmp_seq0038 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14204,7 +14204,7 @@ C08128030 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0038_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0038_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14418,7 +14418,7 @@ C08128030_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0039 (
+CREATE TABLE acs2008_3yr.tmp_seq0039 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14617,7 +14617,7 @@ C08126084 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0039_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0039_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14816,7 +14816,7 @@ C08126084_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0040 (
+CREATE TABLE acs2008_3yr.tmp_seq0040 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15059,7 +15059,7 @@ C08133011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0040_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0040_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15302,7 +15302,7 @@ C08133011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0041 (
+CREATE TABLE acs2008_3yr.tmp_seq0041 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15548,7 +15548,7 @@ C08137018 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0041_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0041_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15794,7 +15794,7 @@ C08137018_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0042 (
+CREATE TABLE acs2008_3yr.tmp_seq0042 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16042,7 +16042,7 @@ C08301011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0042_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0042_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16290,7 +16290,7 @@ C08301011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0043 (
+CREATE TABLE acs2008_3yr.tmp_seq0043 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16349,7 +16349,7 @@ C08303010 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0043_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0043_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16408,7 +16408,7 @@ C08303010_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0044 (
+CREATE TABLE acs2008_3yr.tmp_seq0044 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16569,7 +16569,7 @@ C09016029 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0044_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0044_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16730,7 +16730,7 @@ C09016029_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0045 (
+CREATE TABLE acs2008_3yr.tmp_seq0045 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16942,7 +16942,7 @@ B10063007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0045_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0045_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17154,7 +17154,7 @@ B10063007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0046 (
+CREATE TABLE acs2008_3yr.tmp_seq0046 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17403,7 +17403,7 @@ C11014003 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0046_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0046_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17652,7 +17652,7 @@ C11014003_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0047 (
+CREATE TABLE acs2008_3yr.tmp_seq0047 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17900,7 +17900,7 @@ C11005017 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0047_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0047_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18148,7 +18148,7 @@ C11005017_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0048 (
+CREATE TABLE acs2008_3yr.tmp_seq0048 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18186,7 +18186,7 @@ C11016012 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0048_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0048_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18224,7 +18224,7 @@ C11016012_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0049 (
+CREATE TABLE acs2008_3yr.tmp_seq0049 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18440,7 +18440,7 @@ B12002187 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0049_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0049_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18656,7 +18656,7 @@ B12002187_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0050 (
+CREATE TABLE acs2008_3yr.tmp_seq0050 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18910,7 +18910,7 @@ C12002I006 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0050_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0050_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19164,7 +19164,7 @@ C12002I006_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0051 (
+CREATE TABLE acs2008_3yr.tmp_seq0051 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19266,7 +19266,7 @@ B12007I002 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0051_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0051_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19368,7 +19368,7 @@ B12007I002_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0052 (
+CREATE TABLE acs2008_3yr.tmp_seq0052 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19563,7 +19563,7 @@ C13004007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0052_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0052_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19758,7 +19758,7 @@ C13004007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0053 (
+CREATE TABLE acs2008_3yr.tmp_seq0053 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19998,7 +19998,7 @@ C14003028 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0053_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0053_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20238,7 +20238,7 @@ C14003028_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0054 (
+CREATE TABLE acs2008_3yr.tmp_seq0054 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20305,7 +20305,7 @@ C14006017 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0054_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0054_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20372,7 +20372,7 @@ C14006017_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0056 (
+CREATE TABLE acs2008_3yr.tmp_seq0056 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20581,7 +20581,7 @@ C15002A011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0056_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0056_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20790,7 +20790,7 @@ C15002A011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0057 (
+CREATE TABLE acs2008_3yr.tmp_seq0057 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20888,7 +20888,7 @@ C15002I011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0057_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0057_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20986,7 +20986,7 @@ C15002I011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0058 (
+CREATE TABLE acs2008_3yr.tmp_seq0058 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21035,7 +21035,7 @@ B15004039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0058_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0058_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21084,7 +21084,7 @@ B15004039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0059 (
+CREATE TABLE acs2008_3yr.tmp_seq0059 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21336,7 +21336,7 @@ C16006006 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0059_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0059_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21588,7 +21588,7 @@ C16006006_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0060 (
+CREATE TABLE acs2008_3yr.tmp_seq0060 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21838,7 +21838,7 @@ C16005029 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0060_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0060_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22088,7 +22088,7 @@ C16005029_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0061 (
+CREATE TABLE acs2008_3yr.tmp_seq0061 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22302,7 +22302,7 @@ C16010037 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0061_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0061_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22516,7 +22516,7 @@ C16010037_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0062 (
+CREATE TABLE acs2008_3yr.tmp_seq0062 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22760,7 +22760,7 @@ C17001B019 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0062_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0062_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23004,7 +23004,7 @@ C17001B019_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0063 (
+CREATE TABLE acs2008_3yr.tmp_seq0063 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23248,7 +23248,7 @@ C17001E019 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0063_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0063_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23492,7 +23492,7 @@ C17001E019_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0064 (
+CREATE TABLE acs2008_3yr.tmp_seq0064 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23736,7 +23736,7 @@ C17001H019 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0064_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0064_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23980,7 +23980,7 @@ C17001H019_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0065 (
+CREATE TABLE acs2008_3yr.tmp_seq0065 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24210,7 +24210,7 @@ C17006007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0065_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0065_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24440,7 +24440,7 @@ C17006007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0066 (
+CREATE TABLE acs2008_3yr.tmp_seq0066 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24690,7 +24690,7 @@ C17010A017 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0066_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0066_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24940,7 +24940,7 @@ C17010A017_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0067 (
+CREATE TABLE acs2008_3yr.tmp_seq0067 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25182,7 +25182,7 @@ C17010E017 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0067_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0067_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25424,7 +25424,7 @@ C17010E017_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0068 (
+CREATE TABLE acs2008_3yr.tmp_seq0068 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25676,7 +25676,7 @@ C17012011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0068_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0068_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25928,7 +25928,7 @@ C17012011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0069 (
+CREATE TABLE acs2008_3yr.tmp_seq0069 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26148,7 +26148,7 @@ C17016009 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0069_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0069_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26368,7 +26368,7 @@ C17016009_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0070 (
+CREATE TABLE acs2008_3yr.tmp_seq0070 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26610,7 +26610,7 @@ C17020C009 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0070_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0070_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26852,7 +26852,7 @@ C17020C009_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0071 (
+CREATE TABLE acs2008_3yr.tmp_seq0071 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27068,7 +27068,7 @@ C17021015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0071_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0071_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27284,7 +27284,7 @@ C17021015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0072 (
+CREATE TABLE acs2008_3yr.tmp_seq0072 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27454,7 +27454,7 @@ C17023023 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0072_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0072_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27624,7 +27624,7 @@ C17023023_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0073 (
+CREATE TABLE acs2008_3yr.tmp_seq0073 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27819,7 +27819,7 @@ C17025011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0073_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0073_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28014,7 +28014,7 @@ C17025011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0077 (
+CREATE TABLE acs2008_3yr.tmp_seq0077 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28222,7 +28222,7 @@ C19037045 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0077_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0077_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28430,7 +28430,7 @@ C19037045_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0078 (
+CREATE TABLE acs2008_3yr.tmp_seq0078 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28664,7 +28664,7 @@ C19001I011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0078_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0078_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28898,7 +28898,7 @@ C19001I011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0079 (
+CREATE TABLE acs2008_3yr.tmp_seq0079 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29136,7 +29136,7 @@ C19037B045 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0079_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0079_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29374,7 +29374,7 @@ C19037B045_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0080 (
+CREATE TABLE acs2008_3yr.tmp_seq0080 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29612,7 +29612,7 @@ C19037D045 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0080_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0080_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29850,7 +29850,7 @@ C19037D045_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0081 (
+CREATE TABLE acs2008_3yr.tmp_seq0081 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30088,7 +30088,7 @@ C19037F045 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0081_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0081_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30326,7 +30326,7 @@ C19037F045_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0082 (
+CREATE TABLE acs2008_3yr.tmp_seq0082 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30564,7 +30564,7 @@ C19037H045 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0082_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0082_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30802,7 +30802,7 @@ C19037H045_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0083 (
+CREATE TABLE acs2008_3yr.tmp_seq0083 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31049,7 +31049,7 @@ C19101A011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0083_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0083_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31296,7 +31296,7 @@ C19101A011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0084 (
+CREATE TABLE acs2008_3yr.tmp_seq0084 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31547,7 +31547,7 @@ C19101I011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0084_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0084_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31798,7 +31798,7 @@ C19101I011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0085 (
+CREATE TABLE acs2008_3yr.tmp_seq0085 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32053,7 +32053,7 @@ C19131071 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0085_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0085_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32308,7 +32308,7 @@ C19131071_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0086 (
+CREATE TABLE acs2008_3yr.tmp_seq0086 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32509,7 +32509,7 @@ C19201011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0086_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0086_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32710,7 +32710,7 @@ C19201011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0087 (
+CREATE TABLE acs2008_3yr.tmp_seq0087 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32925,7 +32925,7 @@ C20005039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0087_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0087_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33140,7 +33140,7 @@ C20005039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0088 (
+CREATE TABLE acs2008_3yr.tmp_seq0088 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33379,7 +33379,7 @@ C20005A039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0088_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0088_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33618,7 +33618,7 @@ C20005A039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0089 (
+CREATE TABLE acs2008_3yr.tmp_seq0089 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33801,7 +33801,7 @@ C20005C039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0089_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0089_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33984,7 +33984,7 @@ C20005C039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0090 (
+CREATE TABLE acs2008_3yr.tmp_seq0090 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34223,7 +34223,7 @@ C20005D039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0090_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0090_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34462,7 +34462,7 @@ C20005D039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0091 (
+CREATE TABLE acs2008_3yr.tmp_seq0091 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34645,7 +34645,7 @@ C20005F039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0091_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0091_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34828,7 +34828,7 @@ C20005F039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0092 (
+CREATE TABLE acs2008_3yr.tmp_seq0092 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35067,7 +35067,7 @@ C20005G039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0092_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0092_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35306,7 +35306,7 @@ C20005G039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0093 (
+CREATE TABLE acs2008_3yr.tmp_seq0093 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35559,7 +35559,7 @@ C20005I039 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0093_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0093_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35812,7 +35812,7 @@ C20005I039_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0094 (
+CREATE TABLE acs2008_3yr.tmp_seq0094 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36047,7 +36047,7 @@ C21001D015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0094_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0094_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36282,7 +36282,7 @@ C21001D015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0095 (
+CREATE TABLE acs2008_3yr.tmp_seq0095 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36532,7 +36532,7 @@ C21001I015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0095_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0095_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36782,7 +36782,7 @@ C21001I015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0096 (
+CREATE TABLE acs2008_3yr.tmp_seq0096 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36871,7 +36871,7 @@ C21005011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0096_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0096_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36960,7 +36960,7 @@ C21005011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0097 (
+CREATE TABLE acs2008_3yr.tmp_seq0097 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37123,7 +37123,7 @@ C22007029 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0097_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0097_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37286,7 +37286,7 @@ C22007029_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0098 (
+CREATE TABLE acs2008_3yr.tmp_seq0098 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37469,7 +37469,7 @@ B23001173 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0098_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0098_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37652,7 +37652,7 @@ B23001173_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0099 (
+CREATE TABLE acs2008_3yr.tmp_seq0099 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37861,7 +37861,7 @@ C23002A027 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0099_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0099_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38070,7 +38070,7 @@ C23002A027_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0100 (
+CREATE TABLE acs2008_3yr.tmp_seq0100 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38292,7 +38292,7 @@ C23002C027 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0100_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0100_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38514,7 +38514,7 @@ C23002C027_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0101 (
+CREATE TABLE acs2008_3yr.tmp_seq0101 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38736,7 +38736,7 @@ C23002E027 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0101_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0101_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38958,7 +38958,7 @@ C23002E027_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0102 (
+CREATE TABLE acs2008_3yr.tmp_seq0102 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39180,7 +39180,7 @@ C23002G027 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0102_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0102_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39402,7 +39402,7 @@ C23002G027_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0103 (
+CREATE TABLE acs2008_3yr.tmp_seq0103 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39654,7 +39654,7 @@ C23002I027 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0103_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0103_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39906,7 +39906,7 @@ C23002I027_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0104 (
+CREATE TABLE acs2008_3yr.tmp_seq0104 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40150,7 +40150,7 @@ C23008019 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0104_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0104_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40394,7 +40394,7 @@ C23008019_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0105 (
+CREATE TABLE acs2008_3yr.tmp_seq0105 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40498,7 +40498,7 @@ C23022011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0105_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0105_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40602,7 +40602,7 @@ C23022011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0106 (
+CREATE TABLE acs2008_3yr.tmp_seq0106 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40739,7 +40739,7 @@ B24010127 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0106_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0106_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40876,7 +40876,7 @@ B24010127_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0107 (
+CREATE TABLE acs2008_3yr.tmp_seq0107 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41012,7 +41012,7 @@ B24010253 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0107_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0107_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41148,7 +41148,7 @@ B24010253_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0108 (
+CREATE TABLE acs2008_3yr.tmp_seq0108 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41389,7 +41389,7 @@ C24010B015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0108_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0108_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41630,7 +41630,7 @@ C24010B015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0109 (
+CREATE TABLE acs2008_3yr.tmp_seq0109 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41874,7 +41874,7 @@ C24010E015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0109_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0109_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42118,7 +42118,7 @@ C24010E015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0110 (
+CREATE TABLE acs2008_3yr.tmp_seq0110 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42362,7 +42362,7 @@ C24010H015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0110_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0110_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42606,7 +42606,7 @@ C24010H015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0111 (
+CREATE TABLE acs2008_3yr.tmp_seq0111 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42805,7 +42805,7 @@ C24010I015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0111_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0111_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43004,7 +43004,7 @@ C24010I015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0112 (
+CREATE TABLE acs2008_3yr.tmp_seq0112 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43141,7 +43141,7 @@ B24020127 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0112_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0112_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43278,7 +43278,7 @@ B24020127_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0113 (
+CREATE TABLE acs2008_3yr.tmp_seq0113 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43414,7 +43414,7 @@ B24020253 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0113_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0113_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43550,7 +43550,7 @@ B24020253_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0114 (
+CREATE TABLE acs2008_3yr.tmp_seq0114 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43746,7 +43746,7 @@ C24020075 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0114_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0114_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43942,7 +43942,7 @@ C24020075_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0115 (
+CREATE TABLE acs2008_3yr.tmp_seq0115 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44161,7 +44161,7 @@ B24030209 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0115_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0115_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44380,7 +44380,7 @@ B24030209_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0116 (
+CREATE TABLE acs2008_3yr.tmp_seq0116 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44526,7 +44526,7 @@ C24030055 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0116_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0116_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44672,7 +44672,7 @@ C24030055_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0117 (
+CREATE TABLE acs2008_3yr.tmp_seq0117 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44891,7 +44891,7 @@ B24040209 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0117_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0117_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45110,7 +45110,7 @@ B24040209_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0118 (
+CREATE TABLE acs2008_3yr.tmp_seq0118 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45256,7 +45256,7 @@ C24040055 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0118_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0118_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45402,7 +45402,7 @@ C24040055_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0119 (
+CREATE TABLE acs2008_3yr.tmp_seq0119 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45601,7 +45601,7 @@ B24050189 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0119_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0119_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45800,7 +45800,7 @@ B24050189_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0120 (
+CREATE TABLE acs2008_3yr.tmp_seq0120 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -45908,7 +45908,7 @@ C24050098 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0120_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0120_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -46016,7 +46016,7 @@ C24050098_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0121 (
+CREATE TABLE acs2008_3yr.tmp_seq0121 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -46260,7 +46260,7 @@ B24060234 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0121_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0121_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -46504,7 +46504,7 @@ B24060234_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0122 (
+CREATE TABLE acs2008_3yr.tmp_seq0122 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -46694,7 +46694,7 @@ C24060180 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0122_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0122_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -46884,7 +46884,7 @@ C24060180_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0123 (
+CREATE TABLE acs2008_3yr.tmp_seq0123 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -47056,7 +47056,7 @@ B24070162 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0123_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0123_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -47228,7 +47228,7 @@ B24070162_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0124 (
+CREATE TABLE acs2008_3yr.tmp_seq0124 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -47456,7 +47456,7 @@ C24090019 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0124_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0124_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -47684,7 +47684,7 @@ C24090019_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0125 (
+CREATE TABLE acs2008_3yr.tmp_seq0125 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -47861,7 +47861,7 @@ B24121167 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0125_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0125_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48038,7 +48038,7 @@ B24121167_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0126 (
+CREATE TABLE acs2008_3yr.tmp_seq0126 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48214,7 +48214,7 @@ B24121333 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0126_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0126_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48390,7 +48390,7 @@ B24121333_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0127 (
+CREATE TABLE acs2008_3yr.tmp_seq0127 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48566,7 +48566,7 @@ B24121499 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0127_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0127_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48742,7 +48742,7 @@ B24121499_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0128 (
+CREATE TABLE acs2008_3yr.tmp_seq0128 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -48919,7 +48919,7 @@ B24122167 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0128_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0128_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49096,7 +49096,7 @@ B24122167_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0129 (
+CREATE TABLE acs2008_3yr.tmp_seq0129 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49272,7 +49272,7 @@ B24122333 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0129_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0129_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49448,7 +49448,7 @@ B24122333_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0130 (
+CREATE TABLE acs2008_3yr.tmp_seq0130 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49624,7 +49624,7 @@ B24122499 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0130_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0130_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49800,7 +49800,7 @@ B24122499_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0131 (
+CREATE TABLE acs2008_3yr.tmp_seq0131 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -49977,7 +49977,7 @@ B24123167 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0131_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0131_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -50154,7 +50154,7 @@ B24123167_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0132 (
+CREATE TABLE acs2008_3yr.tmp_seq0132 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -50330,7 +50330,7 @@ B24123333 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0132_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0132_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -50506,7 +50506,7 @@ B24123333_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0133 (
+CREATE TABLE acs2008_3yr.tmp_seq0133 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -50682,7 +50682,7 @@ B24123499 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0133_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0133_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -50858,7 +50858,7 @@ B24123499_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0134 (
+CREATE TABLE acs2008_3yr.tmp_seq0134 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -51092,7 +51092,7 @@ C25014007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0134_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0134_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -51326,7 +51326,7 @@ C25014007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0135 (
+CREATE TABLE acs2008_3yr.tmp_seq0135 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -51574,7 +51574,7 @@ C25032C005 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0135_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0135_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -51822,7 +51822,7 @@ C25032C005_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0136 (
+CREATE TABLE acs2008_3yr.tmp_seq0136 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -52076,7 +52076,7 @@ C25043007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0136_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0136_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -52330,7 +52330,7 @@ C25043007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0137 (
+CREATE TABLE acs2008_3yr.tmp_seq0137 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -52557,7 +52557,7 @@ C25066004 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0137_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0137_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -52784,7 +52784,7 @@ C25066004_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0138 (
+CREATE TABLE acs2008_3yr.tmp_seq0138 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -53030,7 +53030,7 @@ C25093017 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0138_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0138_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -53276,7 +53276,7 @@ C25093017_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0139 (
+CREATE TABLE acs2008_3yr.tmp_seq0139 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -53526,7 +53526,7 @@ C25085008 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0139_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0139_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -53776,7 +53776,7 @@ C25085008_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0140 (
+CREATE TABLE acs2008_3yr.tmp_seq0140 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54022,7 +54022,7 @@ C25110005 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0140_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0140_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54268,7 +54268,7 @@ C25110005_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0141 (
+CREATE TABLE acs2008_3yr.tmp_seq0141 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54469,7 +54469,7 @@ C25117011 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0141_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0141_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54670,7 +54670,7 @@ C25117011_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0142 (
+CREATE TABLE acs2008_3yr.tmp_seq0142 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54817,7 +54817,7 @@ C25121031 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0142_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0142_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -54964,7 +54964,7 @@ C25121031_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0143 (
+CREATE TABLE acs2008_3yr.tmp_seq0143 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55145,7 +55145,7 @@ C25123007 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0143_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0143_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55326,7 +55326,7 @@ C25123007_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0144 (
+CREATE TABLE acs2008_3yr.tmp_seq0144 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55337,7 +55337,7 @@ B26001001 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0144_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0144_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55348,7 +55348,7 @@ B26001001_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0146 (
+CREATE TABLE acs2008_3yr.tmp_seq0146 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55395,7 +55395,7 @@ B98032001 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0146_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0146_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55442,7 +55442,7 @@ B98032001_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0147 (
+CREATE TABLE acs2008_3yr.tmp_seq0147 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55651,7 +55651,7 @@ B99232003 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0147_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0147_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55860,7 +55860,7 @@ B99232003_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0148 (
+CREATE TABLE acs2008_3yr.tmp_seq0148 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -55965,7 +55965,7 @@ B99259003 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0148_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0148_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -56070,7 +56070,7 @@ B99259003_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0149 (
+CREATE TABLE acs2008_3yr.tmp_seq0149 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -56300,7 +56300,7 @@ C07401PR050 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0149_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0149_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -56530,7 +56530,7 @@ C07401PR050_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0150 (
+CREATE TABLE acs2008_3yr.tmp_seq0150 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -56720,7 +56720,7 @@ C07408PR025 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0150_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0150_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -56910,7 +56910,7 @@ C07408PR025_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0151 (
+CREATE TABLE acs2008_3yr.tmp_seq0151 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -57144,7 +57144,7 @@ C05003D015 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0151_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0151_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -57378,7 +57378,7 @@ C05003D015_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0152 (
+CREATE TABLE acs2008_3yr.tmp_seq0152 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -57627,7 +57627,7 @@ C05005PR013 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0152_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0152_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -57876,7 +57876,7 @@ C05005PR013_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0153 (
+CREATE TABLE acs2008_3yr.tmp_seq0153 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -58108,7 +58108,7 @@ C06010PR047 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0153_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0153_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -58340,7 +58340,7 @@ C06010PR047_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0154 (
+CREATE TABLE acs2008_3yr.tmp_seq0154 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -58580,7 +58580,7 @@ C06008PR025 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0154_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0154_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -58820,7 +58820,7 @@ C06008PR025_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0155 (
+CREATE TABLE acs2008_3yr.tmp_seq0155 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -59064,7 +59064,7 @@ C07001PR060 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0155_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0155_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -59308,7 +59308,7 @@ C07001PR060_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0156 (
+CREATE TABLE acs2008_3yr.tmp_seq0156 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -59546,7 +59546,7 @@ C07008PR030 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0156_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0156_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -59784,7 +59784,7 @@ C07008PR030_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0157 (
+CREATE TABLE acs2008_3yr.tmp_seq0157 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -59976,7 +59976,7 @@ C07204PR009 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0157_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0157_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -60168,7 +60168,7 @@ C07204PR009_moe varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0158 (
+CREATE TABLE acs2008_3yr.tmp_seq0158 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -60377,7 +60377,7 @@ B99232003 varchar
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE tmp_seq0158_moe (
+CREATE TABLE acs2008_3yr.tmp_seq0158_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),

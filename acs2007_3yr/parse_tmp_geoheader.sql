@@ -1,4 +1,4 @@
-INSERT INTO geoheader SELECT
+INSERT INTO acs2007_3yr.geoheader SELECT
 	btrim(substring(all_fields from 1 for 6)) AS fileid,
 	btrim(substring(all_fields from 7 for 2)) AS stusab,
 	btrim(substring(all_fields from 9 for 3))::int AS sumlevel,
@@ -52,4 +52,4 @@ INSERT INTO geoheader SELECT
 	NULLIF(btrim(substring(all_fields from 1219 for 6)), '') AS bttr,
 	NULLIF(btrim(substring(all_fields from 1225 for 1)), '') AS btbg,
 	NULLIF(btrim(substring(all_fields from 1226 for 44)), '') AS blank8
-FROM tmp_geoheader
+FROM acs2007_3yr.tmp_geoheader;

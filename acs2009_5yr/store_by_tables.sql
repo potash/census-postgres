@@ -1,10 +1,11 @@
-CREATE TABLE seq0001 (
+CREATE TABLE acs2009_5yr.seq0001 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
 logrecno int,
+geoid varchar(20),
 B07401001 double precision,
 B07401002 double precision,
 B07401003 double precision,
@@ -235,11 +236,11 @@ B07409027 double precision,
 B07409028 double precision,
 B07409029 double precision,
 B07409030 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0001_moe (
+CREATE TABLE acs2009_5yr.seq0001_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -476,11 +477,11 @@ B07409027_moe double precision,
 B07409028_moe double precision,
 B07409029_moe double precision,
 B07409030_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0002 (
+CREATE TABLE acs2009_5yr.seq0002 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -582,11 +583,11 @@ B07413012 double precision,
 B07413013 double precision,
 B07413014 double precision,
 B07413015 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0002_moe (
+CREATE TABLE acs2009_5yr.seq0002_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -688,11 +689,11 @@ B07413012_moe double precision,
 B07413013_moe double precision,
 B07413014_moe double precision,
 B07413015_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0003 (
+CREATE TABLE acs2009_5yr.seq0003 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -943,11 +944,11 @@ B08524053 double precision,
 B08524054 double precision,
 B08524055 double precision,
 B08524056 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0003_moe (
+CREATE TABLE acs2009_5yr.seq0003_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1198,11 +1199,11 @@ B08524053_moe double precision,
 B08524054_moe double precision,
 B08524055_moe double precision,
 B08524056_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0004 (
+CREATE TABLE acs2009_5yr.seq0004 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1426,11 +1427,11 @@ B08513053 double precision,
 B08513054 double precision,
 B08513055 double precision,
 B08513056 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0004_moe (
+CREATE TABLE acs2009_5yr.seq0004_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1654,11 +1655,11 @@ B08513053_moe double precision,
 B08513054_moe double precision,
 B08513055_moe double precision,
 B08513056_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0005 (
+CREATE TABLE acs2009_5yr.seq0005 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -1840,11 +1841,11 @@ B08528067 double precision,
 B08528068 double precision,
 B08528069 double precision,
 B08528070 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0005_moe (
+CREATE TABLE acs2009_5yr.seq0005_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2026,11 +2027,11 @@ B08528067_moe double precision,
 B08528068_moe double precision,
 B08528069_moe double precision,
 B08528070_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0006 (
+CREATE TABLE acs2009_5yr.seq0006 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2280,11 +2281,11 @@ B08537018 double precision,
 B08537019 double precision,
 B08537020 double precision,
 B08537021 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0006_moe (
+CREATE TABLE acs2009_5yr.seq0006_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2534,11 +2535,11 @@ B08537018_moe double precision,
 B08537019_moe double precision,
 B08537020_moe double precision,
 B08537021_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0007 (
+CREATE TABLE acs2009_5yr.seq0007 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2629,11 +2630,11 @@ B08603010 double precision,
 B08603011 double precision,
 B08603012 double precision,
 B08603013 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0007_moe (
+CREATE TABLE acs2009_5yr.seq0007_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2724,11 +2725,11 @@ B08603010_moe double precision,
 B08603011_moe double precision,
 B08603012_moe double precision,
 B08603013_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0008 (
+CREATE TABLE acs2009_5yr.seq0008 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2751,11 +2752,11 @@ B99088005 double precision,
 B99089001 double precision,
 B99089002 double precision,
 B99089003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0008_moe (
+CREATE TABLE acs2009_5yr.seq0008_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2778,11 +2779,11 @@ B99088005_moe double precision,
 B99089001_moe double precision,
 B99089002_moe double precision,
 B99089003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0009 (
+CREATE TABLE acs2009_5yr.seq0009 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2791,11 +2792,11 @@ seq varchar(4),
 logrecno int,
 B00001001 double precision,
 B00002001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0009_moe (
+CREATE TABLE acs2009_5yr.seq0009_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2804,11 +2805,11 @@ seq varchar(4),
 logrecno int,
 B00001001_moe double precision,
 B00002001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0010 (
+CREATE TABLE acs2009_5yr.seq0010 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -2988,11 +2989,11 @@ B01001D028 double precision,
 B01001D029 double precision,
 B01001D030 double precision,
 B01001D031 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0010_moe (
+CREATE TABLE acs2009_5yr.seq0010_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3172,11 +3173,11 @@ B01001D028_moe double precision,
 B01001D029_moe double precision,
 B01001D030_moe double precision,
 B01001D031_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0011 (
+CREATE TABLE acs2009_5yr.seq0011 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3369,11 +3370,11 @@ B01002I001 double precision,
 B01002I002 double precision,
 B01002I003 double precision,
 B01003001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0011_moe (
+CREATE TABLE acs2009_5yr.seq0011_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3566,11 +3567,11 @@ B01002I001_moe double precision,
 B01002I002_moe double precision,
 B01002I003_moe double precision,
 B01003001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0012 (
+CREATE TABLE acs2009_5yr.seq0012 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3692,11 +3693,11 @@ C02003016 double precision,
 C02003017 double precision,
 C02003018 double precision,
 C02003019 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0012_moe (
+CREATE TABLE acs2009_5yr.seq0012_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3818,11 +3819,11 @@ C02003016_moe double precision,
 C02003017_moe double precision,
 C02003018_moe double precision,
 C02003019_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0013 (
+CREATE TABLE acs2009_5yr.seq0013 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3884,11 +3885,11 @@ B03002021 double precision,
 B03003001 double precision,
 B03003002 double precision,
 B03003003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0013_moe (
+CREATE TABLE acs2009_5yr.seq0013_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -3950,11 +3951,11 @@ B03002021_moe double precision,
 B03003001_moe double precision,
 B03003002_moe double precision,
 B03003003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0014 (
+CREATE TABLE acs2009_5yr.seq0014 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4179,11 +4180,11 @@ B04002106 double precision,
 B04002107 double precision,
 B04002108 double precision,
 B04002109 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0014_moe (
+CREATE TABLE acs2009_5yr.seq0014_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4408,11 +4409,11 @@ B04002106_moe double precision,
 B04002107_moe double precision,
 B04002108_moe double precision,
 B04002109_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0015 (
+CREATE TABLE acs2009_5yr.seq0015 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4635,11 +4636,11 @@ B04004105 double precision,
 B04004106 double precision,
 B04004107 double precision,
 B04004108 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0015_moe (
+CREATE TABLE acs2009_5yr.seq0015_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -4862,11 +4863,11 @@ B04004105_moe double precision,
 B04004106_moe double precision,
 B04004107_moe double precision,
 B04004108_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0016 (
+CREATE TABLE acs2009_5yr.seq0016 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5097,11 +5098,11 @@ B04007004 double precision,
 B04007005 double precision,
 B04007006 double precision,
 B04007007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0016_moe (
+CREATE TABLE acs2009_5yr.seq0016_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5332,11 +5333,11 @@ B04007004_moe double precision,
 B04007005_moe double precision,
 B04007006_moe double precision,
 B04007007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0017 (
+CREATE TABLE acs2009_5yr.seq0017 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5571,11 +5572,11 @@ B05003H020 double precision,
 B05003H021 double precision,
 B05003H022 double precision,
 B05003H023 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0017_moe (
+CREATE TABLE acs2009_5yr.seq0017_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -5810,11 +5811,11 @@ B05003H020_moe double precision,
 B05003H021_moe double precision,
 B05003H022_moe double precision,
 B05003H023_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0018 (
+CREATE TABLE acs2009_5yr.seq0018 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6041,11 +6042,11 @@ B05006158 double precision,
 B05006159 double precision,
 B05006160 double precision,
 B05006161 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0018_moe (
+CREATE TABLE acs2009_5yr.seq0018_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6272,11 +6273,11 @@ B05006158_moe double precision,
 B05006159_moe double precision,
 B05006160_moe double precision,
 B05006161_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0019 (
+CREATE TABLE acs2009_5yr.seq0019 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6511,11 +6512,11 @@ B05010025 double precision,
 B05012001 double precision,
 B05012002 double precision,
 B05012003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0019_moe (
+CREATE TABLE acs2009_5yr.seq0019_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6750,11 +6751,11 @@ B05010025_moe double precision,
 B05012001_moe double precision,
 B05012002_moe double precision,
 B05012003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0020 (
+CREATE TABLE acs2009_5yr.seq0020 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -6886,11 +6887,11 @@ B06004I002 double precision,
 B06004I003 double precision,
 B06004I004 double precision,
 B06004I005 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0020_moe (
+CREATE TABLE acs2009_5yr.seq0020_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7022,11 +7023,11 @@ B06004I002_moe double precision,
 B06004I003_moe double precision,
 B06004I004_moe double precision,
 B06004I005_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0021 (
+CREATE TABLE acs2009_5yr.seq0021 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7213,11 +7214,11 @@ B06012017 double precision,
 B06012018 double precision,
 B06012019 double precision,
 B06012020 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0021_moe (
+CREATE TABLE acs2009_5yr.seq0021_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7404,11 +7405,11 @@ B06012017_moe double precision,
 B06012018_moe double precision,
 B06012019_moe double precision,
 B06012020_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0022 (
+CREATE TABLE acs2009_5yr.seq0022 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7655,11 +7656,11 @@ B07008033 double precision,
 B07008034 double precision,
 B07008035 double precision,
 B07008036 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0022_moe (
+CREATE TABLE acs2009_5yr.seq0022_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -7906,11 +7907,11 @@ B07008033_moe double precision,
 B07008034_moe double precision,
 B07008035_moe double precision,
 B07008036_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0023 (
+CREATE TABLE acs2009_5yr.seq0023 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8160,11 +8161,11 @@ C07203006 double precision,
 C07203007 double precision,
 C07203008 double precision,
 C07203009 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0023_moe (
+CREATE TABLE acs2009_5yr.seq0023_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8414,11 +8415,11 @@ C07203006_moe double precision,
 C07203007_moe double precision,
 C07203008_moe double precision,
 C07203009_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0024 (
+CREATE TABLE acs2009_5yr.seq0024 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8444,11 +8445,11 @@ B07204016 double precision,
 B07204017 double precision,
 B07204018 double precision,
 B07204019 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0024_moe (
+CREATE TABLE acs2009_5yr.seq0024_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8474,11 +8475,11 @@ B07204016_moe double precision,
 B07204017_moe double precision,
 B07204018_moe double precision,
 B07204019_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0025 (
+CREATE TABLE acs2009_5yr.seq0025 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8715,11 +8716,11 @@ B08016020 double precision,
 B08016021 double precision,
 B08016022 double precision,
 B08016023 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0025_moe (
+CREATE TABLE acs2009_5yr.seq0025_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -8956,11 +8957,11 @@ B08016020_moe double precision,
 B08016021_moe double precision,
 B08016022_moe double precision,
 B08016023_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0026 (
+CREATE TABLE acs2009_5yr.seq0026 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9159,11 +9160,11 @@ B08111032 double precision,
 B08111033 double precision,
 B08111034 double precision,
 B08111035 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0026_moe (
+CREATE TABLE acs2009_5yr.seq0026_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9362,11 +9363,11 @@ B08111032_moe double precision,
 B08111033_moe double precision,
 B08111034_moe double precision,
 B08111035_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0027 (
+CREATE TABLE acs2009_5yr.seq0027 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9583,11 +9584,11 @@ B08124053 double precision,
 B08124054 double precision,
 B08124055 double precision,
 B08124056 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0027_moe (
+CREATE TABLE acs2009_5yr.seq0027_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -9804,11 +9805,11 @@ B08124053_moe double precision,
 B08124054_moe double precision,
 B08124055_moe double precision,
 B08124056_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0028 (
+CREATE TABLE acs2009_5yr.seq0028 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10026,11 +10027,11 @@ B08131002 double precision,
 B08131003 double precision,
 B08131004 double precision,
 B08131005 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0028_moe (
+CREATE TABLE acs2009_5yr.seq0028_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10248,11 +10249,11 @@ B08131002_moe double precision,
 B08131003_moe double precision,
 B08131004_moe double precision,
 B08131005_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0029 (
+CREATE TABLE acs2009_5yr.seq0029 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10485,11 +10486,11 @@ C08136002 double precision,
 C08136003 double precision,
 C08136004 double precision,
 C08136005 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0029_moe (
+CREATE TABLE acs2009_5yr.seq0029_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10722,11 +10723,11 @@ C08136002_moe double precision,
 C08136003_moe double precision,
 C08136004_moe double precision,
 C08136005_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0030 (
+CREATE TABLE acs2009_5yr.seq0030 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -10864,11 +10865,11 @@ B08303010 double precision,
 B08303011 double precision,
 B08303012 double precision,
 B08303013 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0030_moe (
+CREATE TABLE acs2009_5yr.seq0030_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11006,11 +11007,11 @@ B08303010_moe double precision,
 B08303011_moe double precision,
 B08303012_moe double precision,
 B08303013_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0031 (
+CREATE TABLE acs2009_5yr.seq0031 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11136,11 +11137,11 @@ B09017017 double precision,
 B09017018 double precision,
 B09017019 double precision,
 B09017020 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0031_moe (
+CREATE TABLE acs2009_5yr.seq0031_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11266,11 +11267,11 @@ B09017017_moe double precision,
 B09017018_moe double precision,
 B09017019_moe double precision,
 B09017020_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0032 (
+CREATE TABLE acs2009_5yr.seq0032 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11479,11 +11480,11 @@ B10063004 double precision,
 B10063005 double precision,
 B10063006 double precision,
 B10063007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0032_moe (
+CREATE TABLE acs2009_5yr.seq0032_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11692,11 +11693,11 @@ B10063004_moe double precision,
 B10063005_moe double precision,
 B10063006_moe double precision,
 B10063007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0033 (
+CREATE TABLE acs2009_5yr.seq0033 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -11863,11 +11864,11 @@ B11016013 double precision,
 B11016014 double precision,
 B11016015 double precision,
 B11016016 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0033_moe (
+CREATE TABLE acs2009_5yr.seq0033_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12034,11 +12035,11 @@ B11016013_moe double precision,
 B11016014_moe double precision,
 B11016015_moe double precision,
 B11016016_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0034 (
+CREATE TABLE acs2009_5yr.seq0034 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12272,11 +12273,11 @@ B11010012 double precision,
 B11010013 double precision,
 B11010014 double precision,
 B11010015 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0034_moe (
+CREATE TABLE acs2009_5yr.seq0034_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12510,11 +12511,11 @@ B11010012_moe double precision,
 B11010013_moe double precision,
 B11010014_moe double precision,
 B11010015_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0035 (
+CREATE TABLE acs2009_5yr.seq0035 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12727,11 +12728,11 @@ B12002184 double precision,
 B12002185 double precision,
 B12002186 double precision,
 B12002187 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0035_moe (
+CREATE TABLE acs2009_5yr.seq0035_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -12944,11 +12945,11 @@ B12002184_moe double precision,
 B12002185_moe double precision,
 B12002186_moe double precision,
 B12002187_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0036 (
+CREATE TABLE acs2009_5yr.seq0036 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13164,11 +13165,11 @@ B12007H001 double precision,
 B12007H002 double precision,
 B12007I001 double precision,
 B12007I002 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0036_moe (
+CREATE TABLE acs2009_5yr.seq0036_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13384,11 +13385,11 @@ B12007H001_moe double precision,
 B12007H002_moe double precision,
 B12007I001_moe double precision,
 B12007I002_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0037 (
+CREATE TABLE acs2009_5yr.seq0037 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13573,11 +13574,11 @@ B13014024 double precision,
 B13014025 double precision,
 B13014026 double precision,
 B13014027 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0037_moe (
+CREATE TABLE acs2009_5yr.seq0037_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13762,11 +13763,11 @@ B13014024_moe double precision,
 B13014025_moe double precision,
 B13014026_moe double precision,
 B13014027_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0038 (
+CREATE TABLE acs2009_5yr.seq0038 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -13922,11 +13923,11 @@ B14004030 double precision,
 B14004031 double precision,
 B14004032 double precision,
 B14004033 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0038_moe (
+CREATE TABLE acs2009_5yr.seq0038_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14082,11 +14083,11 @@ B14004030_moe double precision,
 B14004031_moe double precision,
 B14004032_moe double precision,
 B14004033_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0039 (
+CREATE TABLE acs2009_5yr.seq0039 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14206,11 +14207,11 @@ C14007I004 double precision,
 C14007I005 double precision,
 C14007I006 double precision,
 C14007I007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0039_moe (
+CREATE TABLE acs2009_5yr.seq0039_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14330,11 +14331,11 @@ C14007I004_moe double precision,
 C14007I005_moe double precision,
 C14007I006_moe double precision,
 C14007I007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0040 (
+CREATE TABLE acs2009_5yr.seq0040 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14558,11 +14559,11 @@ C15002I008 double precision,
 C15002I009 double precision,
 C15002I010 double precision,
 C15002I011 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0040_moe (
+CREATE TABLE acs2009_5yr.seq0040_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14786,11 +14787,11 @@ C15002I008_moe double precision,
 C15002I009_moe double precision,
 C15002I010_moe double precision,
 C15002I011_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0041 (
+CREATE TABLE acs2009_5yr.seq0041 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -14916,11 +14917,11 @@ B16001116 double precision,
 B16001117 double precision,
 B16001118 double precision,
 B16001119 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0041_moe (
+CREATE TABLE acs2009_5yr.seq0041_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15046,11 +15047,11 @@ B16001116_moe double precision,
 B16001117_moe double precision,
 B16001118_moe double precision,
 B16001119_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0042 (
+CREATE TABLE acs2009_5yr.seq0042 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15302,11 +15303,11 @@ B16006005 double precision,
 B16006006 double precision,
 B16006007 double precision,
 B16006008 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0042_moe (
+CREATE TABLE acs2009_5yr.seq0042_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15558,11 +15559,11 @@ B16006005_moe double precision,
 B16006006_moe double precision,
 B16006007_moe double precision,
 B16006008_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0043 (
+CREATE TABLE acs2009_5yr.seq0043 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15709,11 +15710,11 @@ B16010050 double precision,
 B16010051 double precision,
 B16010052 double precision,
 B16010053 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0043_moe (
+CREATE TABLE acs2009_5yr.seq0043_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -15860,11 +15861,11 @@ B16010050_moe double precision,
 B16010051_moe double precision,
 B16010052_moe double precision,
 B16010053_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0044 (
+CREATE TABLE acs2009_5yr.seq0044 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16107,11 +16108,11 @@ B17001C056 double precision,
 B17001C057 double precision,
 B17001C058 double precision,
 B17001C059 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0044_moe (
+CREATE TABLE acs2009_5yr.seq0044_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16354,11 +16355,11 @@ B17001C056_moe double precision,
 B17001C057_moe double precision,
 B17001C058_moe double precision,
 B17001C059_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0045 (
+CREATE TABLE acs2009_5yr.seq0045 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16601,11 +16602,11 @@ B17001G056 double precision,
 B17001G057 double precision,
 B17001G058 double precision,
 B17001G059 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0045_moe (
+CREATE TABLE acs2009_5yr.seq0045_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -16848,11 +16849,11 @@ B17001G056_moe double precision,
 B17001G057_moe double precision,
 B17001G058_moe double precision,
 B17001G059_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0046 (
+CREATE TABLE acs2009_5yr.seq0046 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17079,11 +17080,11 @@ C17002005 double precision,
 C17002006 double precision,
 C17002007 double precision,
 C17002008 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0046_moe (
+CREATE TABLE acs2009_5yr.seq0046_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17310,11 +17311,11 @@ C17002005_moe double precision,
 C17002006_moe double precision,
 C17002007_moe double precision,
 C17002008_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0047 (
+CREATE TABLE acs2009_5yr.seq0047 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17552,11 +17553,11 @@ B17010C038 double precision,
 B17010C039 double precision,
 B17010C040 double precision,
 B17010C041 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0047_moe (
+CREATE TABLE acs2009_5yr.seq0047_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -17794,11 +17795,11 @@ B17010C038_moe double precision,
 B17010C039_moe double precision,
 B17010C040_moe double precision,
 B17010C041_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0048 (
+CREATE TABLE acs2009_5yr.seq0048 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18010,11 +18011,11 @@ B17010H038 double precision,
 B17010H039 double precision,
 B17010H040 double precision,
 B17010H041 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0048_moe (
+CREATE TABLE acs2009_5yr.seq0048_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18226,11 +18227,11 @@ B17010H038_moe double precision,
 B17010H039_moe double precision,
 B17010H040_moe double precision,
 B17010H041_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0049 (
+CREATE TABLE acs2009_5yr.seq0049 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18482,11 +18483,11 @@ B17016044 double precision,
 B17016045 double precision,
 B17016046 double precision,
 B17016047 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0049_moe (
+CREATE TABLE acs2009_5yr.seq0049_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18738,11 +18739,11 @@ B17016044_moe double precision,
 B17016045_moe double precision,
 B17016046_moe double precision,
 B17016047_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0050 (
+CREATE TABLE acs2009_5yr.seq0050 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -18985,11 +18986,11 @@ B17020G014 double precision,
 B17020G015 double precision,
 B17020G016 double precision,
 B17020G017 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0050_moe (
+CREATE TABLE acs2009_5yr.seq0050_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19232,11 +19233,11 @@ B17020G014_moe double precision,
 B17020G015_moe double precision,
 B17020G016_moe double precision,
 B17020G017_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0051 (
+CREATE TABLE acs2009_5yr.seq0051 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19428,11 +19429,11 @@ B17023032 double precision,
 B17023033 double precision,
 B17023034 double precision,
 B17023035 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0051_moe (
+CREATE TABLE acs2009_5yr.seq0051_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19624,11 +19625,11 @@ B17023032_moe double precision,
 B17023033_moe double precision,
 B17023034_moe double precision,
 B17023035_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0052 (
+CREATE TABLE acs2009_5yr.seq0052 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19794,11 +19795,11 @@ B17026010 double precision,
 B17026011 double precision,
 B17026012 double precision,
 B17026013 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0052_moe (
+CREATE TABLE acs2009_5yr.seq0052_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -19964,11 +19965,11 @@ B17026010_moe double precision,
 B17026011_moe double precision,
 B17026012_moe double precision,
 B17026013_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0053 (
+CREATE TABLE acs2009_5yr.seq0053 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20173,11 +20174,11 @@ B19025F001 double precision,
 B19025G001 double precision,
 B19025H001 double precision,
 B19025I001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0053_moe (
+CREATE TABLE acs2009_5yr.seq0053_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20382,11 +20383,11 @@ B19025F001_moe double precision,
 B19025G001_moe double precision,
 B19025H001_moe double precision,
 B19025I001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0054 (
+CREATE TABLE acs2009_5yr.seq0054 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20600,11 +20601,11 @@ B19037B066 double precision,
 B19037B067 double precision,
 B19037B068 double precision,
 B19037B069 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0054_moe (
+CREATE TABLE acs2009_5yr.seq0054_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -20818,11 +20819,11 @@ B19037B066_moe double precision,
 B19037B067_moe double precision,
 B19037B068_moe double precision,
 B19037B069_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0055 (
+CREATE TABLE acs2009_5yr.seq0055 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21036,11 +21037,11 @@ B19037E066 double precision,
 B19037E067 double precision,
 B19037E068 double precision,
 B19037E069 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0055_moe (
+CREATE TABLE acs2009_5yr.seq0055_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21254,11 +21255,11 @@ B19037E066_moe double precision,
 B19037E067_moe double precision,
 B19037E068_moe double precision,
 B19037E069_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0056 (
+CREATE TABLE acs2009_5yr.seq0056 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21472,11 +21473,11 @@ B19037H066 double precision,
 B19037H067 double precision,
 B19037H068 double precision,
 B19037H069 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0056_moe (
+CREATE TABLE acs2009_5yr.seq0056_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21690,11 +21691,11 @@ B19037H066_moe double precision,
 B19037H067_moe double precision,
 B19037H068_moe double precision,
 B19037H069_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0057 (
+CREATE TABLE acs2009_5yr.seq0057 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -21866,11 +21867,11 @@ B19130026 double precision,
 B19130027 double precision,
 B19130028 double precision,
 B19130029 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0057_moe (
+CREATE TABLE acs2009_5yr.seq0057_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22042,11 +22043,11 @@ B19130026_moe double precision,
 B19130027_moe double precision,
 B19130028_moe double precision,
 B19130029_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0058 (
+CREATE TABLE acs2009_5yr.seq0058 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22278,11 +22279,11 @@ B19129004 double precision,
 B19129005 double precision,
 B19129006 double precision,
 B19129007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0058_moe (
+CREATE TABLE acs2009_5yr.seq0058_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22514,11 +22515,11 @@ B19129004_moe double precision,
 B19129005_moe double precision,
 B19129006_moe double precision,
 B19129007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0059 (
+CREATE TABLE acs2009_5yr.seq0059 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22710,11 +22711,11 @@ B19313F001 double precision,
 B19313G001 double precision,
 B19313H001 double precision,
 B19313I001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0059_moe (
+CREATE TABLE acs2009_5yr.seq0059_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -22906,11 +22907,11 @@ B19313F001_moe double precision,
 B19313G001_moe double precision,
 B19313H001_moe double precision,
 B19313I001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0060 (
+CREATE TABLE acs2009_5yr.seq0060 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23019,11 +23020,11 @@ B19326004 double precision,
 B19326005 double precision,
 B19326006 double precision,
 B19326007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0060_moe (
+CREATE TABLE acs2009_5yr.seq0060_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23132,11 +23133,11 @@ B19326004_moe double precision,
 B19326005_moe double precision,
 B19326006_moe double precision,
 B19326007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0061 (
+CREATE TABLE acs2009_5yr.seq0061 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23309,11 +23310,11 @@ B20005092 double precision,
 B20005093 double precision,
 B20005094 double precision,
 B20005095 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0061_moe (
+CREATE TABLE acs2009_5yr.seq0061_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23486,11 +23487,11 @@ B20005092_moe double precision,
 B20005093_moe double precision,
 B20005094_moe double precision,
 B20005095_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0062 (
+CREATE TABLE acs2009_5yr.seq0062 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23687,11 +23688,11 @@ B20005B092 double precision,
 B20005B093 double precision,
 B20005B094 double precision,
 B20005B095 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0062_moe (
+CREATE TABLE acs2009_5yr.seq0062_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -23888,11 +23889,11 @@ B20005B092_moe double precision,
 B20005B093_moe double precision,
 B20005B094_moe double precision,
 B20005B095_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0063 (
+CREATE TABLE acs2009_5yr.seq0063 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24089,11 +24090,11 @@ B20005D092 double precision,
 B20005D093 double precision,
 B20005D094 double precision,
 B20005D095 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0063_moe (
+CREATE TABLE acs2009_5yr.seq0063_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24290,11 +24291,11 @@ B20005D092_moe double precision,
 B20005D093_moe double precision,
 B20005D094_moe double precision,
 B20005D095_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0064 (
+CREATE TABLE acs2009_5yr.seq0064 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24491,11 +24492,11 @@ B20005F092 double precision,
 B20005F093 double precision,
 B20005F094 double precision,
 B20005F095 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0064_moe (
+CREATE TABLE acs2009_5yr.seq0064_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24692,11 +24693,11 @@ B20005F092_moe double precision,
 B20005F093_moe double precision,
 B20005F094_moe double precision,
 B20005F095_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0065 (
+CREATE TABLE acs2009_5yr.seq0065 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -24893,11 +24894,11 @@ B20005H092 double precision,
 B20005H093 double precision,
 B20005H094 double precision,
 B20005H095 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0065_moe (
+CREATE TABLE acs2009_5yr.seq0065_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25094,11 +25095,11 @@ B20005H092_moe double precision,
 B20005H093_moe double precision,
 B20005H094_moe double precision,
 B20005H095_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0066 (
+CREATE TABLE acs2009_5yr.seq0066 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25270,11 +25271,11 @@ B20017I004 double precision,
 B20017I005 double precision,
 B20017I006 double precision,
 B20017I007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0066_moe (
+CREATE TABLE acs2009_5yr.seq0066_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25446,11 +25447,11 @@ B20017I004_moe double precision,
 B20017I005_moe double precision,
 B20017I006_moe double precision,
 B20017I007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0067 (
+CREATE TABLE acs2009_5yr.seq0067 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25693,11 +25694,11 @@ C21001I012 double precision,
 C21001I013 double precision,
 C21001I014 double precision,
 C21001I015 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0067_moe (
+CREATE TABLE acs2009_5yr.seq0067_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -25940,11 +25941,11 @@ C21001I012_moe double precision,
 C21001I013_moe double precision,
 C21001I014_moe double precision,
 C21001I015_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0068 (
+CREATE TABLE acs2009_5yr.seq0068 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26065,11 +26066,11 @@ B22007043 double precision,
 B22008001 double precision,
 B22008002 double precision,
 B22008003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0068_moe (
+CREATE TABLE acs2009_5yr.seq0068_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26190,11 +26191,11 @@ B22007043_moe double precision,
 B22008001_moe double precision,
 B22008002_moe double precision,
 B22008003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0069 (
+CREATE TABLE acs2009_5yr.seq0069 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26428,11 +26429,11 @@ C23002B024 double precision,
 C23002B025 double precision,
 C23002B026 double precision,
 C23002B027 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0069_moe (
+CREATE TABLE acs2009_5yr.seq0069_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26666,11 +26667,11 @@ C23002B024_moe double precision,
 C23002B025_moe double precision,
 C23002B026_moe double precision,
 C23002B027_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0070 (
+CREATE TABLE acs2009_5yr.seq0070 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -26915,11 +26916,11 @@ C23002I024 double precision,
 C23002I025 double precision,
 C23002I026 double precision,
 C23002I027 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0070_moe (
+CREATE TABLE acs2009_5yr.seq0070_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27164,11 +27165,11 @@ C23002I024_moe double precision,
 C23002I025_moe double precision,
 C23002I026_moe double precision,
 C23002I027_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0071 (
+CREATE TABLE acs2009_5yr.seq0071 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27418,11 +27419,11 @@ B23022046 double precision,
 B23022047 double precision,
 B23022048 double precision,
 B23022049 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0071_moe (
+CREATE TABLE acs2009_5yr.seq0071_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27672,11 +27673,11 @@ B23022046_moe double precision,
 B23022047_moe double precision,
 B23022048_moe double precision,
 B23022049_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0072 (
+CREATE TABLE acs2009_5yr.seq0072 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -27893,11 +27894,11 @@ C24010I012 double precision,
 C24010I013 double precision,
 C24010I014 double precision,
 C24010I015 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0072_moe (
+CREATE TABLE acs2009_5yr.seq0072_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28114,11 +28115,11 @@ C24010I012_moe double precision,
 C24010I013_moe double precision,
 C24010I014_moe double precision,
 C24010I015_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0073 (
+CREATE TABLE acs2009_5yr.seq0073 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28348,11 +28349,11 @@ C24020072 double precision,
 C24020073 double precision,
 C24020074 double precision,
 C24020075 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0073_moe (
+CREATE TABLE acs2009_5yr.seq0073_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28582,11 +28583,11 @@ C24020072_moe double precision,
 C24020073_moe double precision,
 C24020074_moe double precision,
 C24020075_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0074 (
+CREATE TABLE acs2009_5yr.seq0074 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -28803,11 +28804,11 @@ C24030052 double precision,
 C24030053 double precision,
 C24030054 double precision,
 C24030055 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0074_moe (
+CREATE TABLE acs2009_5yr.seq0074_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29024,11 +29025,11 @@ C24030052_moe double precision,
 C24030053_moe double precision,
 C24030054_moe double precision,
 C24030055_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0075 (
+CREATE TABLE acs2009_5yr.seq0075 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29269,11 +29270,11 @@ C24050095 double precision,
 C24050096 double precision,
 C24050097 double precision,
 C24050098 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0075_moe (
+CREATE TABLE acs2009_5yr.seq0075_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29514,11 +29515,11 @@ C24050095_moe double precision,
 C24050096_moe double precision,
 C24050097_moe double precision,
 C24050098_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0076 (
+CREATE TABLE acs2009_5yr.seq0076 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29705,11 +29706,11 @@ C24060177 double precision,
 C24060178 double precision,
 C24060179 double precision,
 C24060180 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0076_moe (
+CREATE TABLE acs2009_5yr.seq0076_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -29896,11 +29897,11 @@ C24060177_moe double precision,
 C24060178_moe double precision,
 C24060179_moe double precision,
 C24060180_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0077 (
+CREATE TABLE acs2009_5yr.seq0077 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30087,11 +30088,11 @@ C24070081 double precision,
 C24070082 double precision,
 C24070083 double precision,
 C24070084 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0077_moe (
+CREATE TABLE acs2009_5yr.seq0077_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30278,11 +30279,11 @@ C24070081_moe double precision,
 C24070082_moe double precision,
 C24070083_moe double precision,
 C24070084_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0078 (
+CREATE TABLE acs2009_5yr.seq0078 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30456,11 +30457,11 @@ B24121164 double precision,
 B24121165 double precision,
 B24121166 double precision,
 B24121167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0078_moe (
+CREATE TABLE acs2009_5yr.seq0078_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30634,11 +30635,11 @@ B24121164_moe double precision,
 B24121165_moe double precision,
 B24121166_moe double precision,
 B24121167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0079 (
+CREATE TABLE acs2009_5yr.seq0079 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30811,11 +30812,11 @@ B24121330 double precision,
 B24121331 double precision,
 B24121332 double precision,
 B24121333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0079_moe (
+CREATE TABLE acs2009_5yr.seq0079_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -30988,11 +30989,11 @@ B24121330_moe double precision,
 B24121331_moe double precision,
 B24121332_moe double precision,
 B24121333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0080 (
+CREATE TABLE acs2009_5yr.seq0080 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31165,11 +31166,11 @@ B24121496 double precision,
 B24121497 double precision,
 B24121498 double precision,
 B24121499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0080_moe (
+CREATE TABLE acs2009_5yr.seq0080_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31342,11 +31343,11 @@ B24121496_moe double precision,
 B24121497_moe double precision,
 B24121498_moe double precision,
 B24121499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0081 (
+CREATE TABLE acs2009_5yr.seq0081 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31520,11 +31521,11 @@ B24122164 double precision,
 B24122165 double precision,
 B24122166 double precision,
 B24122167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0081_moe (
+CREATE TABLE acs2009_5yr.seq0081_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31698,11 +31699,11 @@ B24122164_moe double precision,
 B24122165_moe double precision,
 B24122166_moe double precision,
 B24122167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0082 (
+CREATE TABLE acs2009_5yr.seq0082 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -31875,11 +31876,11 @@ B24122330 double precision,
 B24122331 double precision,
 B24122332 double precision,
 B24122333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0082_moe (
+CREATE TABLE acs2009_5yr.seq0082_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32052,11 +32053,11 @@ B24122330_moe double precision,
 B24122331_moe double precision,
 B24122332_moe double precision,
 B24122333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0083 (
+CREATE TABLE acs2009_5yr.seq0083 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32229,11 +32230,11 @@ B24122496 double precision,
 B24122497 double precision,
 B24122498 double precision,
 B24122499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0083_moe (
+CREATE TABLE acs2009_5yr.seq0083_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32406,11 +32407,11 @@ B24122496_moe double precision,
 B24122497_moe double precision,
 B24122498_moe double precision,
 B24122499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0084 (
+CREATE TABLE acs2009_5yr.seq0084 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32584,11 +32585,11 @@ B24123164 double precision,
 B24123165 double precision,
 B24123166 double precision,
 B24123167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0084_moe (
+CREATE TABLE acs2009_5yr.seq0084_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32762,11 +32763,11 @@ B24123164_moe double precision,
 B24123165_moe double precision,
 B24123166_moe double precision,
 B24123167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0085 (
+CREATE TABLE acs2009_5yr.seq0085 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -32939,11 +32940,11 @@ B24123330 double precision,
 B24123331 double precision,
 B24123332 double precision,
 B24123333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0085_moe (
+CREATE TABLE acs2009_5yr.seq0085_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33116,11 +33117,11 @@ B24123330_moe double precision,
 B24123331_moe double precision,
 B24123332_moe double precision,
 B24123333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0086 (
+CREATE TABLE acs2009_5yr.seq0086 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33293,11 +33294,11 @@ B24123496 double precision,
 B24123497 double precision,
 B24123498 double precision,
 B24123499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0086_moe (
+CREATE TABLE acs2009_5yr.seq0086_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33470,11 +33471,11 @@ B24123496_moe double precision,
 B24123497_moe double precision,
 B24123498_moe double precision,
 B24123499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0087 (
+CREATE TABLE acs2009_5yr.seq0087 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33648,11 +33649,11 @@ B24124164 double precision,
 B24124165 double precision,
 B24124166 double precision,
 B24124167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0087_moe (
+CREATE TABLE acs2009_5yr.seq0087_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -33826,11 +33827,11 @@ B24124164_moe double precision,
 B24124165_moe double precision,
 B24124166_moe double precision,
 B24124167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0088 (
+CREATE TABLE acs2009_5yr.seq0088 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34003,11 +34004,11 @@ B24124330 double precision,
 B24124331 double precision,
 B24124332 double precision,
 B24124333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0088_moe (
+CREATE TABLE acs2009_5yr.seq0088_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34180,11 +34181,11 @@ B24124330_moe double precision,
 B24124331_moe double precision,
 B24124332_moe double precision,
 B24124333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0089 (
+CREATE TABLE acs2009_5yr.seq0089 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34357,11 +34358,11 @@ B24124496 double precision,
 B24124497 double precision,
 B24124498 double precision,
 B24124499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0089_moe (
+CREATE TABLE acs2009_5yr.seq0089_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34534,11 +34535,11 @@ B24124496_moe double precision,
 B24124497_moe double precision,
 B24124498_moe double precision,
 B24124499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0090 (
+CREATE TABLE acs2009_5yr.seq0090 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34712,11 +34713,11 @@ B24125164 double precision,
 B24125165 double precision,
 B24125166 double precision,
 B24125167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0090_moe (
+CREATE TABLE acs2009_5yr.seq0090_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -34890,11 +34891,11 @@ B24125164_moe double precision,
 B24125165_moe double precision,
 B24125166_moe double precision,
 B24125167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0091 (
+CREATE TABLE acs2009_5yr.seq0091 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35067,11 +35068,11 @@ B24125330 double precision,
 B24125331 double precision,
 B24125332 double precision,
 B24125333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0091_moe (
+CREATE TABLE acs2009_5yr.seq0091_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35244,11 +35245,11 @@ B24125330_moe double precision,
 B24125331_moe double precision,
 B24125332_moe double precision,
 B24125333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0092 (
+CREATE TABLE acs2009_5yr.seq0092 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35421,11 +35422,11 @@ B24125496 double precision,
 B24125497 double precision,
 B24125498 double precision,
 B24125499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0092_moe (
+CREATE TABLE acs2009_5yr.seq0092_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35598,11 +35599,11 @@ B24125496_moe double precision,
 B24125497_moe double precision,
 B24125498_moe double precision,
 B24125499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0093 (
+CREATE TABLE acs2009_5yr.seq0093 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35776,11 +35777,11 @@ B24126164 double precision,
 B24126165 double precision,
 B24126166 double precision,
 B24126167 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0093_moe (
+CREATE TABLE acs2009_5yr.seq0093_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -35954,11 +35955,11 @@ B24126164_moe double precision,
 B24126165_moe double precision,
 B24126166_moe double precision,
 B24126167_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0094 (
+CREATE TABLE acs2009_5yr.seq0094 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36131,11 +36132,11 @@ B24126330 double precision,
 B24126331 double precision,
 B24126332 double precision,
 B24126333 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0094_moe (
+CREATE TABLE acs2009_5yr.seq0094_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36308,11 +36309,11 @@ B24126330_moe double precision,
 B24126331_moe double precision,
 B24126332_moe double precision,
 B24126333_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0095 (
+CREATE TABLE acs2009_5yr.seq0095 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36485,11 +36486,11 @@ B24126496 double precision,
 B24126497 double precision,
 B24126498 double precision,
 B24126499 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0095_moe (
+CREATE TABLE acs2009_5yr.seq0095_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36662,11 +36663,11 @@ B24126496_moe double precision,
 B24126497_moe double precision,
 B24126498_moe double precision,
 B24126499_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0096 (
+CREATE TABLE acs2009_5yr.seq0096 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -36916,11 +36917,11 @@ B25015024 double precision,
 B25015025 double precision,
 B25015026 double precision,
 B25015027 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0096_moe (
+CREATE TABLE acs2009_5yr.seq0096_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37170,11 +37171,11 @@ B25015024_moe double precision,
 B25015025_moe double precision,
 B25015026_moe double precision,
 B25015027_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0097 (
+CREATE TABLE acs2009_5yr.seq0097 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37425,11 +37426,11 @@ B25033010 double precision,
 B25033011 double precision,
 B25033012 double precision,
 B25033013 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0097_moe (
+CREATE TABLE acs2009_5yr.seq0097_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37680,11 +37681,11 @@ B25033010_moe double precision,
 B25033011_moe double precision,
 B25033012_moe double precision,
 B25033013_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0098 (
+CREATE TABLE acs2009_5yr.seq0098 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -37925,11 +37926,11 @@ B25057001 double precision,
 B25058001 double precision,
 B25059001 double precision,
 B25060001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0098_moe (
+CREATE TABLE acs2009_5yr.seq0098_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38170,11 +38171,11 @@ B25057001_moe double precision,
 B25058001_moe double precision,
 B25059001_moe double precision,
 B25060001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0099 (
+CREATE TABLE acs2009_5yr.seq0099 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38421,11 +38422,11 @@ C25095026 double precision,
 C25095027 double precision,
 C25095028 double precision,
 C25095029 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0099_moe (
+CREATE TABLE acs2009_5yr.seq0099_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38672,11 +38673,11 @@ C25095026_moe double precision,
 C25095027_moe double precision,
 C25095028_moe double precision,
 C25095029_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0100 (
+CREATE TABLE acs2009_5yr.seq0100 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -38916,11 +38917,11 @@ B25094011 double precision,
 B25094012 double precision,
 B25094013 double precision,
 B25094014 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0100_moe (
+CREATE TABLE acs2009_5yr.seq0100_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39160,11 +39161,11 @@ B25094011_moe double precision,
 B25094012_moe double precision,
 B25094013_moe double precision,
 B25094014_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0101 (
+CREATE TABLE acs2009_5yr.seq0101 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39395,11 +39396,11 @@ B25114004 double precision,
 B25114005 double precision,
 B25114006 double precision,
 B25114007 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0101_moe (
+CREATE TABLE acs2009_5yr.seq0101_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39630,11 +39631,11 @@ B25114004_moe double precision,
 B25114005_moe double precision,
 B25114006_moe double precision,
 B25114007_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0102 (
+CREATE TABLE acs2009_5yr.seq0102 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -39851,11 +39852,11 @@ B25121103 double precision,
 B25121104 double precision,
 B25121105 double precision,
 B25121106 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0102_moe (
+CREATE TABLE acs2009_5yr.seq0102_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40072,11 +40073,11 @@ B25121103_moe double precision,
 B25121104_moe double precision,
 B25121105_moe double precision,
 B25121106_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0103 (
+CREATE TABLE acs2009_5yr.seq0103 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40216,11 +40217,11 @@ B25123010 double precision,
 B25123011 double precision,
 B25123012 double precision,
 B25123013 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0103_moe (
+CREATE TABLE acs2009_5yr.seq0103_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40360,11 +40361,11 @@ B25123010_moe double precision,
 B25123011_moe double precision,
 B25123012_moe double precision,
 B25123013_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0104 (
+CREATE TABLE acs2009_5yr.seq0104 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40372,11 +40373,11 @@ chariter varchar(3),
 seq varchar(4),
 logrecno int,
 B26001001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0104_moe (
+CREATE TABLE acs2009_5yr.seq0104_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40384,11 +40385,11 @@ chariter varchar(3),
 seq varchar(4),
 logrecno int,
 B26001001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0105 (
+CREATE TABLE acs2009_5yr.seq0105 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40432,11 +40433,11 @@ B98022009 double precision,
 B98022010 double precision,
 B98031001 double precision,
 B98032001 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0105_moe (
+CREATE TABLE acs2009_5yr.seq0105_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40480,11 +40481,11 @@ B98022009_moe double precision,
 B98022010_moe double precision,
 B98031001_moe double precision,
 B98032001_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0106 (
+CREATE TABLE acs2009_5yr.seq0106 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40736,11 +40737,11 @@ B992514003 double precision,
 B992515001 double precision,
 B992515002 double precision,
 B992515003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0106_moe (
+CREATE TABLE acs2009_5yr.seq0106_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -40992,11 +40993,11 @@ B992514003_moe double precision,
 B992515001_moe double precision,
 B992515002_moe double precision,
 B992515003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0107 (
+CREATE TABLE acs2009_5yr.seq0107 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41052,11 +41053,11 @@ B99258003 double precision,
 B99259001 double precision,
 B99259002 double precision,
 B99259003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0107_moe (
+CREATE TABLE acs2009_5yr.seq0107_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41112,11 +41113,11 @@ B99258003_moe double precision,
 B99259001_moe double precision,
 B99259002_moe double precision,
 B99259003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0108 (
+CREATE TABLE acs2009_5yr.seq0108 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41353,11 +41354,11 @@ B07409PR027 double precision,
 B07409PR028 double precision,
 B07409PR029 double precision,
 B07409PR030 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0108_moe (
+CREATE TABLE acs2009_5yr.seq0108_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41594,11 +41595,11 @@ B07409PR027_moe double precision,
 B07409PR028_moe double precision,
 B07409PR029_moe double precision,
 B07409PR030_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0109 (
+CREATE TABLE acs2009_5yr.seq0109 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41700,11 +41701,11 @@ B07413PR012 double precision,
 B07413PR013 double precision,
 B07413PR014 double precision,
 B07413PR015 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0109_moe (
+CREATE TABLE acs2009_5yr.seq0109_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -41806,11 +41807,11 @@ B07413PR012_moe double precision,
 B07413PR013_moe double precision,
 B07413PR014_moe double precision,
 B07413PR015_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0110 (
+CREATE TABLE acs2009_5yr.seq0110 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42045,11 +42046,11 @@ B05003H020 double precision,
 B05003H021 double precision,
 B05003H022 double precision,
 B05003H023 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0110_moe (
+CREATE TABLE acs2009_5yr.seq0110_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42284,11 +42285,11 @@ B05003H020_moe double precision,
 B05003H021_moe double precision,
 B05003H022_moe double precision,
 B05003H023_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0111 (
+CREATE TABLE acs2009_5yr.seq0111 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42515,11 +42516,11 @@ B05006158 double precision,
 B05006159 double precision,
 B05006160 double precision,
 B05006161 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0111_moe (
+CREATE TABLE acs2009_5yr.seq0111_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42746,11 +42747,11 @@ B05006158_moe double precision,
 B05006159_moe double precision,
 B05006160_moe double precision,
 B05006161_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0112 (
+CREATE TABLE acs2009_5yr.seq0112 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -42882,11 +42883,11 @@ B06004IPR002 double precision,
 B06004IPR003 double precision,
 B06004IPR004 double precision,
 B06004IPR005 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0112_moe (
+CREATE TABLE acs2009_5yr.seq0112_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43018,11 +43019,11 @@ B06004IPR002_moe double precision,
 B06004IPR003_moe double precision,
 B06004IPR004_moe double precision,
 B06004IPR005_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0113 (
+CREATE TABLE acs2009_5yr.seq0113 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43209,11 +43210,11 @@ B06012PR017 double precision,
 B06012PR018 double precision,
 B06012PR019 double precision,
 B06012PR020 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0113_moe (
+CREATE TABLE acs2009_5yr.seq0113_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43400,11 +43401,11 @@ B06012PR017_moe double precision,
 B06012PR018_moe double precision,
 B06012PR019_moe double precision,
 B06012PR020_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0114 (
+CREATE TABLE acs2009_5yr.seq0114 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43651,11 +43652,11 @@ B07008PR033 double precision,
 B07008PR034 double precision,
 B07008PR035 double precision,
 B07008PR036 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0114_moe (
+CREATE TABLE acs2009_5yr.seq0114_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -43902,11 +43903,11 @@ B07008PR033_moe double precision,
 B07008PR034_moe double precision,
 B07008PR035_moe double precision,
 B07008PR036_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0115 (
+CREATE TABLE acs2009_5yr.seq0115 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44158,11 +44159,11 @@ C07201PR013 double precision,
 C07201PR014 double precision,
 C07201PR015 double precision,
 C07201PR016 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0115_moe (
+CREATE TABLE acs2009_5yr.seq0115_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44414,11 +44415,11 @@ C07201PR013_moe double precision,
 C07201PR014_moe double precision,
 C07201PR015_moe double precision,
 C07201PR016_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0116 (
+CREATE TABLE acs2009_5yr.seq0116 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44442,11 +44443,11 @@ B07204PR014 double precision,
 B07204PR015 double precision,
 B07204PR016 double precision,
 B07204PR017 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0116_moe (
+CREATE TABLE acs2009_5yr.seq0116_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44470,11 +44471,11 @@ B07204PR014_moe double precision,
 B07204PR015_moe double precision,
 B07204PR016_moe double precision,
 B07204PR017_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0117 (
+CREATE TABLE acs2009_5yr.seq0117 (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44726,11 +44727,11 @@ B992514003 double precision,
 B992515001 double precision,
 B992515002 double precision,
 B992515003 double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 
-CREATE TABLE seq0117_moe (
+CREATE TABLE acs2009_5yr.seq0117_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
@@ -44982,7 +44983,7 @@ B992514003_moe double precision,
 B992515001_moe double precision,
 B992515002_moe double precision,
 B992515003_moe double precision,
-PRIMARY KEY (stusab, logrecno)
+PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
 

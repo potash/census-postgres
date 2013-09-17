@@ -1,4 +1,5 @@
-CREATE TABLE geoheader (
+DROP TABLE IF EXISTS acs2008_1yr.geoheader;
+CREATE TABLE acs2008_1yr.geoheader (
 	fileid varchar(6),
 	stusab varchar(2),
 	sumlevel int,

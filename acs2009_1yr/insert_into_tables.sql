@@ -1,5 +1,5 @@
-INSERT INTO seq0001
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0001
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07401001, ''), '.')::double precision,
 NULLIF(NULLIF(B07401002, ''), '.')::double precision,
 NULLIF(NULLIF(B07401003, ''), '.')::double precision,
@@ -220,10 +220,11 @@ NULLIF(NULLIF(C07401047, ''), '.')::double precision,
 NULLIF(NULLIF(C07401048, ''), '.')::double precision,
 NULLIF(NULLIF(C07401049, ''), '.')::double precision,
 NULLIF(NULLIF(C07401050, ''), '.')::double precision
-FROM tmp_seq0001;
+FROM tmp_seq0001
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0001_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0001_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07401001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07401002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07401003_moe, ''), '.')::double precision,
@@ -444,10 +445,11 @@ NULLIF(NULLIF(C07401047_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401048_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401049_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401050_moe, ''), '.')::double precision
-FROM tmp_seq0001_moe;
+FROM acs2009_1yr.tmp_seq0001_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0002
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0002
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07408001, ''), '.')::double precision,
 NULLIF(NULLIF(B07408002, ''), '.')::double precision,
 NULLIF(NULLIF(B07408003, ''), '.')::double precision,
@@ -628,10 +630,11 @@ NULLIF(NULLIF(C07408022, ''), '.')::double precision,
 NULLIF(NULLIF(C07408023, ''), '.')::double precision,
 NULLIF(NULLIF(C07408024, ''), '.')::double precision,
 NULLIF(NULLIF(C07408025, ''), '.')::double precision
-FROM tmp_seq0002;
+FROM tmp_seq0002
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0002_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0002_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07408001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07408002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07408003_moe, ''), '.')::double precision,
@@ -812,10 +815,11 @@ NULLIF(NULLIF(C07408022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408023_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408025_moe, ''), '.')::double precision
-FROM tmp_seq0002_moe;
+FROM acs2009_1yr.tmp_seq0002_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0003
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0003
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08406001, ''), '.')::double precision,
 NULLIF(NULLIF(B08406002, ''), '.')::double precision,
 NULLIF(NULLIF(B08406003, ''), '.')::double precision,
@@ -1034,10 +1038,11 @@ NULLIF(NULLIF(C08511027, ''), '.')::double precision,
 NULLIF(NULLIF(C08511028, ''), '.')::double precision,
 NULLIF(NULLIF(C08511029, ''), '.')::double precision,
 NULLIF(NULLIF(C08511030, ''), '.')::double precision
-FROM tmp_seq0003;
+FROM tmp_seq0003
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0003_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0003_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08406001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08406002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08406003_moe, ''), '.')::double precision,
@@ -1256,10 +1261,11 @@ NULLIF(NULLIF(C08511027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08511028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08511029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08511030_moe, ''), '.')::double precision
-FROM tmp_seq0003_moe;
+FROM acs2009_1yr.tmp_seq0003_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0004
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0004
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08501001, ''), '.')::double precision,
 NULLIF(NULLIF(B08501002, ''), '.')::double precision,
 NULLIF(NULLIF(B08501003, ''), '.')::double precision,
@@ -1482,10 +1488,11 @@ NULLIF(NULLIF(C08505I003, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I004, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I005, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I006, ''), '.')::double precision
-FROM tmp_seq0004;
+FROM tmp_seq0004
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0004_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0004_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08501001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08501002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08501003_moe, ''), '.')::double precision,
@@ -1708,10 +1715,11 @@ NULLIF(NULLIF(C08505I003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08505I006_moe, ''), '.')::double precision
-FROM tmp_seq0004_moe;
+FROM acs2009_1yr.tmp_seq0004_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0005
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0005
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08513001, ''), '.')::double precision,
 NULLIF(NULLIF(B08513002, ''), '.')::double precision,
 NULLIF(NULLIF(B08513003, ''), '.')::double precision,
@@ -1915,10 +1923,11 @@ NULLIF(NULLIF(C08519051, ''), '.')::double precision,
 NULLIF(NULLIF(C08519052, ''), '.')::double precision,
 NULLIF(NULLIF(C08519053, ''), '.')::double precision,
 NULLIF(NULLIF(C08519054, ''), '.')::double precision
-FROM tmp_seq0005;
+FROM tmp_seq0005
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0005_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0005_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08513001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08513002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08513003_moe, ''), '.')::double precision,
@@ -2122,10 +2131,11 @@ NULLIF(NULLIF(C08519051_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08519052_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08519053_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08519054_moe, ''), '.')::double precision
-FROM tmp_seq0005_moe;
+FROM acs2009_1yr.tmp_seq0005_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0006
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0006
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08521001, ''), '.')::double precision,
 NULLIF(NULLIF(B08521002, ''), '.')::double precision,
 NULLIF(NULLIF(B08521003, ''), '.')::double precision,
@@ -2289,10 +2299,11 @@ NULLIF(NULLIF(C08524045, ''), '.')::double precision,
 NULLIF(NULLIF(C08524046, ''), '.')::double precision,
 NULLIF(NULLIF(C08524047, ''), '.')::double precision,
 NULLIF(NULLIF(C08524048, ''), '.')::double precision
-FROM tmp_seq0006;
+FROM tmp_seq0006
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0006_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0006_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08521001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08521002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08521003_moe, ''), '.')::double precision,
@@ -2456,10 +2467,11 @@ NULLIF(NULLIF(C08524045_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08524046_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08524047_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08524048_moe, ''), '.')::double precision
-FROM tmp_seq0006_moe;
+FROM acs2009_1yr.tmp_seq0006_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0007
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0007
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08526001, ''), '.')::double precision,
 NULLIF(NULLIF(B08526002, ''), '.')::double precision,
 NULLIF(NULLIF(B08526003, ''), '.')::double precision,
@@ -2649,10 +2661,11 @@ NULLIF(NULLIF(C08526081, ''), '.')::double precision,
 NULLIF(NULLIF(C08526082, ''), '.')::double precision,
 NULLIF(NULLIF(C08526083, ''), '.')::double precision,
 NULLIF(NULLIF(C08526084, ''), '.')::double precision
-FROM tmp_seq0007;
+FROM tmp_seq0007
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0007_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0007_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08526001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08526002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08526003_moe, ''), '.')::double precision,
@@ -2842,10 +2855,11 @@ NULLIF(NULLIF(C08526081_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08526082_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08526083_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08526084_moe, ''), '.')::double precision
-FROM tmp_seq0007_moe;
+FROM acs2009_1yr.tmp_seq0007_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0008
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0008
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08528001, ''), '.')::double precision,
 NULLIF(NULLIF(B08528002, ''), '.')::double precision,
 NULLIF(NULLIF(B08528003, ''), '.')::double precision,
@@ -3091,10 +3105,11 @@ NULLIF(NULLIF(C08532052, ''), '.')::double precision,
 NULLIF(NULLIF(C08532053, ''), '.')::double precision,
 NULLIF(NULLIF(C08532054, ''), '.')::double precision,
 NULLIF(NULLIF(C08532055, ''), '.')::double precision
-FROM tmp_seq0008;
+FROM tmp_seq0008
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0008_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0008_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08528001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08528002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08528003_moe, ''), '.')::double precision,
@@ -3340,10 +3355,11 @@ NULLIF(NULLIF(C08532052_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08532053_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08532054_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08532055_moe, ''), '.')::double precision
-FROM tmp_seq0008_moe;
+FROM acs2009_1yr.tmp_seq0008_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0009
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0009
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08534001, ''), '.')::double precision,
 NULLIF(NULLIF(B08534002, ''), '.')::double precision,
 NULLIF(NULLIF(B08534003, ''), '.')::double precision,
@@ -3570,10 +3586,11 @@ NULLIF(NULLIF(C08537015, ''), '.')::double precision,
 NULLIF(NULLIF(C08537016, ''), '.')::double precision,
 NULLIF(NULLIF(C08537017, ''), '.')::double precision,
 NULLIF(NULLIF(C08537018, ''), '.')::double precision
-FROM tmp_seq0009;
+FROM tmp_seq0009
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0009_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0009_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08534001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08534002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08534003_moe, ''), '.')::double precision,
@@ -3800,10 +3817,11 @@ NULLIF(NULLIF(C08537015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08537016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08537017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08537018_moe, ''), '.')::double precision
-FROM tmp_seq0009_moe;
+FROM acs2009_1yr.tmp_seq0009_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0010
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0010
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08541001, ''), '.')::double precision,
 NULLIF(NULLIF(B08541002, ''), '.')::double precision,
 NULLIF(NULLIF(B08541003, ''), '.')::double precision,
@@ -3950,10 +3968,11 @@ NULLIF(NULLIF(C08603007, ''), '.')::double precision,
 NULLIF(NULLIF(C08603008, ''), '.')::double precision,
 NULLIF(NULLIF(C08603009, ''), '.')::double precision,
 NULLIF(NULLIF(C08603010, ''), '.')::double precision
-FROM tmp_seq0010;
+FROM tmp_seq0010
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0010_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0010_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08541001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08541002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08541003_moe, ''), '.')::double precision,
@@ -4100,10 +4119,11 @@ NULLIF(NULLIF(C08603007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08603008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08603009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08603010_moe, ''), '.')::double precision
-FROM tmp_seq0010_moe;
+FROM acs2009_1yr.tmp_seq0010_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0011
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0011
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99086001, ''), '.')::double precision,
 NULLIF(NULLIF(B99086002, ''), '.')::double precision,
 NULLIF(NULLIF(B99086003, ''), '.')::double precision,
@@ -4120,10 +4140,11 @@ NULLIF(NULLIF(B99088005, ''), '.')::double precision,
 NULLIF(NULLIF(B99089001, ''), '.')::double precision,
 NULLIF(NULLIF(B99089002, ''), '.')::double precision,
 NULLIF(NULLIF(B99089003, ''), '.')::double precision
-FROM tmp_seq0011;
+FROM tmp_seq0011
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0011_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0011_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99086001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99086002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99086003_moe, ''), '.')::double precision,
@@ -4140,22 +4161,25 @@ NULLIF(NULLIF(B99088005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99089001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99089002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99089003_moe, ''), '.')::double precision
-FROM tmp_seq0011_moe;
+FROM acs2009_1yr.tmp_seq0011_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0012
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0012
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B00001001, ''), '.')::double precision,
 NULLIF(NULLIF(B00002001, ''), '.')::double precision
-FROM tmp_seq0012;
+FROM tmp_seq0012
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0012_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0012_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B00001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B00002001_moe, ''), '.')::double precision
-FROM tmp_seq0012_moe;
+FROM acs2009_1yr.tmp_seq0012_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0013
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0013
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B01001001, ''), '.')::double precision,
 NULLIF(NULLIF(B01001002, ''), '.')::double precision,
 NULLIF(NULLIF(B01001003, ''), '.')::double precision,
@@ -4365,10 +4389,11 @@ NULLIF(NULLIF(C01001D006, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D007, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D008, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D009, ''), '.')::double precision
-FROM tmp_seq0013;
+FROM tmp_seq0013
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0013_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0013_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B01001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B01001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B01001003_moe, ''), '.')::double precision,
@@ -4578,10 +4603,11 @@ NULLIF(NULLIF(C01001D006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001D009_moe, ''), '.')::double precision
-FROM tmp_seq0013_moe;
+FROM acs2009_1yr.tmp_seq0013_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0014
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0014
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B01001E001, ''), '.')::double precision,
 NULLIF(NULLIF(B01001E002, ''), '.')::double precision,
 NULLIF(NULLIF(B01001E003, ''), '.')::double precision,
@@ -4813,10 +4839,11 @@ NULLIF(NULLIF(C01001I006, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I007, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I008, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I009, ''), '.')::double precision
-FROM tmp_seq0014;
+FROM tmp_seq0014
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0014_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0014_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B01001E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B01001E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B01001E003_moe, ''), '.')::double precision,
@@ -5048,10 +5075,11 @@ NULLIF(NULLIF(C01001I006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C01001I009_moe, ''), '.')::double precision
-FROM tmp_seq0014_moe;
+FROM acs2009_1yr.tmp_seq0014_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0015
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0015
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B02001001, ''), '.')::double precision,
 NULLIF(NULLIF(B02001002, ''), '.')::double precision,
 NULLIF(NULLIF(B02001003, ''), '.')::double precision,
@@ -5260,10 +5288,11 @@ NULLIF(NULLIF(C02007002, ''), '.')::double precision,
 NULLIF(NULLIF(C02007003, ''), '.')::double precision,
 NULLIF(NULLIF(C02007004, ''), '.')::double precision,
 NULLIF(NULLIF(C02007005, ''), '.')::double precision
-FROM tmp_seq0015;
+FROM tmp_seq0015
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0015_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0015_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B02001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B02001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B02001003_moe, ''), '.')::double precision,
@@ -5472,10 +5501,11 @@ NULLIF(NULLIF(C02007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C02007003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C02007004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C02007005_moe, ''), '.')::double precision
-FROM tmp_seq0015_moe;
+FROM acs2009_1yr.tmp_seq0015_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0016
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0016
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B03001001, ''), '.')::double precision,
 NULLIF(NULLIF(B03001002, ''), '.')::double precision,
 NULLIF(NULLIF(B03001003, ''), '.')::double precision,
@@ -5553,10 +5583,11 @@ NULLIF(NULLIF(C03002009, ''), '.')::double precision,
 NULLIF(NULLIF(C03002010, ''), '.')::double precision,
 NULLIF(NULLIF(C03002011, ''), '.')::double precision,
 NULLIF(NULLIF(C03002012, ''), '.')::double precision
-FROM tmp_seq0016;
+FROM tmp_seq0016
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0016_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0016_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B03001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B03001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B03001003_moe, ''), '.')::double precision,
@@ -5634,10 +5665,11 @@ NULLIF(NULLIF(C03002009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C03002010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C03002011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C03002012_moe, ''), '.')::double precision
-FROM tmp_seq0016_moe;
+FROM acs2009_1yr.tmp_seq0016_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0017
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0017
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04001001, ''), '.')::double precision,
 NULLIF(NULLIF(B04001002, ''), '.')::double precision,
 NULLIF(NULLIF(B04001003, ''), '.')::double precision,
@@ -5779,10 +5811,11 @@ NULLIF(NULLIF(C04001029, ''), '.')::double precision,
 NULLIF(NULLIF(C04001030, ''), '.')::double precision,
 NULLIF(NULLIF(C04001031, ''), '.')::double precision,
 NULLIF(NULLIF(C04001032, ''), '.')::double precision
-FROM tmp_seq0017;
+FROM tmp_seq0017
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0017_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0017_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04001003_moe, ''), '.')::double precision,
@@ -5924,10 +5957,11 @@ NULLIF(NULLIF(C04001029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04001030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04001031_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04001032_moe, ''), '.')::double precision
-FROM tmp_seq0017_moe;
+FROM acs2009_1yr.tmp_seq0017_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0018
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0018
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04002001, ''), '.')::double precision,
 NULLIF(NULLIF(B04002002, ''), '.')::double precision,
 NULLIF(NULLIF(B04002003, ''), '.')::double precision,
@@ -6069,10 +6103,11 @@ NULLIF(NULLIF(C04002029, ''), '.')::double precision,
 NULLIF(NULLIF(C04002030, ''), '.')::double precision,
 NULLIF(NULLIF(C04002031, ''), '.')::double precision,
 NULLIF(NULLIF(C04002032, ''), '.')::double precision
-FROM tmp_seq0018;
+FROM tmp_seq0018
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0018_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0018_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04002002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04002003_moe, ''), '.')::double precision,
@@ -6214,10 +6249,11 @@ NULLIF(NULLIF(C04002029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04002030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04002031_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04002032_moe, ''), '.')::double precision
-FROM tmp_seq0018_moe;
+FROM acs2009_1yr.tmp_seq0018_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0019
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0019
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04003001, ''), '.')::double precision,
 NULLIF(NULLIF(B04003002, ''), '.')::double precision,
 NULLIF(NULLIF(B04003003, ''), '.')::double precision,
@@ -6357,10 +6393,11 @@ NULLIF(NULLIF(C04003028, ''), '.')::double precision,
 NULLIF(NULLIF(C04003029, ''), '.')::double precision,
 NULLIF(NULLIF(C04003030, ''), '.')::double precision,
 NULLIF(NULLIF(C04003031, ''), '.')::double precision
-FROM tmp_seq0019;
+FROM tmp_seq0019
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0019_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0019_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04003001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04003002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04003003_moe, ''), '.')::double precision,
@@ -6500,10 +6537,11 @@ NULLIF(NULLIF(C04003028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04003029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04003030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04003031_moe, ''), '.')::double precision
-FROM tmp_seq0019_moe;
+FROM acs2009_1yr.tmp_seq0019_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0020
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0020
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04004001, ''), '.')::double precision,
 NULLIF(NULLIF(B04004002, ''), '.')::double precision,
 NULLIF(NULLIF(B04004003, ''), '.')::double precision,
@@ -6643,10 +6681,11 @@ NULLIF(NULLIF(C04004028, ''), '.')::double precision,
 NULLIF(NULLIF(C04004029, ''), '.')::double precision,
 NULLIF(NULLIF(C04004030, ''), '.')::double precision,
 NULLIF(NULLIF(C04004031, ''), '.')::double precision
-FROM tmp_seq0020;
+FROM tmp_seq0020
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0020_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0020_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04004001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04004002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04004003_moe, ''), '.')::double precision,
@@ -6786,10 +6825,11 @@ NULLIF(NULLIF(C04004028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04004029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04004030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04004031_moe, ''), '.')::double precision
-FROM tmp_seq0020_moe;
+FROM acs2009_1yr.tmp_seq0020_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0021
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0021
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04005001, ''), '.')::double precision,
 NULLIF(NULLIF(B04005002, ''), '.')::double precision,
 NULLIF(NULLIF(B04005003, ''), '.')::double precision,
@@ -6929,10 +6969,11 @@ NULLIF(NULLIF(C04005028, ''), '.')::double precision,
 NULLIF(NULLIF(C04005029, ''), '.')::double precision,
 NULLIF(NULLIF(C04005030, ''), '.')::double precision,
 NULLIF(NULLIF(C04005031, ''), '.')::double precision
-FROM tmp_seq0021;
+FROM tmp_seq0021
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0021_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0021_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04005001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04005002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04005003_moe, ''), '.')::double precision,
@@ -7072,10 +7113,11 @@ NULLIF(NULLIF(C04005028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04005029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04005030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04005031_moe, ''), '.')::double precision
-FROM tmp_seq0021_moe;
+FROM acs2009_1yr.tmp_seq0021_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0022
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0022
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04006001, ''), '.')::double precision,
 NULLIF(NULLIF(B04006002, ''), '.')::double precision,
 NULLIF(NULLIF(B04006003, ''), '.')::double precision,
@@ -7229,10 +7271,11 @@ NULLIF(NULLIF(C04007002, ''), '.')::double precision,
 NULLIF(NULLIF(C04007003, ''), '.')::double precision,
 NULLIF(NULLIF(C04007004, ''), '.')::double precision,
 NULLIF(NULLIF(C04007005, ''), '.')::double precision
-FROM tmp_seq0022;
+FROM tmp_seq0022
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0022_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0022_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B04006001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04006002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B04006003_moe, ''), '.')::double precision,
@@ -7386,10 +7429,11 @@ NULLIF(NULLIF(C04007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04007003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04007004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C04007005_moe, ''), '.')::double precision
-FROM tmp_seq0022_moe;
+FROM acs2009_1yr.tmp_seq0022_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0023
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0023
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05001001, ''), '.')::double precision,
 NULLIF(NULLIF(B05001002, ''), '.')::double precision,
 NULLIF(NULLIF(B05001003, ''), '.')::double precision,
@@ -7614,10 +7658,11 @@ NULLIF(NULLIF(C05003D012, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D013, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D014, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D015, ''), '.')::double precision
-FROM tmp_seq0023;
+FROM tmp_seq0023
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0023_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0023_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05001003_moe, ''), '.')::double precision,
@@ -7842,10 +7887,11 @@ NULLIF(NULLIF(C05003D012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D015_moe, ''), '.')::double precision
-FROM tmp_seq0023_moe;
+FROM acs2009_1yr.tmp_seq0023_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0024
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0024
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05003E001, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E002, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E003, ''), '.')::double precision,
@@ -8085,10 +8131,11 @@ NULLIF(NULLIF(C05005010, ''), '.')::double precision,
 NULLIF(NULLIF(C05005011, ''), '.')::double precision,
 NULLIF(NULLIF(C05005012, ''), '.')::double precision,
 NULLIF(NULLIF(C05005013, ''), '.')::double precision
-FROM tmp_seq0024;
+FROM tmp_seq0024
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0024_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0024_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05003E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E003_moe, ''), '.')::double precision,
@@ -8328,10 +8375,11 @@ NULLIF(NULLIF(C05005010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005013_moe, ''), '.')::double precision
-FROM tmp_seq0024_moe;
+FROM acs2009_1yr.tmp_seq0024_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0025
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0025
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05006001, ''), '.')::double precision,
 NULLIF(NULLIF(B05006002, ''), '.')::double precision,
 NULLIF(NULLIF(B05006003, ''), '.')::double precision,
@@ -8561,10 +8609,11 @@ NULLIF(NULLIF(C05006065, ''), '.')::double precision,
 NULLIF(NULLIF(C05006066, ''), '.')::double precision,
 NULLIF(NULLIF(C05006067, ''), '.')::double precision,
 NULLIF(NULLIF(C05006068, ''), '.')::double precision
-FROM tmp_seq0025;
+FROM tmp_seq0025
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0025_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0025_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05006001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05006002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05006003_moe, ''), '.')::double precision,
@@ -8794,10 +8843,11 @@ NULLIF(NULLIF(C05006065_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05006066_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05006067_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05006068_moe, ''), '.')::double precision
-FROM tmp_seq0025_moe;
+FROM acs2009_1yr.tmp_seq0025_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0026
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0026
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05007001, ''), '.')::double precision,
 NULLIF(NULLIF(B05007002, ''), '.')::double precision,
 NULLIF(NULLIF(B05007003, ''), '.')::double precision,
@@ -8949,10 +8999,11 @@ NULLIF(NULLIF(C05007054, ''), '.')::double precision,
 NULLIF(NULLIF(C05007055, ''), '.')::double precision,
 NULLIF(NULLIF(C05007056, ''), '.')::double precision,
 NULLIF(NULLIF(C05007057, ''), '.')::double precision
-FROM tmp_seq0026;
+FROM tmp_seq0026
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0026_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0026_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05007001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05007003_moe, ''), '.')::double precision,
@@ -9104,10 +9155,11 @@ NULLIF(NULLIF(C05007054_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05007055_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05007056_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05007057_moe, ''), '.')::double precision
-FROM tmp_seq0026_moe;
+FROM acs2009_1yr.tmp_seq0026_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0027
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0027
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05008001, ''), '.')::double precision,
 NULLIF(NULLIF(B05008002, ''), '.')::double precision,
 NULLIF(NULLIF(B05008003, ''), '.')::double precision,
@@ -9331,10 +9383,11 @@ NULLIF(NULLIF(C05011003, ''), '.')::double precision,
 NULLIF(NULLIF(C05011004, ''), '.')::double precision,
 NULLIF(NULLIF(C05011005, ''), '.')::double precision,
 NULLIF(NULLIF(C05011006, ''), '.')::double precision
-FROM tmp_seq0027;
+FROM tmp_seq0027
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0027_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0027_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05008001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05008002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05008003_moe, ''), '.')::double precision,
@@ -9558,10 +9611,11 @@ NULLIF(NULLIF(C05011003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05011004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05011005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05011006_moe, ''), '.')::double precision
-FROM tmp_seq0027_moe;
+FROM acs2009_1yr.tmp_seq0027_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0028
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0028
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06001001, ''), '.')::double precision,
 NULLIF(NULLIF(B06001002, ''), '.')::double precision,
 NULLIF(NULLIF(B06001003, ''), '.')::double precision,
@@ -9745,10 +9799,11 @@ NULLIF(NULLIF(C06003010, ''), '.')::double precision,
 NULLIF(NULLIF(C06003011, ''), '.')::double precision,
 NULLIF(NULLIF(C06003012, ''), '.')::double precision,
 NULLIF(NULLIF(C06003013, ''), '.')::double precision
-FROM tmp_seq0028;
+FROM tmp_seq0028
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0028_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0028_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06001003_moe, ''), '.')::double precision,
@@ -9932,10 +9987,11 @@ NULLIF(NULLIF(C06003010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06003011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06003012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06003013_moe, ''), '.')::double precision
-FROM tmp_seq0028_moe;
+FROM acs2009_1yr.tmp_seq0028_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0029
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0029
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06007001, ''), '.')::double precision,
 NULLIF(NULLIF(B06007002, ''), '.')::double precision,
 NULLIF(NULLIF(B06007003, ''), '.')::double precision,
@@ -10166,10 +10222,11 @@ NULLIF(NULLIF(C06008022, ''), '.')::double precision,
 NULLIF(NULLIF(C06008023, ''), '.')::double precision,
 NULLIF(NULLIF(C06008024, ''), '.')::double precision,
 NULLIF(NULLIF(C06008025, ''), '.')::double precision
-FROM tmp_seq0029;
+FROM tmp_seq0029
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0029_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0029_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06007001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06007003_moe, ''), '.')::double precision,
@@ -10400,10 +10457,11 @@ NULLIF(NULLIF(C06008022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008023_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008025_moe, ''), '.')::double precision
-FROM tmp_seq0029_moe;
+FROM acs2009_1yr.tmp_seq0029_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0030
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0030
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07001001, ''), '.')::double precision,
 NULLIF(NULLIF(B07001002, ''), '.')::double precision,
 NULLIF(NULLIF(B07001003, ''), '.')::double precision,
@@ -10638,10 +10696,11 @@ NULLIF(NULLIF(C07001057, ''), '.')::double precision,
 NULLIF(NULLIF(C07001058, ''), '.')::double precision,
 NULLIF(NULLIF(C07001059, ''), '.')::double precision,
 NULLIF(NULLIF(C07001060, ''), '.')::double precision
-FROM tmp_seq0030;
+FROM tmp_seq0030
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0030_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0030_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07001003_moe, ''), '.')::double precision,
@@ -10876,10 +10935,11 @@ NULLIF(NULLIF(C07001057_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001058_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001059_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001060_moe, ''), '.')::double precision
-FROM tmp_seq0030_moe;
+FROM acs2009_1yr.tmp_seq0030_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0031
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0031
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07007001, ''), '.')::double precision,
 NULLIF(NULLIF(B07007002, ''), '.')::double precision,
 NULLIF(NULLIF(B07007003, ''), '.')::double precision,
@@ -11108,10 +11168,11 @@ NULLIF(NULLIF(C07008027, ''), '.')::double precision,
 NULLIF(NULLIF(C07008028, ''), '.')::double precision,
 NULLIF(NULLIF(C07008029, ''), '.')::double precision,
 NULLIF(NULLIF(C07008030, ''), '.')::double precision
-FROM tmp_seq0031;
+FROM tmp_seq0031
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0031_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0031_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07007001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07007003_moe, ''), '.')::double precision,
@@ -11340,10 +11401,11 @@ NULLIF(NULLIF(C07008027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008030_moe, ''), '.')::double precision
-FROM tmp_seq0031_moe;
+FROM acs2009_1yr.tmp_seq0031_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0032
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0032
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07013001, ''), '.')::double precision,
 NULLIF(NULLIF(B07013002, ''), '.')::double precision,
 NULLIF(NULLIF(B07013003, ''), '.')::double precision,
@@ -11525,10 +11587,11 @@ NULLIF(NULLIF(C07204009, ''), '.')::double precision,
 NULLIF(NULLIF(C07204010, ''), '.')::double precision,
 NULLIF(NULLIF(C07204011, ''), '.')::double precision,
 NULLIF(NULLIF(C07204012, ''), '.')::double precision
-FROM tmp_seq0032;
+FROM tmp_seq0032
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0032_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0032_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07013001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07013002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07013003_moe, ''), '.')::double precision,
@@ -11710,10 +11773,11 @@ NULLIF(NULLIF(C07204009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204012_moe, ''), '.')::double precision
-FROM tmp_seq0032_moe;
+FROM acs2009_1yr.tmp_seq0032_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0033
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0033
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08006001, ''), '.')::double precision,
 NULLIF(NULLIF(B08006002, ''), '.')::double precision,
 NULLIF(NULLIF(B08006003, ''), '.')::double precision,
@@ -11933,10 +11997,11 @@ NULLIF(NULLIF(C08011030, ''), '.')::double precision,
 NULLIF(NULLIF(C08011031, ''), '.')::double precision,
 NULLIF(NULLIF(C08011032, ''), '.')::double precision,
 NULLIF(NULLIF(C08011033, ''), '.')::double precision
-FROM tmp_seq0033;
+FROM tmp_seq0033
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0033_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0033_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08006001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08006002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08006003_moe, ''), '.')::double precision,
@@ -12156,10 +12221,11 @@ NULLIF(NULLIF(C08011030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08011031_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08011032_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08011033_moe, ''), '.')::double precision
-FROM tmp_seq0033_moe;
+FROM acs2009_1yr.tmp_seq0033_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0034
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0034
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08012001, ''), '.')::double precision,
 NULLIF(NULLIF(B08012002, ''), '.')::double precision,
 NULLIF(NULLIF(B08012003, ''), '.')::double precision,
@@ -12349,10 +12415,11 @@ NULLIF(NULLIF(C08018003, ''), '.')::double precision,
 NULLIF(NULLIF(C08018004, ''), '.')::double precision,
 NULLIF(NULLIF(C08018005, ''), '.')::double precision,
 NULLIF(NULLIF(C08018006, ''), '.')::double precision
-FROM tmp_seq0034;
+FROM tmp_seq0034
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0034_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0034_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08012001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08012002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08012003_moe, ''), '.')::double precision,
@@ -12542,10 +12609,11 @@ NULLIF(NULLIF(C08018003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08018004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08018005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08018006_moe, ''), '.')::double precision
-FROM tmp_seq0034_moe;
+FROM acs2009_1yr.tmp_seq0034_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0035
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0035
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08101001, ''), '.')::double precision,
 NULLIF(NULLIF(B08101002, ''), '.')::double precision,
 NULLIF(NULLIF(B08101003, ''), '.')::double precision,
@@ -12768,10 +12836,11 @@ NULLIF(NULLIF(C08105I003, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I004, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I005, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I006, ''), '.')::double precision
-FROM tmp_seq0035;
+FROM tmp_seq0035
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0035_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0035_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08101001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08101002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08101003_moe, ''), '.')::double precision,
@@ -12994,10 +13063,11 @@ NULLIF(NULLIF(C08105I003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08105I006_moe, ''), '.')::double precision
-FROM tmp_seq0035_moe;
+FROM acs2009_1yr.tmp_seq0035_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0036
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0036
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08111001, ''), '.')::double precision,
 NULLIF(NULLIF(B08111002, ''), '.')::double precision,
 NULLIF(NULLIF(B08111003, ''), '.')::double precision,
@@ -13149,10 +13219,11 @@ NULLIF(NULLIF(C08113027, ''), '.')::double precision,
 NULLIF(NULLIF(C08113028, ''), '.')::double precision,
 NULLIF(NULLIF(C08113029, ''), '.')::double precision,
 NULLIF(NULLIF(C08113030, ''), '.')::double precision
-FROM tmp_seq0036;
+FROM tmp_seq0036
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0036_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0036_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08111001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08111002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08111003_moe, ''), '.')::double precision,
@@ -13304,10 +13375,11 @@ NULLIF(NULLIF(C08113027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08113028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08113029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08113030_moe, ''), '.')::double precision
-FROM tmp_seq0036_moe;
+FROM acs2009_1yr.tmp_seq0036_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0037
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0037
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08119001, ''), '.')::double precision,
 NULLIF(NULLIF(B08119002, ''), '.')::double precision,
 NULLIF(NULLIF(B08119003, ''), '.')::double precision,
@@ -13484,10 +13556,11 @@ NULLIF(NULLIF(C08122021, ''), '.')::double precision,
 NULLIF(NULLIF(C08122022, ''), '.')::double precision,
 NULLIF(NULLIF(C08122023, ''), '.')::double precision,
 NULLIF(NULLIF(C08122024, ''), '.')::double precision
-FROM tmp_seq0037;
+FROM tmp_seq0037
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0037_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0037_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08119001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08119002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08119003_moe, ''), '.')::double precision,
@@ -13664,10 +13737,11 @@ NULLIF(NULLIF(C08122021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08122022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08122023_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08122024_moe, ''), '.')::double precision
-FROM tmp_seq0037_moe;
+FROM acs2009_1yr.tmp_seq0037_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0038
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0038
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08124001, ''), '.')::double precision,
 NULLIF(NULLIF(B08124002, ''), '.')::double precision,
 NULLIF(NULLIF(B08124003, ''), '.')::double precision,
@@ -13872,10 +13946,11 @@ NULLIF(NULLIF(C08128027, ''), '.')::double precision,
 NULLIF(NULLIF(C08128028, ''), '.')::double precision,
 NULLIF(NULLIF(C08128029, ''), '.')::double precision,
 NULLIF(NULLIF(C08128030, ''), '.')::double precision
-FROM tmp_seq0038;
+FROM tmp_seq0038
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0038_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0038_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08124001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08124002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08124003_moe, ''), '.')::double precision,
@@ -14080,10 +14155,11 @@ NULLIF(NULLIF(C08128027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08128028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08128029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08128030_moe, ''), '.')::double precision
-FROM tmp_seq0038_moe;
+FROM acs2009_1yr.tmp_seq0038_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0039
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0039
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08126001, ''), '.')::double precision,
 NULLIF(NULLIF(B08126002, ''), '.')::double precision,
 NULLIF(NULLIF(B08126003, ''), '.')::double precision,
@@ -14273,10 +14349,11 @@ NULLIF(NULLIF(C08126081, ''), '.')::double precision,
 NULLIF(NULLIF(C08126082, ''), '.')::double precision,
 NULLIF(NULLIF(C08126083, ''), '.')::double precision,
 NULLIF(NULLIF(C08126084, ''), '.')::double precision
-FROM tmp_seq0039;
+FROM tmp_seq0039
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0039_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0039_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08126001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08126002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08126003_moe, ''), '.')::double precision,
@@ -14466,10 +14543,11 @@ NULLIF(NULLIF(C08126081_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08126082_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08126083_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08126084_moe, ''), '.')::double precision
-FROM tmp_seq0039_moe;
+FROM acs2009_1yr.tmp_seq0039_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0040
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0040
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08130001, ''), '.')::double precision,
 NULLIF(NULLIF(B08130002, ''), '.')::double precision,
 NULLIF(NULLIF(B08130003, ''), '.')::double precision,
@@ -14703,10 +14781,11 @@ NULLIF(NULLIF(C08133008, ''), '.')::double precision,
 NULLIF(NULLIF(C08133009, ''), '.')::double precision,
 NULLIF(NULLIF(C08133010, ''), '.')::double precision,
 NULLIF(NULLIF(C08133011, ''), '.')::double precision
-FROM tmp_seq0040;
+FROM tmp_seq0040
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0040_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0040_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08130001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08130002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08130003_moe, ''), '.')::double precision,
@@ -14940,10 +15019,11 @@ NULLIF(NULLIF(C08133008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08133009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08133010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08133011_moe, ''), '.')::double precision
-FROM tmp_seq0040_moe;
+FROM acs2009_1yr.tmp_seq0040_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0041
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0041
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08134001, ''), '.')::double precision,
 NULLIF(NULLIF(B08134002, ''), '.')::double precision,
 NULLIF(NULLIF(B08134003, ''), '.')::double precision,
@@ -15180,10 +15260,11 @@ NULLIF(NULLIF(C08137015, ''), '.')::double precision,
 NULLIF(NULLIF(C08137016, ''), '.')::double precision,
 NULLIF(NULLIF(C08137017, ''), '.')::double precision,
 NULLIF(NULLIF(C08137018, ''), '.')::double precision
-FROM tmp_seq0041;
+FROM tmp_seq0041
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0041_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0041_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08134001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08134002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08134003_moe, ''), '.')::double precision,
@@ -15420,10 +15501,11 @@ NULLIF(NULLIF(C08137015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08137016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08137017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08137018_moe, ''), '.')::double precision
-FROM tmp_seq0041_moe;
+FROM acs2009_1yr.tmp_seq0041_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0042
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0042
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08141001, ''), '.')::double precision,
 NULLIF(NULLIF(B08141002, ''), '.')::double precision,
 NULLIF(NULLIF(B08141003, ''), '.')::double precision,
@@ -15662,10 +15744,11 @@ NULLIF(NULLIF(C08301008, ''), '.')::double precision,
 NULLIF(NULLIF(C08301009, ''), '.')::double precision,
 NULLIF(NULLIF(C08301010, ''), '.')::double precision,
 NULLIF(NULLIF(C08301011, ''), '.')::double precision
-FROM tmp_seq0042;
+FROM tmp_seq0042
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0042_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0042_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08141001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08141002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08141003_moe, ''), '.')::double precision,
@@ -15904,10 +15987,11 @@ NULLIF(NULLIF(C08301008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08301009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08301010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08301011_moe, ''), '.')::double precision
-FROM tmp_seq0042_moe;
+FROM acs2009_1yr.tmp_seq0042_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0043
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0043
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08302001, ''), '.')::double precision,
 NULLIF(NULLIF(B08302002, ''), '.')::double precision,
 NULLIF(NULLIF(B08302003, ''), '.')::double precision,
@@ -15957,10 +16041,11 @@ NULLIF(NULLIF(C08303007, ''), '.')::double precision,
 NULLIF(NULLIF(C08303008, ''), '.')::double precision,
 NULLIF(NULLIF(C08303009, ''), '.')::double precision,
 NULLIF(NULLIF(C08303010, ''), '.')::double precision
-FROM tmp_seq0043;
+FROM tmp_seq0043
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0043_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0043_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B08302001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08302002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B08302003_moe, ''), '.')::double precision,
@@ -16010,10 +16095,11 @@ NULLIF(NULLIF(C08303007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08303008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08303009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C08303010_moe, ''), '.')::double precision
-FROM tmp_seq0043_moe;
+FROM acs2009_1yr.tmp_seq0043_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0044
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0044
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B09001001, ''), '.')::double precision,
 NULLIF(NULLIF(B09001002, ''), '.')::double precision,
 NULLIF(NULLIF(B09001003, ''), '.')::double precision,
@@ -16232,10 +16318,11 @@ NULLIF(NULLIF(C09016026, ''), '.')::double precision,
 NULLIF(NULLIF(C09016027, ''), '.')::double precision,
 NULLIF(NULLIF(C09016028, ''), '.')::double precision,
 NULLIF(NULLIF(C09016029, ''), '.')::double precision
-FROM tmp_seq0044;
+FROM tmp_seq0044
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0044_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0044_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B09001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B09001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B09001003_moe, ''), '.')::double precision,
@@ -16454,10 +16541,11 @@ NULLIF(NULLIF(C09016026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C09016027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C09016028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C09016029_moe, ''), '.')::double precision
-FROM tmp_seq0044_moe;
+FROM acs2009_1yr.tmp_seq0044_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0045
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0045
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B10001001, ''), '.')::double precision,
 NULLIF(NULLIF(B10001002, ''), '.')::double precision,
 NULLIF(NULLIF(B10001003, ''), '.')::double precision,
@@ -16671,10 +16759,11 @@ NULLIF(NULLIF(B10063004, ''), '.')::double precision,
 NULLIF(NULLIF(B10063005, ''), '.')::double precision,
 NULLIF(NULLIF(B10063006, ''), '.')::double precision,
 NULLIF(NULLIF(B10063007, ''), '.')::double precision
-FROM tmp_seq0045;
+FROM tmp_seq0045
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0045_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0045_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B10001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B10001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B10001003_moe, ''), '.')::double precision,
@@ -16888,10 +16977,11 @@ NULLIF(NULLIF(B10063004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B10063005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B10063006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B10063007_moe, ''), '.')::double precision
-FROM tmp_seq0045_moe;
+FROM acs2009_1yr.tmp_seq0045_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0046
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0046
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11001001, ''), '.')::double precision,
 NULLIF(NULLIF(B11001002, ''), '.')::double precision,
 NULLIF(NULLIF(B11001003, ''), '.')::double precision,
@@ -17131,10 +17221,11 @@ NULLIF(NULLIF(C11013003, ''), '.')::double precision,
 NULLIF(NULLIF(C11014001, ''), '.')::double precision,
 NULLIF(NULLIF(C11014002, ''), '.')::double precision,
 NULLIF(NULLIF(C11014003, ''), '.')::double precision
-FROM tmp_seq0046;
+FROM tmp_seq0046
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0046_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0046_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11001003_moe, ''), '.')::double precision,
@@ -17374,10 +17465,11 @@ NULLIF(NULLIF(C11013003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11014001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11014002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11014003_moe, ''), '.')::double precision
-FROM tmp_seq0046_moe;
+FROM acs2009_1yr.tmp_seq0046_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0047
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0047
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11002001, ''), '.')::double precision,
 NULLIF(NULLIF(B11002002, ''), '.')::double precision,
 NULLIF(NULLIF(B11002003, ''), '.')::double precision,
@@ -17616,10 +17708,11 @@ NULLIF(NULLIF(C11005014, ''), '.')::double precision,
 NULLIF(NULLIF(C11005015, ''), '.')::double precision,
 NULLIF(NULLIF(C11005016, ''), '.')::double precision,
 NULLIF(NULLIF(C11005017, ''), '.')::double precision
-FROM tmp_seq0047;
+FROM tmp_seq0047
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0047_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0047_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11002002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11002003_moe, ''), '.')::double precision,
@@ -17858,10 +17951,11 @@ NULLIF(NULLIF(C11005014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11005015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11005016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11005017_moe, ''), '.')::double precision
-FROM tmp_seq0047_moe;
+FROM acs2009_1yr.tmp_seq0047_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0048
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0048
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11016001, ''), '.')::double precision,
 NULLIF(NULLIF(B11016002, ''), '.')::double precision,
 NULLIF(NULLIF(B11016003, ''), '.')::double precision,
@@ -17893,10 +17987,11 @@ NULLIF(NULLIF(C11016009, ''), '.')::double precision,
 NULLIF(NULLIF(C11016010, ''), '.')::double precision,
 NULLIF(NULLIF(C11016011, ''), '.')::double precision,
 NULLIF(NULLIF(C11016012, ''), '.')::double precision
-FROM tmp_seq0048;
+FROM tmp_seq0048
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0048_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0048_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B11016001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11016002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B11016003_moe, ''), '.')::double precision,
@@ -17928,10 +18023,11 @@ NULLIF(NULLIF(C11016009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11016010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11016011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C11016012_moe, ''), '.')::double precision
-FROM tmp_seq0048_moe;
+FROM acs2009_1yr.tmp_seq0048_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0049
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0049
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12001001, ''), '.')::double precision,
 NULLIF(NULLIF(B12001002, ''), '.')::double precision,
 NULLIF(NULLIF(B12001003, ''), '.')::double precision,
@@ -18138,10 +18234,11 @@ NULLIF(NULLIF(B12002184, ''), '.')::double precision,
 NULLIF(NULLIF(B12002185, ''), '.')::double precision,
 NULLIF(NULLIF(B12002186, ''), '.')::double precision,
 NULLIF(NULLIF(B12002187, ''), '.')::double precision
-FROM tmp_seq0049;
+FROM tmp_seq0049
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0049_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0049_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12001003_moe, ''), '.')::double precision,
@@ -18348,10 +18445,11 @@ NULLIF(NULLIF(B12002184_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12002185_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12002186_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12002187_moe, ''), '.')::double precision
-FROM tmp_seq0049_moe;
+FROM acs2009_1yr.tmp_seq0049_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0050
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0050
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12002A001, ''), '.')::double precision,
 NULLIF(NULLIF(B12002A002, ''), '.')::double precision,
 NULLIF(NULLIF(B12002A003, ''), '.')::double precision,
@@ -18596,10 +18694,11 @@ NULLIF(NULLIF(C12002I003, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I004, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I005, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I006, ''), '.')::double precision
-FROM tmp_seq0050;
+FROM tmp_seq0050
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0050_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0050_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12002A001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12002A002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12002A003_moe, ''), '.')::double precision,
@@ -18844,10 +18943,11 @@ NULLIF(NULLIF(C12002I003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C12002I006_moe, ''), '.')::double precision
-FROM tmp_seq0050_moe;
+FROM acs2009_1yr.tmp_seq0050_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0051
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0051
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12005001, ''), '.')::double precision,
 NULLIF(NULLIF(B12005002, ''), '.')::double precision,
 NULLIF(NULLIF(B12005003, ''), '.')::double precision,
@@ -18995,10 +19095,11 @@ NULLIF(NULLIF(B12505010, ''), '.')::double precision,
 NULLIF(NULLIF(B12505011, ''), '.')::double precision,
 NULLIF(NULLIF(B12505012, ''), '.')::double precision,
 NULLIF(NULLIF(B12505013, ''), '.')::double precision
-FROM tmp_seq0051;
+FROM tmp_seq0051
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0051_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0051_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B12005001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12005002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12005003_moe, ''), '.')::double precision,
@@ -19146,10 +19247,11 @@ NULLIF(NULLIF(B12505010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12505011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12505012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B12505013_moe, ''), '.')::double precision
-FROM tmp_seq0051_moe;
+FROM acs2009_1yr.tmp_seq0051_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0052
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0052
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B13001001, ''), '.')::double precision,
 NULLIF(NULLIF(B13001002, ''), '.')::double precision,
 NULLIF(NULLIF(B13001003, ''), '.')::double precision,
@@ -19335,10 +19437,11 @@ NULLIF(NULLIF(C13004004, ''), '.')::double precision,
 NULLIF(NULLIF(C13004005, ''), '.')::double precision,
 NULLIF(NULLIF(C13004006, ''), '.')::double precision,
 NULLIF(NULLIF(C13004007, ''), '.')::double precision
-FROM tmp_seq0052;
+FROM tmp_seq0052
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0052_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0052_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B13001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B13001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B13001003_moe, ''), '.')::double precision,
@@ -19524,10 +19627,11 @@ NULLIF(NULLIF(C13004004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C13004005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C13004006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C13004007_moe, ''), '.')::double precision
-FROM tmp_seq0052_moe;
+FROM acs2009_1yr.tmp_seq0052_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0053
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0053
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14001001, ''), '.')::double precision,
 NULLIF(NULLIF(B14001002, ''), '.')::double precision,
 NULLIF(NULLIF(B14001003, ''), '.')::double precision,
@@ -19758,10 +19862,11 @@ NULLIF(NULLIF(C14003025, ''), '.')::double precision,
 NULLIF(NULLIF(C14003026, ''), '.')::double precision,
 NULLIF(NULLIF(C14003027, ''), '.')::double precision,
 NULLIF(NULLIF(C14003028, ''), '.')::double precision
-FROM tmp_seq0053;
+FROM tmp_seq0053
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0053_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0053_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14001003_moe, ''), '.')::double precision,
@@ -19992,10 +20097,11 @@ NULLIF(NULLIF(C14003025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14003026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14003027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14003028_moe, ''), '.')::double precision
-FROM tmp_seq0053_moe;
+FROM acs2009_1yr.tmp_seq0053_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0054
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0054
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14006001, ''), '.')::double precision,
 NULLIF(NULLIF(B14006002, ''), '.')::double precision,
 NULLIF(NULLIF(B14006003, ''), '.')::double precision,
@@ -20228,10 +20334,11 @@ NULLIF(NULLIF(C14007F004, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F005, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F006, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F007, ''), '.')::double precision
-FROM tmp_seq0054;
+FROM tmp_seq0054
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0054_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0054_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14006001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14006002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14006003_moe, ''), '.')::double precision,
@@ -20464,10 +20571,11 @@ NULLIF(NULLIF(C14007F004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007F007_moe, ''), '.')::double precision
-FROM tmp_seq0054_moe;
+FROM acs2009_1yr.tmp_seq0054_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0055
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0055
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14007G001, ''), '.')::double precision,
 NULLIF(NULLIF(B14007G002, ''), '.')::double precision,
 NULLIF(NULLIF(B14007G003, ''), '.')::double precision,
@@ -20546,10 +20654,11 @@ NULLIF(NULLIF(C14007I004, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I005, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I006, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I007, ''), '.')::double precision
-FROM tmp_seq0055;
+FROM tmp_seq0055
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0055_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0055_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B14007G001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14007G002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B14007G003_moe, ''), '.')::double precision,
@@ -20628,10 +20737,11 @@ NULLIF(NULLIF(C14007I004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C14007I007_moe, ''), '.')::double precision
-FROM tmp_seq0055_moe;
+FROM acs2009_1yr.tmp_seq0055_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0056
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0056
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15001001, ''), '.')::double precision,
 NULLIF(NULLIF(B15001002, ''), '.')::double precision,
 NULLIF(NULLIF(B15001003, ''), '.')::double precision,
@@ -20869,10 +20979,11 @@ NULLIF(NULLIF(C15002A008, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A009, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A010, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A011, ''), '.')::double precision
-FROM tmp_seq0056;
+FROM tmp_seq0056
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0056_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0056_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15001003_moe, ''), '.')::double precision,
@@ -21110,10 +21221,11 @@ NULLIF(NULLIF(C15002A008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002A011_moe, ''), '.')::double precision
-FROM tmp_seq0056_moe;
+FROM acs2009_1yr.tmp_seq0056_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0057
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0057
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15002C001, ''), '.')::double precision,
 NULLIF(NULLIF(B15002C002, ''), '.')::double precision,
 NULLIF(NULLIF(B15002C003, ''), '.')::double precision,
@@ -21335,10 +21447,11 @@ NULLIF(NULLIF(C15002I008, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I009, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I010, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I011, ''), '.')::double precision
-FROM tmp_seq0057;
+FROM tmp_seq0057
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0057_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0057_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15002C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15002C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15002C003_moe, ''), '.')::double precision,
@@ -21560,10 +21673,11 @@ NULLIF(NULLIF(C15002I008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15002I011_moe, ''), '.')::double precision
-FROM tmp_seq0057_moe;
+FROM acs2009_1yr.tmp_seq0057_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0058
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0058
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15003001, ''), '.')::double precision,
 NULLIF(NULLIF(B15003002, ''), '.')::double precision,
 NULLIF(NULLIF(B15003003, ''), '.')::double precision,
@@ -21738,10 +21852,11 @@ NULLIF(NULLIF(C15010I003, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I004, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I005, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I006, ''), '.')::double precision
-FROM tmp_seq0058;
+FROM tmp_seq0058
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0058_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0058_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B15003001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15003002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B15003003_moe, ''), '.')::double precision,
@@ -21916,10 +22031,11 @@ NULLIF(NULLIF(C15010I003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C15010I006_moe, ''), '.')::double precision
-FROM tmp_seq0058_moe;
+FROM acs2009_1yr.tmp_seq0058_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0059
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0059
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16001001, ''), '.')::double precision,
 NULLIF(NULLIF(B16001002, ''), '.')::double precision,
 NULLIF(NULLIF(B16001003, ''), '.')::double precision,
@@ -22162,10 +22278,11 @@ NULLIF(NULLIF(C16006003, ''), '.')::double precision,
 NULLIF(NULLIF(C16006004, ''), '.')::double precision,
 NULLIF(NULLIF(C16006005, ''), '.')::double precision,
 NULLIF(NULLIF(C16006006, ''), '.')::double precision
-FROM tmp_seq0059;
+FROM tmp_seq0059
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0059_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0059_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16001003_moe, ''), '.')::double precision,
@@ -22408,10 +22525,11 @@ NULLIF(NULLIF(C16006003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16006004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16006005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16006006_moe, ''), '.')::double precision
-FROM tmp_seq0059_moe;
+FROM acs2009_1yr.tmp_seq0059_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0060
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0060
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16002001, ''), '.')::double precision,
 NULLIF(NULLIF(B16002002, ''), '.')::double precision,
 NULLIF(NULLIF(B16002003, ''), '.')::double precision,
@@ -22652,10 +22770,11 @@ NULLIF(NULLIF(C16005026, ''), '.')::double precision,
 NULLIF(NULLIF(C16005027, ''), '.')::double precision,
 NULLIF(NULLIF(C16005028, ''), '.')::double precision,
 NULLIF(NULLIF(C16005029, ''), '.')::double precision
-FROM tmp_seq0060;
+FROM tmp_seq0060
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0060_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0060_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16002002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16002003_moe, ''), '.')::double precision,
@@ -22896,10 +23015,11 @@ NULLIF(NULLIF(C16005026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16005027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16005028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16005029_moe, ''), '.')::double precision
-FROM tmp_seq0060_moe;
+FROM acs2009_1yr.tmp_seq0060_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0061
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0061
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16008001, ''), '.')::double precision,
 NULLIF(NULLIF(B16008002, ''), '.')::double precision,
 NULLIF(NULLIF(B16008003, ''), '.')::double precision,
@@ -23104,10 +23224,11 @@ NULLIF(NULLIF(C16010034, ''), '.')::double precision,
 NULLIF(NULLIF(C16010035, ''), '.')::double precision,
 NULLIF(NULLIF(C16010036, ''), '.')::double precision,
 NULLIF(NULLIF(C16010037, ''), '.')::double precision
-FROM tmp_seq0061;
+FROM tmp_seq0061
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0061_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0061_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B16008001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16008002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B16008003_moe, ''), '.')::double precision,
@@ -23312,10 +23433,11 @@ NULLIF(NULLIF(C16010034_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16010035_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16010036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C16010037_moe, ''), '.')::double precision
-FROM tmp_seq0061_moe;
+FROM acs2009_1yr.tmp_seq0061_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0062
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0062
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001001, ''), '.')::double precision,
 NULLIF(NULLIF(B17001002, ''), '.')::double precision,
 NULLIF(NULLIF(B17001003, ''), '.')::double precision,
@@ -23550,10 +23672,11 @@ NULLIF(NULLIF(C17001B016, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B017, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B018, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B019, ''), '.')::double precision
-FROM tmp_seq0062;
+FROM tmp_seq0062
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0062_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0062_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001003_moe, ''), '.')::double precision,
@@ -23788,10 +23911,11 @@ NULLIF(NULLIF(C17001B016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001B019_moe, ''), '.')::double precision
-FROM tmp_seq0062_moe;
+FROM acs2009_1yr.tmp_seq0062_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0063
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0063
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001C001, ''), '.')::double precision,
 NULLIF(NULLIF(B17001C002, ''), '.')::double precision,
 NULLIF(NULLIF(B17001C003, ''), '.')::double precision,
@@ -24026,10 +24150,11 @@ NULLIF(NULLIF(C17001E016, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E017, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E018, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E019, ''), '.')::double precision
-FROM tmp_seq0063;
+FROM tmp_seq0063
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0063_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0063_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001C003_moe, ''), '.')::double precision,
@@ -24264,10 +24389,11 @@ NULLIF(NULLIF(C17001E016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001E019_moe, ''), '.')::double precision
-FROM tmp_seq0063_moe;
+FROM acs2009_1yr.tmp_seq0063_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0064
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0064
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001F001, ''), '.')::double precision,
 NULLIF(NULLIF(B17001F002, ''), '.')::double precision,
 NULLIF(NULLIF(B17001F003, ''), '.')::double precision,
@@ -24502,10 +24628,11 @@ NULLIF(NULLIF(C17001H016, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H017, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H018, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H019, ''), '.')::double precision
-FROM tmp_seq0064;
+FROM tmp_seq0064
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0064_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0064_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001F001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001F002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001F003_moe, ''), '.')::double precision,
@@ -24740,10 +24867,11 @@ NULLIF(NULLIF(C17001H016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17001H019_moe, ''), '.')::double precision
-FROM tmp_seq0064_moe;
+FROM acs2009_1yr.tmp_seq0064_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0065
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0065
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001I001, ''), '.')::double precision,
 NULLIF(NULLIF(B17001I002, ''), '.')::double precision,
 NULLIF(NULLIF(B17001I003, ''), '.')::double precision,
@@ -24964,10 +25092,11 @@ NULLIF(NULLIF(C17006004, ''), '.')::double precision,
 NULLIF(NULLIF(C17006005, ''), '.')::double precision,
 NULLIF(NULLIF(C17006006, ''), '.')::double precision,
 NULLIF(NULLIF(C17006007, ''), '.')::double precision
-FROM tmp_seq0065;
+FROM tmp_seq0065
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0065_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0065_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17001I001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001I002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17001I003_moe, ''), '.')::double precision,
@@ -25188,10 +25317,11 @@ NULLIF(NULLIF(C17006004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17006005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17006006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17006007_moe, ''), '.')::double precision
-FROM tmp_seq0065_moe;
+FROM acs2009_1yr.tmp_seq0065_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0066
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0066
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17007001, ''), '.')::double precision,
 NULLIF(NULLIF(B17007002, ''), '.')::double precision,
 NULLIF(NULLIF(B17007003, ''), '.')::double precision,
@@ -25432,10 +25562,11 @@ NULLIF(NULLIF(C17010A014, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A015, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A016, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A017, ''), '.')::double precision
-FROM tmp_seq0066;
+FROM tmp_seq0066
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0066_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0066_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17007001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17007002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17007003_moe, ''), '.')::double precision,
@@ -25676,10 +25807,11 @@ NULLIF(NULLIF(C17010A014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010A017_moe, ''), '.')::double precision
-FROM tmp_seq0066_moe;
+FROM acs2009_1yr.tmp_seq0066_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0067
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0067
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17010C001, ''), '.')::double precision,
 NULLIF(NULLIF(B17010C002, ''), '.')::double precision,
 NULLIF(NULLIF(B17010C003, ''), '.')::double precision,
@@ -25912,10 +26044,11 @@ NULLIF(NULLIF(C17010E014, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E015, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E016, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E017, ''), '.')::double precision
-FROM tmp_seq0067;
+FROM tmp_seq0067
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0067_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0067_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17010C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17010C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17010C003_moe, ''), '.')::double precision,
@@ -26148,10 +26281,11 @@ NULLIF(NULLIF(C17010E014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17010E017_moe, ''), '.')::double precision
-FROM tmp_seq0067_moe;
+FROM acs2009_1yr.tmp_seq0067_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0068
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0068
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17010G001, ''), '.')::double precision,
 NULLIF(NULLIF(B17010G002, ''), '.')::double precision,
 NULLIF(NULLIF(B17010G003, ''), '.')::double precision,
@@ -26394,10 +26528,11 @@ NULLIF(NULLIF(C17012008, ''), '.')::double precision,
 NULLIF(NULLIF(C17012009, ''), '.')::double precision,
 NULLIF(NULLIF(C17012010, ''), '.')::double precision,
 NULLIF(NULLIF(C17012011, ''), '.')::double precision
-FROM tmp_seq0068;
+FROM tmp_seq0068
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0068_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0068_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17010G001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17010G002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17010G003_moe, ''), '.')::double precision,
@@ -26640,10 +26775,11 @@ NULLIF(NULLIF(C17012008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17012009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17012010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17012011_moe, ''), '.')::double precision
-FROM tmp_seq0068_moe;
+FROM acs2009_1yr.tmp_seq0068_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0069
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0069
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17013001, ''), '.')::double precision,
 NULLIF(NULLIF(B17013002, ''), '.')::double precision,
 NULLIF(NULLIF(B17013003, ''), '.')::double precision,
@@ -26854,10 +26990,11 @@ NULLIF(NULLIF(C17016006, ''), '.')::double precision,
 NULLIF(NULLIF(C17016007, ''), '.')::double precision,
 NULLIF(NULLIF(C17016008, ''), '.')::double precision,
 NULLIF(NULLIF(C17016009, ''), '.')::double precision
-FROM tmp_seq0069;
+FROM tmp_seq0069
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0069_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0069_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17013001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17013002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17013003_moe, ''), '.')::double precision,
@@ -27068,10 +27205,11 @@ NULLIF(NULLIF(C17016006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17016007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17016008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17016009_moe, ''), '.')::double precision
-FROM tmp_seq0069_moe;
+FROM acs2009_1yr.tmp_seq0069_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0070
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0070
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17017001, ''), '.')::double precision,
 NULLIF(NULLIF(B17017002, ''), '.')::double precision,
 NULLIF(NULLIF(B17017003, ''), '.')::double precision,
@@ -27304,10 +27442,11 @@ NULLIF(NULLIF(C17020C006, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C007, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C008, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C009, ''), '.')::double precision
-FROM tmp_seq0070;
+FROM tmp_seq0070
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0070_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0070_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17017001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17017002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17017003_moe, ''), '.')::double precision,
@@ -27540,10 +27679,11 @@ NULLIF(NULLIF(C17020C006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17020C009_moe, ''), '.')::double precision
-FROM tmp_seq0070_moe;
+FROM acs2009_1yr.tmp_seq0070_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0071
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0071
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17020D001, ''), '.')::double precision,
 NULLIF(NULLIF(B17020D002, ''), '.')::double precision,
 NULLIF(NULLIF(B17020D003, ''), '.')::double precision,
@@ -27750,10 +27890,11 @@ NULLIF(NULLIF(C17021012, ''), '.')::double precision,
 NULLIF(NULLIF(C17021013, ''), '.')::double precision,
 NULLIF(NULLIF(C17021014, ''), '.')::double precision,
 NULLIF(NULLIF(C17021015, ''), '.')::double precision
-FROM tmp_seq0071;
+FROM tmp_seq0071
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0071_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0071_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17020D001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17020D002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17020D003_moe, ''), '.')::double precision,
@@ -27960,10 +28101,11 @@ NULLIF(NULLIF(C17021012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17021013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17021014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17021015_moe, ''), '.')::double precision
-FROM tmp_seq0071_moe;
+FROM acs2009_1yr.tmp_seq0071_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0072
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0072
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17022001, ''), '.')::double precision,
 NULLIF(NULLIF(B17022002, ''), '.')::double precision,
 NULLIF(NULLIF(B17022003, ''), '.')::double precision,
@@ -28124,10 +28266,11 @@ NULLIF(NULLIF(C17023020, ''), '.')::double precision,
 NULLIF(NULLIF(C17023021, ''), '.')::double precision,
 NULLIF(NULLIF(C17023022, ''), '.')::double precision,
 NULLIF(NULLIF(C17023023, ''), '.')::double precision
-FROM tmp_seq0072;
+FROM tmp_seq0072
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0072_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0072_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17022001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17022002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17022003_moe, ''), '.')::double precision,
@@ -28288,10 +28431,11 @@ NULLIF(NULLIF(C17023020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17023021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17023022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17023023_moe, ''), '.')::double precision
-FROM tmp_seq0072_moe;
+FROM acs2009_1yr.tmp_seq0072_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0073
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0073
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17024001, ''), '.')::double precision,
 NULLIF(NULLIF(B17024002, ''), '.')::double precision,
 NULLIF(NULLIF(B17024003, ''), '.')::double precision,
@@ -28498,10 +28642,11 @@ NULLIF(NULLIF(C17026005, ''), '.')::double precision,
 NULLIF(NULLIF(C17026006, ''), '.')::double precision,
 NULLIF(NULLIF(C17026007, ''), '.')::double precision,
 NULLIF(NULLIF(C17026008, ''), '.')::double precision
-FROM tmp_seq0073;
+FROM tmp_seq0073
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0073_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0073_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B17024001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17024002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B17024003_moe, ''), '.')::double precision,
@@ -28708,10 +28853,11 @@ NULLIF(NULLIF(C17026005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17026006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17026007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C17026008_moe, ''), '.')::double precision
-FROM tmp_seq0073_moe;
+FROM acs2009_1yr.tmp_seq0073_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0074
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0074
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18101001, ''), '.')::double precision,
 NULLIF(NULLIF(B18101002, ''), '.')::double precision,
 NULLIF(NULLIF(B18101003, ''), '.')::double precision,
@@ -28922,10 +29068,11 @@ NULLIF(NULLIF(C18102018, ''), '.')::double precision,
 NULLIF(NULLIF(C18102019, ''), '.')::double precision,
 NULLIF(NULLIF(C18102020, ''), '.')::double precision,
 NULLIF(NULLIF(C18102021, ''), '.')::double precision
-FROM tmp_seq0074;
+FROM tmp_seq0074
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0074_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0074_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18101001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18101002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18101003_moe, ''), '.')::double precision,
@@ -29136,10 +29283,11 @@ NULLIF(NULLIF(C18102018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18102019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18102020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18102021_moe, ''), '.')::double precision
-FROM tmp_seq0074_moe;
+FROM acs2009_1yr.tmp_seq0074_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0075
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0075
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18103001, ''), '.')::double precision,
 NULLIF(NULLIF(B18103002, ''), '.')::double precision,
 NULLIF(NULLIF(B18103003, ''), '.')::double precision,
@@ -29362,10 +29510,11 @@ NULLIF(NULLIF(C18106018, ''), '.')::double precision,
 NULLIF(NULLIF(C18106019, ''), '.')::double precision,
 NULLIF(NULLIF(C18106020, ''), '.')::double precision,
 NULLIF(NULLIF(C18106021, ''), '.')::double precision
-FROM tmp_seq0075;
+FROM tmp_seq0075
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0075_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0075_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18103001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18103002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18103003_moe, ''), '.')::double precision,
@@ -29588,10 +29737,11 @@ NULLIF(NULLIF(C18106018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18106019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18106020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18106021_moe, ''), '.')::double precision
-FROM tmp_seq0075_moe;
+FROM acs2009_1yr.tmp_seq0075_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0076
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0076
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18107001, ''), '.')::double precision,
 NULLIF(NULLIF(B18107002, ''), '.')::double precision,
 NULLIF(NULLIF(B18107003, ''), '.')::double precision,
@@ -29815,10 +29965,11 @@ NULLIF(NULLIF(C18130019, ''), '.')::double precision,
 NULLIF(NULLIF(C18130020, ''), '.')::double precision,
 NULLIF(NULLIF(C18130021, ''), '.')::double precision,
 NULLIF(NULLIF(C18130022, ''), '.')::double precision
-FROM tmp_seq0076;
+FROM tmp_seq0076
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0076_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0076_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18107001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18107002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18107003_moe, ''), '.')::double precision,
@@ -30042,10 +30193,11 @@ NULLIF(NULLIF(C18130019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18130020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18130021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18130022_moe, ''), '.')::double precision
-FROM tmp_seq0076_moe;
+FROM acs2009_1yr.tmp_seq0076_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0077
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0077
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18131001, ''), '.')::double precision,
 NULLIF(NULLIF(B18131002, ''), '.')::double precision,
 NULLIF(NULLIF(B18131003, ''), '.')::double precision,
@@ -30217,10 +30369,11 @@ NULLIF(NULLIF(C18131013, ''), '.')::double precision,
 NULLIF(NULLIF(C18131014, ''), '.')::double precision,
 NULLIF(NULLIF(C18131015, ''), '.')::double precision,
 NULLIF(NULLIF(C18131016, ''), '.')::double precision
-FROM tmp_seq0077;
+FROM tmp_seq0077
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0077_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0077_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B18131001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18131002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B18131003_moe, ''), '.')::double precision,
@@ -30392,10 +30545,11 @@ NULLIF(NULLIF(C18131013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18131014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18131015_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C18131016_moe, ''), '.')::double precision
-FROM tmp_seq0077_moe;
+FROM acs2009_1yr.tmp_seq0077_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0078
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0078
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19001001, ''), '.')::double precision,
 NULLIF(NULLIF(B19001002, ''), '.')::double precision,
 NULLIF(NULLIF(B19001003, ''), '.')::double precision,
@@ -30594,10 +30748,11 @@ NULLIF(NULLIF(C19037042, ''), '.')::double precision,
 NULLIF(NULLIF(C19037043, ''), '.')::double precision,
 NULLIF(NULLIF(C19037044, ''), '.')::double precision,
 NULLIF(NULLIF(C19037045, ''), '.')::double precision
-FROM tmp_seq0078;
+FROM tmp_seq0078
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0078_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0078_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19001003_moe, ''), '.')::double precision,
@@ -30796,10 +30951,11 @@ NULLIF(NULLIF(C19037042_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037043_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037045_moe, ''), '.')::double precision
-FROM tmp_seq0078_moe;
+FROM acs2009_1yr.tmp_seq0078_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0079
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0079
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19001C001, ''), '.')::double precision,
 NULLIF(NULLIF(B19001C002, ''), '.')::double precision,
 NULLIF(NULLIF(B19001C003, ''), '.')::double precision,
@@ -31024,10 +31180,11 @@ NULLIF(NULLIF(C19001I008, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I009, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I010, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I011, ''), '.')::double precision
-FROM tmp_seq0079;
+FROM tmp_seq0079
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0079_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0079_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19001C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19001C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19001C003_moe, ''), '.')::double precision,
@@ -31252,10 +31409,11 @@ NULLIF(NULLIF(C19001I008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19001I011_moe, ''), '.')::double precision
-FROM tmp_seq0079_moe;
+FROM acs2009_1yr.tmp_seq0079_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0080
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0080
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037A001, ''), '.')::double precision,
 NULLIF(NULLIF(B19037A002, ''), '.')::double precision,
 NULLIF(NULLIF(B19037A003, ''), '.')::double precision,
@@ -31484,10 +31642,11 @@ NULLIF(NULLIF(C19037B042, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B043, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B044, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B045, ''), '.')::double precision
-FROM tmp_seq0080;
+FROM tmp_seq0080
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0080_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0080_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037A001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037A002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037A003_moe, ''), '.')::double precision,
@@ -31716,10 +31875,11 @@ NULLIF(NULLIF(C19037B042_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B043_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037B045_moe, ''), '.')::double precision
-FROM tmp_seq0080_moe;
+FROM acs2009_1yr.tmp_seq0080_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0081
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0081
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037C001, ''), '.')::double precision,
 NULLIF(NULLIF(B19037C002, ''), '.')::double precision,
 NULLIF(NULLIF(B19037C003, ''), '.')::double precision,
@@ -31948,10 +32108,11 @@ NULLIF(NULLIF(C19037D042, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D043, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D044, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D045, ''), '.')::double precision
-FROM tmp_seq0081;
+FROM tmp_seq0081
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0081_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0081_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037C003_moe, ''), '.')::double precision,
@@ -32180,10 +32341,11 @@ NULLIF(NULLIF(C19037D042_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D043_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037D045_moe, ''), '.')::double precision
-FROM tmp_seq0081_moe;
+FROM acs2009_1yr.tmp_seq0081_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0082
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0082
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037E001, ''), '.')::double precision,
 NULLIF(NULLIF(B19037E002, ''), '.')::double precision,
 NULLIF(NULLIF(B19037E003, ''), '.')::double precision,
@@ -32412,10 +32574,11 @@ NULLIF(NULLIF(C19037F042, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F043, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F044, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F045, ''), '.')::double precision
-FROM tmp_seq0082;
+FROM tmp_seq0082
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0082_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0082_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037E003_moe, ''), '.')::double precision,
@@ -32644,10 +32807,11 @@ NULLIF(NULLIF(C19037F042_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F043_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037F045_moe, ''), '.')::double precision
-FROM tmp_seq0082_moe;
+FROM acs2009_1yr.tmp_seq0082_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0083
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0083
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037G001, ''), '.')::double precision,
 NULLIF(NULLIF(B19037G002, ''), '.')::double precision,
 NULLIF(NULLIF(B19037G003, ''), '.')::double precision,
@@ -32876,10 +33040,11 @@ NULLIF(NULLIF(C19037H042, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H043, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H044, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H045, ''), '.')::double precision
-FROM tmp_seq0083;
+FROM tmp_seq0083
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0083_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0083_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037G001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037G002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037G003_moe, ''), '.')::double precision,
@@ -33108,10 +33273,11 @@ NULLIF(NULLIF(C19037H042_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H043_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19037H045_moe, ''), '.')::double precision
-FROM tmp_seq0083_moe;
+FROM acs2009_1yr.tmp_seq0083_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0084
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0084
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037I001, ''), '.')::double precision,
 NULLIF(NULLIF(B19037I002, ''), '.')::double precision,
 NULLIF(NULLIF(B19037I003, ''), '.')::double precision,
@@ -33349,10 +33515,11 @@ NULLIF(NULLIF(C19101A008, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A009, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A010, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A011, ''), '.')::double precision
-FROM tmp_seq0084;
+FROM tmp_seq0084
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0084_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0084_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19037I001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037I002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19037I003_moe, ''), '.')::double precision,
@@ -33590,10 +33757,11 @@ NULLIF(NULLIF(C19101A008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101A011_moe, ''), '.')::double precision
-FROM tmp_seq0084_moe;
+FROM acs2009_1yr.tmp_seq0084_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0085
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0085
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19101B001, ''), '.')::double precision,
 NULLIF(NULLIF(B19101B002, ''), '.')::double precision,
 NULLIF(NULLIF(B19101B003, ''), '.')::double precision,
@@ -33835,10 +34003,11 @@ NULLIF(NULLIF(C19101I008, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I009, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I010, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I011, ''), '.')::double precision
-FROM tmp_seq0085;
+FROM tmp_seq0085
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0085_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0085_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19101B001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19101B002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19101B003_moe, ''), '.')::double precision,
@@ -34080,10 +34249,11 @@ NULLIF(NULLIF(C19101I008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19101I011_moe, ''), '.')::double precision
-FROM tmp_seq0085_moe;
+FROM acs2009_1yr.tmp_seq0085_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0086
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0086
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19121001, ''), '.')::double precision,
 NULLIF(NULLIF(B19121002, ''), '.')::double precision,
 NULLIF(NULLIF(B19121003, ''), '.')::double precision,
@@ -34329,10 +34499,11 @@ NULLIF(NULLIF(C19131068, ''), '.')::double precision,
 NULLIF(NULLIF(C19131069, ''), '.')::double precision,
 NULLIF(NULLIF(C19131070, ''), '.')::double precision,
 NULLIF(NULLIF(C19131071, ''), '.')::double precision
-FROM tmp_seq0086;
+FROM tmp_seq0086
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0086_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0086_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19121001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19121002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19121003_moe, ''), '.')::double precision,
@@ -34578,10 +34749,11 @@ NULLIF(NULLIF(C19131068_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19131069_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19131070_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19131071_moe, ''), '.')::double precision
-FROM tmp_seq0086_moe;
+FROM acs2009_1yr.tmp_seq0086_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0087
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0087
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19201001, ''), '.')::double precision,
 NULLIF(NULLIF(B19201002, ''), '.')::double precision,
 NULLIF(NULLIF(B19201003, ''), '.')::double precision,
@@ -34773,10 +34945,11 @@ NULLIF(NULLIF(C19201008, ''), '.')::double precision,
 NULLIF(NULLIF(C19201009, ''), '.')::double precision,
 NULLIF(NULLIF(C19201010, ''), '.')::double precision,
 NULLIF(NULLIF(C19201011, ''), '.')::double precision
-FROM tmp_seq0087;
+FROM tmp_seq0087
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0087_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0087_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B19201001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19201002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B19201003_moe, ''), '.')::double precision,
@@ -34968,10 +35141,11 @@ NULLIF(NULLIF(C19201008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19201009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19201010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C19201011_moe, ''), '.')::double precision
-FROM tmp_seq0087_moe;
+FROM acs2009_1yr.tmp_seq0087_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0088
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0088
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20001001, ''), '.')::double precision,
 NULLIF(NULLIF(B20001002, ''), '.')::double precision,
 NULLIF(NULLIF(B20001003, ''), '.')::double precision,
@@ -35177,10 +35351,11 @@ NULLIF(NULLIF(C20005036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005039, ''), '.')::double precision
-FROM tmp_seq0088;
+FROM tmp_seq0088
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0088_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0088_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20001003_moe, ''), '.')::double precision,
@@ -35386,10 +35561,11 @@ NULLIF(NULLIF(C20005036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005039_moe, ''), '.')::double precision
-FROM tmp_seq0088_moe;
+FROM acs2009_1yr.tmp_seq0088_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0089
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0089
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005A001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005A002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005A003, ''), '.')::double precision,
@@ -35619,10 +35795,11 @@ NULLIF(NULLIF(C20005A036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A039, ''), '.')::double precision
-FROM tmp_seq0089;
+FROM tmp_seq0089
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0089_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0089_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005A001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005A002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005A003_moe, ''), '.')::double precision,
@@ -35852,10 +36029,11 @@ NULLIF(NULLIF(C20005A036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005A039_moe, ''), '.')::double precision
-FROM tmp_seq0089_moe;
+FROM acs2009_1yr.tmp_seq0089_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0090
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0090
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005C001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005C002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005C003, ''), '.')::double precision,
@@ -36029,10 +36207,11 @@ NULLIF(NULLIF(C20005C036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C039, ''), '.')::double precision
-FROM tmp_seq0090;
+FROM tmp_seq0090
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0090_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0090_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005C003_moe, ''), '.')::double precision,
@@ -36206,10 +36385,11 @@ NULLIF(NULLIF(C20005C036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005C039_moe, ''), '.')::double precision
-FROM tmp_seq0090_moe;
+FROM acs2009_1yr.tmp_seq0090_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0091
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0091
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005D001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005D002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005D003, ''), '.')::double precision,
@@ -36439,10 +36619,11 @@ NULLIF(NULLIF(C20005D036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D039, ''), '.')::double precision
-FROM tmp_seq0091;
+FROM tmp_seq0091
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0091_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0091_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005D001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005D002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005D003_moe, ''), '.')::double precision,
@@ -36672,10 +36853,11 @@ NULLIF(NULLIF(C20005D036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005D039_moe, ''), '.')::double precision
-FROM tmp_seq0091_moe;
+FROM acs2009_1yr.tmp_seq0091_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0092
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0092
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005F001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005F002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005F003, ''), '.')::double precision,
@@ -36849,10 +37031,11 @@ NULLIF(NULLIF(C20005F036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F039, ''), '.')::double precision
-FROM tmp_seq0092;
+FROM tmp_seq0092
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0092_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0092_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005F001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005F002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005F003_moe, ''), '.')::double precision,
@@ -37026,10 +37209,11 @@ NULLIF(NULLIF(C20005F036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005F039_moe, ''), '.')::double precision
-FROM tmp_seq0092_moe;
+FROM acs2009_1yr.tmp_seq0092_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0093
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0093
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005G001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005G002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005G003, ''), '.')::double precision,
@@ -37259,10 +37443,11 @@ NULLIF(NULLIF(C20005G036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G039, ''), '.')::double precision
-FROM tmp_seq0093;
+FROM tmp_seq0093
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0093_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0093_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005G001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005G002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005G003_moe, ''), '.')::double precision,
@@ -37492,10 +37677,11 @@ NULLIF(NULLIF(C20005G036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005G039_moe, ''), '.')::double precision
-FROM tmp_seq0093_moe;
+FROM acs2009_1yr.tmp_seq0093_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0094
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0094
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005I001, ''), '.')::double precision,
 NULLIF(NULLIF(B20005I002, ''), '.')::double precision,
 NULLIF(NULLIF(B20005I003, ''), '.')::double precision,
@@ -37739,10 +37925,11 @@ NULLIF(NULLIF(C20005I036, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I037, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I038, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I039, ''), '.')::double precision
-FROM tmp_seq0094;
+FROM tmp_seq0094
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0094_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0094_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B20005I001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005I002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B20005I003_moe, ''), '.')::double precision,
@@ -37986,10 +38173,11 @@ NULLIF(NULLIF(C20005I036_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I037_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I038_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C20005I039_moe, ''), '.')::double precision
-FROM tmp_seq0094_moe;
+FROM acs2009_1yr.tmp_seq0094_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0095
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0095
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21001001, ''), '.')::double precision,
 NULLIF(NULLIF(B21001002, ''), '.')::double precision,
 NULLIF(NULLIF(B21001003, ''), '.')::double precision,
@@ -38215,10 +38403,11 @@ NULLIF(NULLIF(C21001D012, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D013, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D014, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D015, ''), '.')::double precision
-FROM tmp_seq0095;
+FROM tmp_seq0095
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0095_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0095_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21001003_moe, ''), '.')::double precision,
@@ -38444,10 +38633,11 @@ NULLIF(NULLIF(C21001D012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001D015_moe, ''), '.')::double precision
-FROM tmp_seq0095_moe;
+FROM acs2009_1yr.tmp_seq0095_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0096
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0096
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21001E001, ''), '.')::double precision,
 NULLIF(NULLIF(B21001E002, ''), '.')::double precision,
 NULLIF(NULLIF(B21001E003, ''), '.')::double precision,
@@ -38688,10 +38878,11 @@ NULLIF(NULLIF(C21001I012, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I013, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I014, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I015, ''), '.')::double precision
-FROM tmp_seq0096;
+FROM tmp_seq0096
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0096_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0096_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21001E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21001E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21001E003_moe, ''), '.')::double precision,
@@ -38932,10 +39123,11 @@ NULLIF(NULLIF(C21001I012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21001I015_moe, ''), '.')::double precision
-FROM tmp_seq0096_moe;
+FROM acs2009_1yr.tmp_seq0096_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0097
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0097
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21002001, ''), '.')::double precision,
 NULLIF(NULLIF(B21002002, ''), '.')::double precision,
 NULLIF(NULLIF(B21002003, ''), '.')::double precision,
@@ -39119,10 +39311,11 @@ NULLIF(NULLIF(C21007031, ''), '.')::double precision,
 NULLIF(NULLIF(C21100001, ''), '.')::double precision,
 NULLIF(NULLIF(C21100002, ''), '.')::double precision,
 NULLIF(NULLIF(C21100003, ''), '.')::double precision
-FROM tmp_seq0097;
+FROM tmp_seq0097
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0097_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0097_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B21002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21002002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B21002003_moe, ''), '.')::double precision,
@@ -39306,10 +39499,11 @@ NULLIF(NULLIF(C21007031_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21100001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21100002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C21100003_moe, ''), '.')::double precision
-FROM tmp_seq0097_moe;
+FROM acs2009_1yr.tmp_seq0097_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0098
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0098
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B22001001, ''), '.')::double precision,
 NULLIF(NULLIF(B22001002, ''), '.')::double precision,
 NULLIF(NULLIF(B22001003, ''), '.')::double precision,
@@ -39470,10 +39664,11 @@ NULLIF(NULLIF(C22007026, ''), '.')::double precision,
 NULLIF(NULLIF(C22007027, ''), '.')::double precision,
 NULLIF(NULLIF(C22007028, ''), '.')::double precision,
 NULLIF(NULLIF(C22007029, ''), '.')::double precision
-FROM tmp_seq0098;
+FROM tmp_seq0098
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0098_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0098_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B22001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B22001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B22001003_moe, ''), '.')::double precision,
@@ -39634,10 +39829,11 @@ NULLIF(NULLIF(C22007026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C22007027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C22007028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C22007029_moe, ''), '.')::double precision
-FROM tmp_seq0098_moe;
+FROM acs2009_1yr.tmp_seq0098_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0099
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0099
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23001001, ''), '.')::double precision,
 NULLIF(NULLIF(B23001002, ''), '.')::double precision,
 NULLIF(NULLIF(B23001003, ''), '.')::double precision,
@@ -39842,10 +40038,11 @@ NULLIF(NULLIF(B23024028, ''), '.')::double precision,
 NULLIF(NULLIF(B23024029, ''), '.')::double precision,
 NULLIF(NULLIF(B23024030, ''), '.')::double precision,
 NULLIF(NULLIF(B23024031, ''), '.')::double precision
-FROM tmp_seq0099;
+FROM tmp_seq0099
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0099_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0099_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23001003_moe, ''), '.')::double precision,
@@ -40050,10 +40247,11 @@ NULLIF(NULLIF(B23024028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23024029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23024030_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23024031_moe, ''), '.')::double precision
-FROM tmp_seq0099_moe;
+FROM acs2009_1yr.tmp_seq0099_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0100
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0100
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002A001, ''), '.')::double precision,
 NULLIF(NULLIF(B23002A002, ''), '.')::double precision,
 NULLIF(NULLIF(B23002A003, ''), '.')::double precision,
@@ -40253,10 +40451,11 @@ NULLIF(NULLIF(C23002A024, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A025, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A026, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A027, ''), '.')::double precision
-FROM tmp_seq0100;
+FROM tmp_seq0100
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0100_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0100_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002A001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002A002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002A003_moe, ''), '.')::double precision,
@@ -40456,10 +40655,11 @@ NULLIF(NULLIF(C23002A024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002A027_moe, ''), '.')::double precision
-FROM tmp_seq0100_moe;
+FROM acs2009_1yr.tmp_seq0100_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0101
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0101
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002B001, ''), '.')::double precision,
 NULLIF(NULLIF(B23002B002, ''), '.')::double precision,
 NULLIF(NULLIF(B23002B003, ''), '.')::double precision,
@@ -40672,10 +40872,11 @@ NULLIF(NULLIF(C23002C024, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C025, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C026, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C027, ''), '.')::double precision
-FROM tmp_seq0101;
+FROM tmp_seq0101
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0101_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0101_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002B001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002B002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002B003_moe, ''), '.')::double precision,
@@ -40888,10 +41089,11 @@ NULLIF(NULLIF(C23002C024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002C027_moe, ''), '.')::double precision
-FROM tmp_seq0101_moe;
+FROM acs2009_1yr.tmp_seq0101_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0102
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0102
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002D001, ''), '.')::double precision,
 NULLIF(NULLIF(B23002D002, ''), '.')::double precision,
 NULLIF(NULLIF(B23002D003, ''), '.')::double precision,
@@ -41104,10 +41306,11 @@ NULLIF(NULLIF(C23002E024, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E025, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E026, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E027, ''), '.')::double precision
-FROM tmp_seq0102;
+FROM tmp_seq0102
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0102_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0102_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002D001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002D002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002D003_moe, ''), '.')::double precision,
@@ -41320,10 +41523,11 @@ NULLIF(NULLIF(C23002E024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002E027_moe, ''), '.')::double precision
-FROM tmp_seq0102_moe;
+FROM acs2009_1yr.tmp_seq0102_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0103
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0103
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002F001, ''), '.')::double precision,
 NULLIF(NULLIF(B23002F002, ''), '.')::double precision,
 NULLIF(NULLIF(B23002F003, ''), '.')::double precision,
@@ -41536,10 +41740,11 @@ NULLIF(NULLIF(C23002G024, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G025, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G026, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G027, ''), '.')::double precision
-FROM tmp_seq0103;
+FROM tmp_seq0103
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0103_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0103_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002F001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002F002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002F003_moe, ''), '.')::double precision,
@@ -41752,10 +41957,11 @@ NULLIF(NULLIF(C23002G024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002G027_moe, ''), '.')::double precision
-FROM tmp_seq0103_moe;
+FROM acs2009_1yr.tmp_seq0103_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0104
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0104
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002H001, ''), '.')::double precision,
 NULLIF(NULLIF(B23002H002, ''), '.')::double precision,
 NULLIF(NULLIF(B23002H003, ''), '.')::double precision,
@@ -41998,10 +42204,11 @@ NULLIF(NULLIF(C23002I024, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I025, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I026, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I027, ''), '.')::double precision
-FROM tmp_seq0104;
+FROM tmp_seq0104
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0104_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0104_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23002H001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002H002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23002H003_moe, ''), '.')::double precision,
@@ -42244,10 +42451,11 @@ NULLIF(NULLIF(C23002I024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I025_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23002I027_moe, ''), '.')::double precision
-FROM tmp_seq0104_moe;
+FROM acs2009_1yr.tmp_seq0104_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0105
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0105
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23004001, ''), '.')::double precision,
 NULLIF(NULLIF(B23004002, ''), '.')::double precision,
 NULLIF(NULLIF(B23004003, ''), '.')::double precision,
@@ -42482,10 +42690,11 @@ NULLIF(NULLIF(C23008016, ''), '.')::double precision,
 NULLIF(NULLIF(C23008017, ''), '.')::double precision,
 NULLIF(NULLIF(C23008018, ''), '.')::double precision,
 NULLIF(NULLIF(C23008019, ''), '.')::double precision
-FROM tmp_seq0105;
+FROM tmp_seq0105
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0105_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0105_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23004001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23004002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23004003_moe, ''), '.')::double precision,
@@ -42720,10 +42929,11 @@ NULLIF(NULLIF(C23008016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23008017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23008018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23008019_moe, ''), '.')::double precision
-FROM tmp_seq0105_moe;
+FROM acs2009_1yr.tmp_seq0105_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0106
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0106
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23010001, ''), '.')::double precision,
 NULLIF(NULLIF(B23010002, ''), '.')::double precision,
 NULLIF(NULLIF(B23010003, ''), '.')::double precision,
@@ -42942,10 +43152,11 @@ NULLIF(NULLIF(C23023020, ''), '.')::double precision,
 NULLIF(NULLIF(C23023021, ''), '.')::double precision,
 NULLIF(NULLIF(C23023022, ''), '.')::double precision,
 NULLIF(NULLIF(C23023023, ''), '.')::double precision
-FROM tmp_seq0106;
+FROM tmp_seq0106
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0106_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0106_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B23010001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23010002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B23010003_moe, ''), '.')::double precision,
@@ -43164,10 +43375,11 @@ NULLIF(NULLIF(C23023020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23023021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23023022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C23023023_moe, ''), '.')::double precision
-FROM tmp_seq0106_moe;
+FROM acs2009_1yr.tmp_seq0106_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0107
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0107
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010001, ''), '.')::double precision,
 NULLIF(NULLIF(B24010002, ''), '.')::double precision,
 NULLIF(NULLIF(B24010003, ''), '.')::double precision,
@@ -43295,10 +43507,11 @@ NULLIF(NULLIF(B24010124, ''), '.')::double precision,
 NULLIF(NULLIF(B24010125, ''), '.')::double precision,
 NULLIF(NULLIF(B24010126, ''), '.')::double precision,
 NULLIF(NULLIF(B24010127, ''), '.')::double precision
-FROM tmp_seq0107;
+FROM tmp_seq0107
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0107_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0107_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010003_moe, ''), '.')::double precision,
@@ -43426,10 +43639,11 @@ NULLIF(NULLIF(B24010124_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010125_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010126_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010127_moe, ''), '.')::double precision
-FROM tmp_seq0107_moe;
+FROM acs2009_1yr.tmp_seq0107_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0108
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0108
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010128, ''), '.')::double precision,
 NULLIF(NULLIF(B24010129, ''), '.')::double precision,
 NULLIF(NULLIF(B24010130, ''), '.')::double precision,
@@ -43556,10 +43770,11 @@ NULLIF(NULLIF(B24010250, ''), '.')::double precision,
 NULLIF(NULLIF(B24010251, ''), '.')::double precision,
 NULLIF(NULLIF(B24010252, ''), '.')::double precision,
 NULLIF(NULLIF(B24010253, ''), '.')::double precision
-FROM tmp_seq0108;
+FROM tmp_seq0108
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0108_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0108_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010128_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010129_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010130_moe, ''), '.')::double precision,
@@ -43686,10 +43901,11 @@ NULLIF(NULLIF(B24010250_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010251_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010252_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010253_moe, ''), '.')::double precision
-FROM tmp_seq0108_moe;
+FROM acs2009_1yr.tmp_seq0108_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0109
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0109
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010A001, ''), '.')::double precision,
 NULLIF(NULLIF(B24010A002, ''), '.')::double precision,
 NULLIF(NULLIF(B24010A003, ''), '.')::double precision,
@@ -43921,10 +44137,11 @@ NULLIF(NULLIF(C24010B012, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B013, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B014, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B015, ''), '.')::double precision
-FROM tmp_seq0109;
+FROM tmp_seq0109
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0109_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0109_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010A001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010A002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010A003_moe, ''), '.')::double precision,
@@ -44156,10 +44373,11 @@ NULLIF(NULLIF(C24010B012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010B015_moe, ''), '.')::double precision
-FROM tmp_seq0109_moe;
+FROM acs2009_1yr.tmp_seq0109_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0110
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0110
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010C001, ''), '.')::double precision,
 NULLIF(NULLIF(B24010C002, ''), '.')::double precision,
 NULLIF(NULLIF(B24010C003, ''), '.')::double precision,
@@ -44394,10 +44612,11 @@ NULLIF(NULLIF(C24010E012, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E013, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E014, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E015, ''), '.')::double precision
-FROM tmp_seq0110;
+FROM tmp_seq0110
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0110_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0110_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010C001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010C002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010C003_moe, ''), '.')::double precision,
@@ -44632,10 +44851,11 @@ NULLIF(NULLIF(C24010E012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010E015_moe, ''), '.')::double precision
-FROM tmp_seq0110_moe;
+FROM acs2009_1yr.tmp_seq0110_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0111
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0111
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010F001, ''), '.')::double precision,
 NULLIF(NULLIF(B24010F002, ''), '.')::double precision,
 NULLIF(NULLIF(B24010F003, ''), '.')::double precision,
@@ -44870,10 +45090,11 @@ NULLIF(NULLIF(C24010H012, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H013, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H014, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H015, ''), '.')::double precision
-FROM tmp_seq0111;
+FROM tmp_seq0111
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0111_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0111_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010F001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010F002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010F003_moe, ''), '.')::double precision,
@@ -45108,10 +45329,11 @@ NULLIF(NULLIF(C24010H012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010H015_moe, ''), '.')::double precision
-FROM tmp_seq0111_moe;
+FROM acs2009_1yr.tmp_seq0111_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0112
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0112
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010I001, ''), '.')::double precision,
 NULLIF(NULLIF(B24010I002, ''), '.')::double precision,
 NULLIF(NULLIF(B24010I003, ''), '.')::double precision,
@@ -45301,10 +45523,11 @@ NULLIF(NULLIF(C24010I012, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I013, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I014, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I015, ''), '.')::double precision
-FROM tmp_seq0112;
+FROM tmp_seq0112
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0112_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0112_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24010I001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010I002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24010I003_moe, ''), '.')::double precision,
@@ -45494,10 +45717,11 @@ NULLIF(NULLIF(C24010I012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24010I015_moe, ''), '.')::double precision
-FROM tmp_seq0112_moe;
+FROM acs2009_1yr.tmp_seq0112_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0113
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0113
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24020001, ''), '.')::double precision,
 NULLIF(NULLIF(B24020002, ''), '.')::double precision,
 NULLIF(NULLIF(B24020003, ''), '.')::double precision,
@@ -45625,10 +45849,11 @@ NULLIF(NULLIF(B24020124, ''), '.')::double precision,
 NULLIF(NULLIF(B24020125, ''), '.')::double precision,
 NULLIF(NULLIF(B24020126, ''), '.')::double precision,
 NULLIF(NULLIF(B24020127, ''), '.')::double precision
-FROM tmp_seq0113;
+FROM tmp_seq0113
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0113_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0113_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24020001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020003_moe, ''), '.')::double precision,
@@ -45756,10 +45981,11 @@ NULLIF(NULLIF(B24020124_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020125_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020126_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020127_moe, ''), '.')::double precision
-FROM tmp_seq0113_moe;
+FROM acs2009_1yr.tmp_seq0113_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0114
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0114
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24020128, ''), '.')::double precision,
 NULLIF(NULLIF(B24020129, ''), '.')::double precision,
 NULLIF(NULLIF(B24020130, ''), '.')::double precision,
@@ -45886,10 +46112,11 @@ NULLIF(NULLIF(B24020250, ''), '.')::double precision,
 NULLIF(NULLIF(B24020251, ''), '.')::double precision,
 NULLIF(NULLIF(B24020252, ''), '.')::double precision,
 NULLIF(NULLIF(B24020253, ''), '.')::double precision
-FROM tmp_seq0114;
+FROM tmp_seq0114
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0114_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0114_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24020128_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020129_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020130_moe, ''), '.')::double precision,
@@ -46016,10 +46243,11 @@ NULLIF(NULLIF(B24020250_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020251_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020252_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24020253_moe, ''), '.')::double precision
-FROM tmp_seq0114_moe;
+FROM acs2009_1yr.tmp_seq0114_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0115
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0115
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24021001, ''), '.')::double precision,
 NULLIF(NULLIF(B24021002, ''), '.')::double precision,
 NULLIF(NULLIF(B24021003, ''), '.')::double precision,
@@ -46206,10 +46434,11 @@ NULLIF(NULLIF(C24020072, ''), '.')::double precision,
 NULLIF(NULLIF(C24020073, ''), '.')::double precision,
 NULLIF(NULLIF(C24020074, ''), '.')::double precision,
 NULLIF(NULLIF(C24020075, ''), '.')::double precision
-FROM tmp_seq0115;
+FROM tmp_seq0115
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0115_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0115_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24021001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24021002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24021003_moe, ''), '.')::double precision,
@@ -46396,10 +46625,11 @@ NULLIF(NULLIF(C24020072_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24020073_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24020074_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24020075_moe, ''), '.')::double precision
-FROM tmp_seq0115_moe;
+FROM acs2009_1yr.tmp_seq0115_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0116
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0116
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24030001, ''), '.')::double precision,
 NULLIF(NULLIF(B24030002, ''), '.')::double precision,
 NULLIF(NULLIF(B24030003, ''), '.')::double precision,
@@ -46609,10 +46839,11 @@ NULLIF(NULLIF(B24030206, ''), '.')::double precision,
 NULLIF(NULLIF(B24030207, ''), '.')::double precision,
 NULLIF(NULLIF(B24030208, ''), '.')::double precision,
 NULLIF(NULLIF(B24030209, ''), '.')::double precision
-FROM tmp_seq0116;
+FROM tmp_seq0116
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0116_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0116_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24030001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24030002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24030003_moe, ''), '.')::double precision,
@@ -46822,10 +47053,11 @@ NULLIF(NULLIF(B24030206_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24030207_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24030208_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24030209_moe, ''), '.')::double precision
-FROM tmp_seq0116_moe;
+FROM acs2009_1yr.tmp_seq0116_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0117
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0117
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24031001, ''), '.')::double precision,
 NULLIF(NULLIF(B24031002, ''), '.')::double precision,
 NULLIF(NULLIF(B24031003, ''), '.')::double precision,
@@ -46962,10 +47194,11 @@ NULLIF(NULLIF(C24030052, ''), '.')::double precision,
 NULLIF(NULLIF(C24030053, ''), '.')::double precision,
 NULLIF(NULLIF(C24030054, ''), '.')::double precision,
 NULLIF(NULLIF(C24030055, ''), '.')::double precision
-FROM tmp_seq0117;
+FROM tmp_seq0117
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0117_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0117_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24031001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24031002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24031003_moe, ''), '.')::double precision,
@@ -47102,10 +47335,11 @@ NULLIF(NULLIF(C24030052_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24030053_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24030054_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24030055_moe, ''), '.')::double precision
-FROM tmp_seq0117_moe;
+FROM acs2009_1yr.tmp_seq0117_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0118
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0118
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24040001, ''), '.')::double precision,
 NULLIF(NULLIF(B24040002, ''), '.')::double precision,
 NULLIF(NULLIF(B24040003, ''), '.')::double precision,
@@ -47315,10 +47549,11 @@ NULLIF(NULLIF(B24040206, ''), '.')::double precision,
 NULLIF(NULLIF(B24040207, ''), '.')::double precision,
 NULLIF(NULLIF(B24040208, ''), '.')::double precision,
 NULLIF(NULLIF(B24040209, ''), '.')::double precision
-FROM tmp_seq0118;
+FROM tmp_seq0118
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0118_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0118_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24040001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24040002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24040003_moe, ''), '.')::double precision,
@@ -47528,10 +47763,11 @@ NULLIF(NULLIF(B24040206_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24040207_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24040208_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24040209_moe, ''), '.')::double precision
-FROM tmp_seq0118_moe;
+FROM acs2009_1yr.tmp_seq0118_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0119
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0119
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24041001, ''), '.')::double precision,
 NULLIF(NULLIF(B24041002, ''), '.')::double precision,
 NULLIF(NULLIF(B24041003, ''), '.')::double precision,
@@ -47668,10 +47904,11 @@ NULLIF(NULLIF(C24040052, ''), '.')::double precision,
 NULLIF(NULLIF(C24040053, ''), '.')::double precision,
 NULLIF(NULLIF(C24040054, ''), '.')::double precision,
 NULLIF(NULLIF(C24040055, ''), '.')::double precision
-FROM tmp_seq0119;
+FROM tmp_seq0119
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0119_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0119_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24041001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24041002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24041003_moe, ''), '.')::double precision,
@@ -47808,10 +48045,11 @@ NULLIF(NULLIF(C24040052_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24040053_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24040054_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24040055_moe, ''), '.')::double precision
-FROM tmp_seq0119_moe;
+FROM acs2009_1yr.tmp_seq0119_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0120
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0120
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24050001, ''), '.')::double precision,
 NULLIF(NULLIF(B24050002, ''), '.')::double precision,
 NULLIF(NULLIF(B24050003, ''), '.')::double precision,
@@ -48001,10 +48239,11 @@ NULLIF(NULLIF(B24050186, ''), '.')::double precision,
 NULLIF(NULLIF(B24050187, ''), '.')::double precision,
 NULLIF(NULLIF(B24050188, ''), '.')::double precision,
 NULLIF(NULLIF(B24050189, ''), '.')::double precision
-FROM tmp_seq0120;
+FROM tmp_seq0120
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0120_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0120_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24050001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24050002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24050003_moe, ''), '.')::double precision,
@@ -48194,10 +48433,11 @@ NULLIF(NULLIF(B24050186_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24050187_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24050188_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24050189_moe, ''), '.')::double precision
-FROM tmp_seq0120_moe;
+FROM acs2009_1yr.tmp_seq0120_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0121
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0121
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(C24050001, ''), '.')::double precision,
 NULLIF(NULLIF(C24050002, ''), '.')::double precision,
 NULLIF(NULLIF(C24050003, ''), '.')::double precision,
@@ -48296,10 +48536,11 @@ NULLIF(NULLIF(C24050095, ''), '.')::double precision,
 NULLIF(NULLIF(C24050096, ''), '.')::double precision,
 NULLIF(NULLIF(C24050097, ''), '.')::double precision,
 NULLIF(NULLIF(C24050098, ''), '.')::double precision
-FROM tmp_seq0121;
+FROM tmp_seq0121
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0121_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0121_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(C24050001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24050002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24050003_moe, ''), '.')::double precision,
@@ -48398,10 +48639,11 @@ NULLIF(NULLIF(C24050095_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24050096_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24050097_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24050098_moe, ''), '.')::double precision
-FROM tmp_seq0121_moe;
+FROM acs2009_1yr.tmp_seq0121_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0122
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0122
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24060001, ''), '.')::double precision,
 NULLIF(NULLIF(B24060002, ''), '.')::double precision,
 NULLIF(NULLIF(B24060003, ''), '.')::double precision,
@@ -48636,10 +48878,11 @@ NULLIF(NULLIF(B24060231, ''), '.')::double precision,
 NULLIF(NULLIF(B24060232, ''), '.')::double precision,
 NULLIF(NULLIF(B24060233, ''), '.')::double precision,
 NULLIF(NULLIF(B24060234, ''), '.')::double precision
-FROM tmp_seq0122;
+FROM tmp_seq0122
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0122_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0122_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24060001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24060002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24060003_moe, ''), '.')::double precision,
@@ -48874,10 +49117,11 @@ NULLIF(NULLIF(B24060231_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24060232_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24060233_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24060234_moe, ''), '.')::double precision
-FROM tmp_seq0122_moe;
+FROM acs2009_1yr.tmp_seq0122_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0123
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0123
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(C24060001, ''), '.')::double precision,
 NULLIF(NULLIF(C24060002, ''), '.')::double precision,
 NULLIF(NULLIF(C24060003, ''), '.')::double precision,
@@ -49058,10 +49302,11 @@ NULLIF(NULLIF(C24060177, ''), '.')::double precision,
 NULLIF(NULLIF(C24060178, ''), '.')::double precision,
 NULLIF(NULLIF(C24060179, ''), '.')::double precision,
 NULLIF(NULLIF(C24060180, ''), '.')::double precision
-FROM tmp_seq0123;
+FROM tmp_seq0123
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0123_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0123_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(C24060001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24060002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24060003_moe, ''), '.')::double precision,
@@ -49242,10 +49487,11 @@ NULLIF(NULLIF(C24060177_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24060178_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24060179_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24060180_moe, ''), '.')::double precision
-FROM tmp_seq0123_moe;
+FROM acs2009_1yr.tmp_seq0123_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0124
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0124
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24070001, ''), '.')::double precision,
 NULLIF(NULLIF(B24070002, ''), '.')::double precision,
 NULLIF(NULLIF(B24070003, ''), '.')::double precision,
@@ -49408,10 +49654,11 @@ NULLIF(NULLIF(B24070159, ''), '.')::double precision,
 NULLIF(NULLIF(B24070160, ''), '.')::double precision,
 NULLIF(NULLIF(B24070161, ''), '.')::double precision,
 NULLIF(NULLIF(B24070162, ''), '.')::double precision
-FROM tmp_seq0124;
+FROM tmp_seq0124
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0124_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0124_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24070001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24070002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24070003_moe, ''), '.')::double precision,
@@ -49574,10 +49821,11 @@ NULLIF(NULLIF(B24070159_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24070160_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24070161_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24070162_moe, ''), '.')::double precision
-FROM tmp_seq0124_moe;
+FROM acs2009_1yr.tmp_seq0124_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0125
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0125
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24080001, ''), '.')::double precision,
 NULLIF(NULLIF(B24080002, ''), '.')::double precision,
 NULLIF(NULLIF(B24080003, ''), '.')::double precision,
@@ -49796,10 +50044,11 @@ NULLIF(NULLIF(C24090016, ''), '.')::double precision,
 NULLIF(NULLIF(C24090017, ''), '.')::double precision,
 NULLIF(NULLIF(C24090018, ''), '.')::double precision,
 NULLIF(NULLIF(C24090019, ''), '.')::double precision
-FROM tmp_seq0125;
+FROM tmp_seq0125
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0125_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0125_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24080001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24080002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24080003_moe, ''), '.')::double precision,
@@ -50018,10 +50267,11 @@ NULLIF(NULLIF(C24090016_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24090017_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24090018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C24090019_moe, ''), '.')::double precision
-FROM tmp_seq0125_moe;
+FROM acs2009_1yr.tmp_seq0125_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0126
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0126
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121001, ''), '.')::double precision,
 NULLIF(NULLIF(B24121002, ''), '.')::double precision,
 NULLIF(NULLIF(B24121003, ''), '.')::double precision,
@@ -50189,10 +50439,11 @@ NULLIF(NULLIF(B24121164, ''), '.')::double precision,
 NULLIF(NULLIF(B24121165, ''), '.')::double precision,
 NULLIF(NULLIF(B24121166, ''), '.')::double precision,
 NULLIF(NULLIF(B24121167, ''), '.')::double precision
-FROM tmp_seq0126;
+FROM tmp_seq0126
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0126_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0126_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121003_moe, ''), '.')::double precision,
@@ -50360,10 +50611,11 @@ NULLIF(NULLIF(B24121164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121167_moe, ''), '.')::double precision
-FROM tmp_seq0126_moe;
+FROM acs2009_1yr.tmp_seq0126_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0127
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0127
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121168, ''), '.')::double precision,
 NULLIF(NULLIF(B24121169, ''), '.')::double precision,
 NULLIF(NULLIF(B24121170, ''), '.')::double precision,
@@ -50530,10 +50782,11 @@ NULLIF(NULLIF(B24121330, ''), '.')::double precision,
 NULLIF(NULLIF(B24121331, ''), '.')::double precision,
 NULLIF(NULLIF(B24121332, ''), '.')::double precision,
 NULLIF(NULLIF(B24121333, ''), '.')::double precision
-FROM tmp_seq0127;
+FROM tmp_seq0127
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0127_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0127_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121170_moe, ''), '.')::double precision,
@@ -50700,10 +50953,11 @@ NULLIF(NULLIF(B24121330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121333_moe, ''), '.')::double precision
-FROM tmp_seq0127_moe;
+FROM acs2009_1yr.tmp_seq0127_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0128
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0128
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121334, ''), '.')::double precision,
 NULLIF(NULLIF(B24121335, ''), '.')::double precision,
 NULLIF(NULLIF(B24121336, ''), '.')::double precision,
@@ -50870,10 +51124,11 @@ NULLIF(NULLIF(B24121496, ''), '.')::double precision,
 NULLIF(NULLIF(B24121497, ''), '.')::double precision,
 NULLIF(NULLIF(B24121498, ''), '.')::double precision,
 NULLIF(NULLIF(B24121499, ''), '.')::double precision
-FROM tmp_seq0128;
+FROM tmp_seq0128
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0128_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0128_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24121334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121336_moe, ''), '.')::double precision,
@@ -51040,10 +51295,11 @@ NULLIF(NULLIF(B24121496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24121499_moe, ''), '.')::double precision
-FROM tmp_seq0128_moe;
+FROM acs2009_1yr.tmp_seq0128_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0129
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0129
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122001, ''), '.')::double precision,
 NULLIF(NULLIF(B24122002, ''), '.')::double precision,
 NULLIF(NULLIF(B24122003, ''), '.')::double precision,
@@ -51211,10 +51467,11 @@ NULLIF(NULLIF(B24122164, ''), '.')::double precision,
 NULLIF(NULLIF(B24122165, ''), '.')::double precision,
 NULLIF(NULLIF(B24122166, ''), '.')::double precision,
 NULLIF(NULLIF(B24122167, ''), '.')::double precision
-FROM tmp_seq0129;
+FROM tmp_seq0129
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0129_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0129_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122003_moe, ''), '.')::double precision,
@@ -51382,10 +51639,11 @@ NULLIF(NULLIF(B24122164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122167_moe, ''), '.')::double precision
-FROM tmp_seq0129_moe;
+FROM acs2009_1yr.tmp_seq0129_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0130
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0130
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122168, ''), '.')::double precision,
 NULLIF(NULLIF(B24122169, ''), '.')::double precision,
 NULLIF(NULLIF(B24122170, ''), '.')::double precision,
@@ -51552,10 +51810,11 @@ NULLIF(NULLIF(B24122330, ''), '.')::double precision,
 NULLIF(NULLIF(B24122331, ''), '.')::double precision,
 NULLIF(NULLIF(B24122332, ''), '.')::double precision,
 NULLIF(NULLIF(B24122333, ''), '.')::double precision
-FROM tmp_seq0130;
+FROM tmp_seq0130
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0130_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0130_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122170_moe, ''), '.')::double precision,
@@ -51722,10 +51981,11 @@ NULLIF(NULLIF(B24122330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122333_moe, ''), '.')::double precision
-FROM tmp_seq0130_moe;
+FROM acs2009_1yr.tmp_seq0130_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0131
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0131
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122334, ''), '.')::double precision,
 NULLIF(NULLIF(B24122335, ''), '.')::double precision,
 NULLIF(NULLIF(B24122336, ''), '.')::double precision,
@@ -51892,10 +52152,11 @@ NULLIF(NULLIF(B24122496, ''), '.')::double precision,
 NULLIF(NULLIF(B24122497, ''), '.')::double precision,
 NULLIF(NULLIF(B24122498, ''), '.')::double precision,
 NULLIF(NULLIF(B24122499, ''), '.')::double precision
-FROM tmp_seq0131;
+FROM tmp_seq0131
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0131_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0131_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24122334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122336_moe, ''), '.')::double precision,
@@ -52062,10 +52323,11 @@ NULLIF(NULLIF(B24122496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24122499_moe, ''), '.')::double precision
-FROM tmp_seq0131_moe;
+FROM acs2009_1yr.tmp_seq0131_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0132
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0132
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123001, ''), '.')::double precision,
 NULLIF(NULLIF(B24123002, ''), '.')::double precision,
 NULLIF(NULLIF(B24123003, ''), '.')::double precision,
@@ -52233,10 +52495,11 @@ NULLIF(NULLIF(B24123164, ''), '.')::double precision,
 NULLIF(NULLIF(B24123165, ''), '.')::double precision,
 NULLIF(NULLIF(B24123166, ''), '.')::double precision,
 NULLIF(NULLIF(B24123167, ''), '.')::double precision
-FROM tmp_seq0132;
+FROM tmp_seq0132
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0132_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0132_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123003_moe, ''), '.')::double precision,
@@ -52404,10 +52667,11 @@ NULLIF(NULLIF(B24123164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123167_moe, ''), '.')::double precision
-FROM tmp_seq0132_moe;
+FROM acs2009_1yr.tmp_seq0132_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0133
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0133
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123168, ''), '.')::double precision,
 NULLIF(NULLIF(B24123169, ''), '.')::double precision,
 NULLIF(NULLIF(B24123170, ''), '.')::double precision,
@@ -52574,10 +52838,11 @@ NULLIF(NULLIF(B24123330, ''), '.')::double precision,
 NULLIF(NULLIF(B24123331, ''), '.')::double precision,
 NULLIF(NULLIF(B24123332, ''), '.')::double precision,
 NULLIF(NULLIF(B24123333, ''), '.')::double precision
-FROM tmp_seq0133;
+FROM tmp_seq0133
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0133_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0133_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123170_moe, ''), '.')::double precision,
@@ -52744,10 +53009,11 @@ NULLIF(NULLIF(B24123330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123333_moe, ''), '.')::double precision
-FROM tmp_seq0133_moe;
+FROM acs2009_1yr.tmp_seq0133_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0134
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0134
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123334, ''), '.')::double precision,
 NULLIF(NULLIF(B24123335, ''), '.')::double precision,
 NULLIF(NULLIF(B24123336, ''), '.')::double precision,
@@ -52914,10 +53180,11 @@ NULLIF(NULLIF(B24123496, ''), '.')::double precision,
 NULLIF(NULLIF(B24123497, ''), '.')::double precision,
 NULLIF(NULLIF(B24123498, ''), '.')::double precision,
 NULLIF(NULLIF(B24123499, ''), '.')::double precision
-FROM tmp_seq0134;
+FROM tmp_seq0134
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0134_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0134_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24123334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123336_moe, ''), '.')::double precision,
@@ -53084,10 +53351,11 @@ NULLIF(NULLIF(B24123496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24123499_moe, ''), '.')::double precision
-FROM tmp_seq0134_moe;
+FROM acs2009_1yr.tmp_seq0134_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0135
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0135
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124001, ''), '.')::double precision,
 NULLIF(NULLIF(B24124002, ''), '.')::double precision,
 NULLIF(NULLIF(B24124003, ''), '.')::double precision,
@@ -53255,10 +53523,11 @@ NULLIF(NULLIF(B24124164, ''), '.')::double precision,
 NULLIF(NULLIF(B24124165, ''), '.')::double precision,
 NULLIF(NULLIF(B24124166, ''), '.')::double precision,
 NULLIF(NULLIF(B24124167, ''), '.')::double precision
-FROM tmp_seq0135;
+FROM tmp_seq0135
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0135_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0135_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124003_moe, ''), '.')::double precision,
@@ -53426,10 +53695,11 @@ NULLIF(NULLIF(B24124164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124167_moe, ''), '.')::double precision
-FROM tmp_seq0135_moe;
+FROM acs2009_1yr.tmp_seq0135_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0136
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0136
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124168, ''), '.')::double precision,
 NULLIF(NULLIF(B24124169, ''), '.')::double precision,
 NULLIF(NULLIF(B24124170, ''), '.')::double precision,
@@ -53596,10 +53866,11 @@ NULLIF(NULLIF(B24124330, ''), '.')::double precision,
 NULLIF(NULLIF(B24124331, ''), '.')::double precision,
 NULLIF(NULLIF(B24124332, ''), '.')::double precision,
 NULLIF(NULLIF(B24124333, ''), '.')::double precision
-FROM tmp_seq0136;
+FROM tmp_seq0136
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0136_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0136_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124170_moe, ''), '.')::double precision,
@@ -53766,10 +54037,11 @@ NULLIF(NULLIF(B24124330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124333_moe, ''), '.')::double precision
-FROM tmp_seq0136_moe;
+FROM acs2009_1yr.tmp_seq0136_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0137
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0137
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124334, ''), '.')::double precision,
 NULLIF(NULLIF(B24124335, ''), '.')::double precision,
 NULLIF(NULLIF(B24124336, ''), '.')::double precision,
@@ -53936,10 +54208,11 @@ NULLIF(NULLIF(B24124496, ''), '.')::double precision,
 NULLIF(NULLIF(B24124497, ''), '.')::double precision,
 NULLIF(NULLIF(B24124498, ''), '.')::double precision,
 NULLIF(NULLIF(B24124499, ''), '.')::double precision
-FROM tmp_seq0137;
+FROM tmp_seq0137
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0137_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0137_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24124334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124336_moe, ''), '.')::double precision,
@@ -54106,10 +54379,11 @@ NULLIF(NULLIF(B24124496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24124499_moe, ''), '.')::double precision
-FROM tmp_seq0137_moe;
+FROM acs2009_1yr.tmp_seq0137_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0138
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0138
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125001, ''), '.')::double precision,
 NULLIF(NULLIF(B24125002, ''), '.')::double precision,
 NULLIF(NULLIF(B24125003, ''), '.')::double precision,
@@ -54277,10 +54551,11 @@ NULLIF(NULLIF(B24125164, ''), '.')::double precision,
 NULLIF(NULLIF(B24125165, ''), '.')::double precision,
 NULLIF(NULLIF(B24125166, ''), '.')::double precision,
 NULLIF(NULLIF(B24125167, ''), '.')::double precision
-FROM tmp_seq0138;
+FROM tmp_seq0138
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0138_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0138_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125003_moe, ''), '.')::double precision,
@@ -54448,10 +54723,11 @@ NULLIF(NULLIF(B24125164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125167_moe, ''), '.')::double precision
-FROM tmp_seq0138_moe;
+FROM acs2009_1yr.tmp_seq0138_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0139
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0139
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125168, ''), '.')::double precision,
 NULLIF(NULLIF(B24125169, ''), '.')::double precision,
 NULLIF(NULLIF(B24125170, ''), '.')::double precision,
@@ -54618,10 +54894,11 @@ NULLIF(NULLIF(B24125330, ''), '.')::double precision,
 NULLIF(NULLIF(B24125331, ''), '.')::double precision,
 NULLIF(NULLIF(B24125332, ''), '.')::double precision,
 NULLIF(NULLIF(B24125333, ''), '.')::double precision
-FROM tmp_seq0139;
+FROM tmp_seq0139
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0139_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0139_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125170_moe, ''), '.')::double precision,
@@ -54788,10 +55065,11 @@ NULLIF(NULLIF(B24125330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125333_moe, ''), '.')::double precision
-FROM tmp_seq0139_moe;
+FROM acs2009_1yr.tmp_seq0139_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0140
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0140
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125334, ''), '.')::double precision,
 NULLIF(NULLIF(B24125335, ''), '.')::double precision,
 NULLIF(NULLIF(B24125336, ''), '.')::double precision,
@@ -54958,10 +55236,11 @@ NULLIF(NULLIF(B24125496, ''), '.')::double precision,
 NULLIF(NULLIF(B24125497, ''), '.')::double precision,
 NULLIF(NULLIF(B24125498, ''), '.')::double precision,
 NULLIF(NULLIF(B24125499, ''), '.')::double precision
-FROM tmp_seq0140;
+FROM tmp_seq0140
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0140_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0140_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24125334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125336_moe, ''), '.')::double precision,
@@ -55128,10 +55407,11 @@ NULLIF(NULLIF(B24125496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24125499_moe, ''), '.')::double precision
-FROM tmp_seq0140_moe;
+FROM acs2009_1yr.tmp_seq0140_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0141
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0141
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126001, ''), '.')::double precision,
 NULLIF(NULLIF(B24126002, ''), '.')::double precision,
 NULLIF(NULLIF(B24126003, ''), '.')::double precision,
@@ -55299,10 +55579,11 @@ NULLIF(NULLIF(B24126164, ''), '.')::double precision,
 NULLIF(NULLIF(B24126165, ''), '.')::double precision,
 NULLIF(NULLIF(B24126166, ''), '.')::double precision,
 NULLIF(NULLIF(B24126167, ''), '.')::double precision
-FROM tmp_seq0141;
+FROM tmp_seq0141
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0141_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0141_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126003_moe, ''), '.')::double precision,
@@ -55470,10 +55751,11 @@ NULLIF(NULLIF(B24126164_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126165_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126166_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126167_moe, ''), '.')::double precision
-FROM tmp_seq0141_moe;
+FROM acs2009_1yr.tmp_seq0141_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0142
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0142
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126168, ''), '.')::double precision,
 NULLIF(NULLIF(B24126169, ''), '.')::double precision,
 NULLIF(NULLIF(B24126170, ''), '.')::double precision,
@@ -55640,10 +55922,11 @@ NULLIF(NULLIF(B24126330, ''), '.')::double precision,
 NULLIF(NULLIF(B24126331, ''), '.')::double precision,
 NULLIF(NULLIF(B24126332, ''), '.')::double precision,
 NULLIF(NULLIF(B24126333, ''), '.')::double precision
-FROM tmp_seq0142;
+FROM tmp_seq0142
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0142_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0142_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126168_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126169_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126170_moe, ''), '.')::double precision,
@@ -55810,10 +56093,11 @@ NULLIF(NULLIF(B24126330_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126331_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126332_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126333_moe, ''), '.')::double precision
-FROM tmp_seq0142_moe;
+FROM acs2009_1yr.tmp_seq0142_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0143
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0143
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126334, ''), '.')::double precision,
 NULLIF(NULLIF(B24126335, ''), '.')::double precision,
 NULLIF(NULLIF(B24126336, ''), '.')::double precision,
@@ -55980,10 +56264,11 @@ NULLIF(NULLIF(B24126496, ''), '.')::double precision,
 NULLIF(NULLIF(B24126497, ''), '.')::double precision,
 NULLIF(NULLIF(B24126498, ''), '.')::double precision,
 NULLIF(NULLIF(B24126499, ''), '.')::double precision
-FROM tmp_seq0143;
+FROM tmp_seq0143
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0143_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0143_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B24126334_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126335_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126336_moe, ''), '.')::double precision,
@@ -56150,10 +56435,11 @@ NULLIF(NULLIF(B24126496_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126497_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126498_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B24126499_moe, ''), '.')::double precision
-FROM tmp_seq0143_moe;
+FROM acs2009_1yr.tmp_seq0143_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0144
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0144
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25001001, ''), '.')::double precision,
 NULLIF(NULLIF(B25002001, ''), '.')::double precision,
 NULLIF(NULLIF(B25002002, ''), '.')::double precision,
@@ -56380,10 +56666,11 @@ NULLIF(NULLIF(C25014004, ''), '.')::double precision,
 NULLIF(NULLIF(C25014005, ''), '.')::double precision,
 NULLIF(NULLIF(C25014006, ''), '.')::double precision,
 NULLIF(NULLIF(C25014007, ''), '.')::double precision
-FROM tmp_seq0144;
+FROM tmp_seq0144
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0144_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0144_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25002002_moe, ''), '.')::double precision,
@@ -56610,10 +56897,11 @@ NULLIF(NULLIF(C25014004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25014005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25014006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25014007_moe, ''), '.')::double precision
-FROM tmp_seq0144_moe;
+FROM acs2009_1yr.tmp_seq0144_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0145
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0145
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25015001, ''), '.')::double precision,
 NULLIF(NULLIF(B25015002, ''), '.')::double precision,
 NULLIF(NULLIF(B25015003, ''), '.')::double precision,
@@ -56856,10 +57144,11 @@ NULLIF(NULLIF(C25032008, ''), '.')::double precision,
 NULLIF(NULLIF(C25032009, ''), '.')::double precision,
 NULLIF(NULLIF(C25032010, ''), '.')::double precision,
 NULLIF(NULLIF(C25032011, ''), '.')::double precision
-FROM tmp_seq0145;
+FROM tmp_seq0145
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0145_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0145_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25015001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25015002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25015003_moe, ''), '.')::double precision,
@@ -57102,10 +57391,11 @@ NULLIF(NULLIF(C25032008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25032009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25032010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25032011_moe, ''), '.')::double precision
-FROM tmp_seq0145_moe;
+FROM acs2009_1yr.tmp_seq0145_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0146
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0146
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25032B001, ''), '.')::double precision,
 NULLIF(NULLIF(B25032B002, ''), '.')::double precision,
 NULLIF(NULLIF(B25032B003, ''), '.')::double precision,
@@ -57346,10 +57636,11 @@ NULLIF(NULLIF(C25033006, ''), '.')::double precision,
 NULLIF(NULLIF(C25033007, ''), '.')::double precision,
 NULLIF(NULLIF(C25033008, ''), '.')::double precision,
 NULLIF(NULLIF(C25033009, ''), '.')::double precision
-FROM tmp_seq0146;
+FROM tmp_seq0146
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0146_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0146_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25032B001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25032B002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25032B003_moe, ''), '.')::double precision,
@@ -57590,10 +57881,11 @@ NULLIF(NULLIF(C25033006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25033007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25033008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25033009_moe, ''), '.')::double precision
-FROM tmp_seq0146_moe;
+FROM acs2009_1yr.tmp_seq0146_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0147
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0147
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25043001, ''), '.')::double precision,
 NULLIF(NULLIF(B25043002, ''), '.')::double precision,
 NULLIF(NULLIF(B25043003, ''), '.')::double precision,
@@ -57837,10 +58129,11 @@ NULLIF(NULLIF(C25061004, ''), '.')::double precision,
 NULLIF(NULLIF(C25061005, ''), '.')::double precision,
 NULLIF(NULLIF(C25061006, ''), '.')::double precision,
 NULLIF(NULLIF(C25061007, ''), '.')::double precision
-FROM tmp_seq0147;
+FROM tmp_seq0147
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0147_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0147_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25043001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25043002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25043003_moe, ''), '.')::double precision,
@@ -58084,10 +58377,11 @@ NULLIF(NULLIF(C25061004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25061005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25061006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25061007_moe, ''), '.')::double precision
-FROM tmp_seq0147_moe;
+FROM acs2009_1yr.tmp_seq0147_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0148
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0148
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25066001, ''), '.')::double precision,
 NULLIF(NULLIF(B25066002, ''), '.')::double precision,
 NULLIF(NULLIF(B25066003, ''), '.')::double precision,
@@ -58293,10 +58587,11 @@ NULLIF(NULLIF(C25073018, ''), '.')::double precision,
 NULLIF(NULLIF(C25073019, ''), '.')::double precision,
 NULLIF(NULLIF(C25073020, ''), '.')::double precision,
 NULLIF(NULLIF(C25073021, ''), '.')::double precision
-FROM tmp_seq0148;
+FROM tmp_seq0148
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0148_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0148_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25066001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25066002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25066003_moe, ''), '.')::double precision,
@@ -58502,10 +58797,11 @@ NULLIF(NULLIF(C25073018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25073019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25073020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25073021_moe, ''), '.')::double precision
-FROM tmp_seq0148_moe;
+FROM acs2009_1yr.tmp_seq0148_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0149
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0149
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25093001, ''), '.')::double precision,
 NULLIF(NULLIF(B25093002, ''), '.')::double precision,
 NULLIF(NULLIF(B25093003, ''), '.')::double precision,
@@ -58707,10 +59003,11 @@ NULLIF(NULLIF(C25095026, ''), '.')::double precision,
 NULLIF(NULLIF(C25095027, ''), '.')::double precision,
 NULLIF(NULLIF(C25095028, ''), '.')::double precision,
 NULLIF(NULLIF(C25095029, ''), '.')::double precision
-FROM tmp_seq0149;
+FROM tmp_seq0149
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0149_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0149_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25093001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25093002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25093003_moe, ''), '.')::double precision,
@@ -58912,10 +59209,11 @@ NULLIF(NULLIF(C25095026_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25095027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25095028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25095029_moe, ''), '.')::double precision
-FROM tmp_seq0149_moe;
+FROM acs2009_1yr.tmp_seq0149_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0150
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0150
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25074001, ''), '.')::double precision,
 NULLIF(NULLIF(B25074002, ''), '.')::double precision,
 NULLIF(NULLIF(B25074003, ''), '.')::double precision,
@@ -59156,10 +59454,11 @@ NULLIF(NULLIF(C25085005, ''), '.')::double precision,
 NULLIF(NULLIF(C25085006, ''), '.')::double precision,
 NULLIF(NULLIF(C25085007, ''), '.')::double precision,
 NULLIF(NULLIF(C25085008, ''), '.')::double precision
-FROM tmp_seq0150;
+FROM tmp_seq0150
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0150_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0150_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25074001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25074002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25074003_moe, ''), '.')::double precision,
@@ -59400,10 +59699,11 @@ NULLIF(NULLIF(C25085005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25085006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25085007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25085008_moe, ''), '.')::double precision
-FROM tmp_seq0150_moe;
+FROM acs2009_1yr.tmp_seq0150_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0151
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0151
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25101001, ''), '.')::double precision,
 NULLIF(NULLIF(B25101002, ''), '.')::double precision,
 NULLIF(NULLIF(B25101003, ''), '.')::double precision,
@@ -59644,10 +59944,11 @@ NULLIF(NULLIF(C25114002, ''), '.')::double precision,
 NULLIF(NULLIF(C25114003, ''), '.')::double precision,
 NULLIF(NULLIF(C25114004, ''), '.')::double precision,
 NULLIF(NULLIF(C25114005, ''), '.')::double precision
-FROM tmp_seq0151;
+FROM tmp_seq0151
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0151_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0151_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25101001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25101002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25101003_moe, ''), '.')::double precision,
@@ -59888,10 +60189,11 @@ NULLIF(NULLIF(C25114002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25114003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25114004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25114005_moe, ''), '.')::double precision
-FROM tmp_seq0151_moe;
+FROM acs2009_1yr.tmp_seq0151_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0152
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0152
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25116001, ''), '.')::double precision,
 NULLIF(NULLIF(B25116002, ''), '.')::double precision,
 NULLIF(NULLIF(B25116003, ''), '.')::double precision,
@@ -60116,10 +60418,11 @@ NULLIF(NULLIF(C25117008, ''), '.')::double precision,
 NULLIF(NULLIF(C25117009, ''), '.')::double precision,
 NULLIF(NULLIF(C25117010, ''), '.')::double precision,
 NULLIF(NULLIF(C25117011, ''), '.')::double precision
-FROM tmp_seq0152;
+FROM tmp_seq0152
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0152_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0152_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25116001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25116002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25116003_moe, ''), '.')::double precision,
@@ -60344,10 +60647,11 @@ NULLIF(NULLIF(C25117008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25117009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25117010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25117011_moe, ''), '.')::double precision
-FROM tmp_seq0152_moe;
+FROM acs2009_1yr.tmp_seq0152_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0153
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0153
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25122001, ''), '.')::double precision,
 NULLIF(NULLIF(B25122002, ''), '.')::double precision,
 NULLIF(NULLIF(B25122003, ''), '.')::double precision,
@@ -60550,10 +60854,11 @@ NULLIF(NULLIF(C25123004, ''), '.')::double precision,
 NULLIF(NULLIF(C25123005, ''), '.')::double precision,
 NULLIF(NULLIF(C25123006, ''), '.')::double precision,
 NULLIF(NULLIF(C25123007, ''), '.')::double precision
-FROM tmp_seq0153;
+FROM tmp_seq0153
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0153_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0153_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B25122001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25122002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B25122003_moe, ''), '.')::double precision,
@@ -60756,20 +61061,23 @@ NULLIF(NULLIF(C25123004_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25123005_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25123006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C25123007_moe, ''), '.')::double precision
-FROM tmp_seq0153_moe;
+FROM acs2009_1yr.tmp_seq0153_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0154
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0154
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B26001001, ''), '.')::double precision
-FROM tmp_seq0154;
+FROM tmp_seq0154
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0154_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0154_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B26001001_moe, ''), '.')::double precision
-FROM tmp_seq0154_moe;
+FROM acs2009_1yr.tmp_seq0154_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0155
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0155
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27001001, ''), '.')::double precision,
 NULLIF(NULLIF(B27001002, ''), '.')::double precision,
 NULLIF(NULLIF(B27001003, ''), '.')::double precision,
@@ -61000,10 +61308,11 @@ NULLIF(NULLIF(C27001D007, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D008, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D009, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D010, ''), '.')::double precision
-FROM tmp_seq0155;
+FROM tmp_seq0155
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0155_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0155_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27001003_moe, ''), '.')::double precision,
@@ -61234,10 +61543,11 @@ NULLIF(NULLIF(C27001D007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001D010_moe, ''), '.')::double precision
-FROM tmp_seq0155_moe;
+FROM acs2009_1yr.tmp_seq0155_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0156
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0156
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27001E001, ''), '.')::double precision,
 NULLIF(NULLIF(B27001E002, ''), '.')::double precision,
 NULLIF(NULLIF(B27001E003, ''), '.')::double precision,
@@ -61428,10 +61738,11 @@ NULLIF(NULLIF(C27001I007, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I008, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I009, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I010, ''), '.')::double precision
-FROM tmp_seq0156;
+FROM tmp_seq0156
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0156_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0156_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27001E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27001E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27001E003_moe, ''), '.')::double precision,
@@ -61622,10 +61933,11 @@ NULLIF(NULLIF(C27001I007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27001I010_moe, ''), '.')::double precision
-FROM tmp_seq0156_moe;
+FROM acs2009_1yr.tmp_seq0156_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0157
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0157
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27002001, ''), '.')::double precision,
 NULLIF(NULLIF(B27002002, ''), '.')::double precision,
 NULLIF(NULLIF(B27002003, ''), '.')::double precision,
@@ -61860,10 +62172,11 @@ NULLIF(NULLIF(C27004018, ''), '.')::double precision,
 NULLIF(NULLIF(C27004019, ''), '.')::double precision,
 NULLIF(NULLIF(C27004020, ''), '.')::double precision,
 NULLIF(NULLIF(C27004021, ''), '.')::double precision
-FROM tmp_seq0157;
+FROM tmp_seq0157
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0157_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0157_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27002001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27002002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27002003_moe, ''), '.')::double precision,
@@ -62098,10 +62411,11 @@ NULLIF(NULLIF(C27004018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27004019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27004020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27004021_moe, ''), '.')::double precision
-FROM tmp_seq0157_moe;
+FROM acs2009_1yr.tmp_seq0157_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0158
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0158
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27005001, ''), '.')::double precision,
 NULLIF(NULLIF(B27005002, ''), '.')::double precision,
 NULLIF(NULLIF(B27005003, ''), '.')::double precision,
@@ -62336,10 +62650,11 @@ NULLIF(NULLIF(C27007018, ''), '.')::double precision,
 NULLIF(NULLIF(C27007019, ''), '.')::double precision,
 NULLIF(NULLIF(C27007020, ''), '.')::double precision,
 NULLIF(NULLIF(C27007021, ''), '.')::double precision
-FROM tmp_seq0158;
+FROM tmp_seq0158
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0158_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0158_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27005001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27005002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27005003_moe, ''), '.')::double precision,
@@ -62574,10 +62889,11 @@ NULLIF(NULLIF(C27007018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27007019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27007020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27007021_moe, ''), '.')::double precision
-FROM tmp_seq0158_moe;
+FROM acs2009_1yr.tmp_seq0158_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0159
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0159
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27008001, ''), '.')::double precision,
 NULLIF(NULLIF(B27008002, ''), '.')::double precision,
 NULLIF(NULLIF(B27008003, ''), '.')::double precision,
@@ -62821,10 +63137,11 @@ NULLIF(NULLIF(C27010018, ''), '.')::double precision,
 NULLIF(NULLIF(C27010019, ''), '.')::double precision,
 NULLIF(NULLIF(C27010020, ''), '.')::double precision,
 NULLIF(NULLIF(C27010021, ''), '.')::double precision
-FROM tmp_seq0159;
+FROM tmp_seq0159
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0159_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0159_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27008001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27008002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27008003_moe, ''), '.')::double precision,
@@ -63068,10 +63385,11 @@ NULLIF(NULLIF(C27010018_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27010019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27010020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27010021_moe, ''), '.')::double precision
-FROM tmp_seq0159_moe;
+FROM acs2009_1yr.tmp_seq0159_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0160
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0160
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27011001, ''), '.')::double precision,
 NULLIF(NULLIF(B27011002, ''), '.')::double precision,
 NULLIF(NULLIF(B27011003, ''), '.')::double precision,
@@ -63315,10 +63633,11 @@ NULLIF(NULLIF(C27013019, ''), '.')::double precision,
 NULLIF(NULLIF(C27013020, ''), '.')::double precision,
 NULLIF(NULLIF(C27013021, ''), '.')::double precision,
 NULLIF(NULLIF(C27013022, ''), '.')::double precision
-FROM tmp_seq0160;
+FROM tmp_seq0160
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0160_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0160_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27011001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27011002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27011003_moe, ''), '.')::double precision,
@@ -63562,10 +63881,11 @@ NULLIF(NULLIF(C27013019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27013020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27013021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27013022_moe, ''), '.')::double precision
-FROM tmp_seq0160_moe;
+FROM acs2009_1yr.tmp_seq0160_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0161
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0161
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27014001, ''), '.')::double precision,
 NULLIF(NULLIF(B27014002, ''), '.')::double precision,
 NULLIF(NULLIF(B27014003, ''), '.')::double precision,
@@ -63773,10 +64093,11 @@ NULLIF(NULLIF(C27014019, ''), '.')::double precision,
 NULLIF(NULLIF(C27014020, ''), '.')::double precision,
 NULLIF(NULLIF(C27014021, ''), '.')::double precision,
 NULLIF(NULLIF(C27014022, ''), '.')::double precision
-FROM tmp_seq0161;
+FROM tmp_seq0161
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0161_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0161_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27014001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27014002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27014003_moe, ''), '.')::double precision,
@@ -63984,10 +64305,11 @@ NULLIF(NULLIF(C27014019_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27014020_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27014021_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27014022_moe, ''), '.')::double precision
-FROM tmp_seq0161_moe;
+FROM acs2009_1yr.tmp_seq0161_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0162
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0162
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27016001, ''), '.')::double precision,
 NULLIF(NULLIF(B27016002, ''), '.')::double precision,
 NULLIF(NULLIF(B27016003, ''), '.')::double precision,
@@ -64194,10 +64516,11 @@ NULLIF(NULLIF(C27016048, ''), '.')::double precision,
 NULLIF(NULLIF(C27016049, ''), '.')::double precision,
 NULLIF(NULLIF(C27016050, ''), '.')::double precision,
 NULLIF(NULLIF(C27016051, ''), '.')::double precision
-FROM tmp_seq0162;
+FROM tmp_seq0162
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0162_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0162_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27016001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27016002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27016003_moe, ''), '.')::double precision,
@@ -64404,10 +64727,11 @@ NULLIF(NULLIF(C27016048_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27016049_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27016050_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27016051_moe, ''), '.')::double precision
-FROM tmp_seq0162_moe;
+FROM acs2009_1yr.tmp_seq0162_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0163
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0163
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27017001, ''), '.')::double precision,
 NULLIF(NULLIF(B27017002, ''), '.')::double precision,
 NULLIF(NULLIF(B27017003, ''), '.')::double precision,
@@ -64652,10 +64976,11 @@ NULLIF(NULLIF(C27018048, ''), '.')::double precision,
 NULLIF(NULLIF(C27018049, ''), '.')::double precision,
 NULLIF(NULLIF(C27018050, ''), '.')::double precision,
 NULLIF(NULLIF(C27018051, ''), '.')::double precision
-FROM tmp_seq0163;
+FROM tmp_seq0163
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0163_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0163_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B27017001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27017002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B27017003_moe, ''), '.')::double precision,
@@ -64900,10 +65225,11 @@ NULLIF(NULLIF(C27018048_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27018049_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27018050_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C27018051_moe, ''), '.')::double precision
-FROM tmp_seq0163_moe;
+FROM acs2009_1yr.tmp_seq0163_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0164
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0164
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B98001001, ''), '.')::double precision,
 NULLIF(NULLIF(B98001002, ''), '.')::double precision,
 NULLIF(NULLIF(B98002001, ''), '.')::double precision,
@@ -64941,10 +65267,11 @@ NULLIF(NULLIF(B98022009, ''), '.')::double precision,
 NULLIF(NULLIF(B98022010, ''), '.')::double precision,
 NULLIF(NULLIF(B98031001, ''), '.')::double precision,
 NULLIF(NULLIF(B98032001, ''), '.')::double precision
-FROM tmp_seq0164;
+FROM tmp_seq0164
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0164_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0164_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B98001001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B98001002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B98002001_moe, ''), '.')::double precision,
@@ -64982,10 +65309,11 @@ NULLIF(NULLIF(B98022009_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B98022010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B98031001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B98032001_moe, ''), '.')::double precision
-FROM tmp_seq0164_moe;
+FROM acs2009_1yr.tmp_seq0164_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0165
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0165
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99011001, ''), '.')::double precision,
 NULLIF(NULLIF(B99011002, ''), '.')::double precision,
 NULLIF(NULLIF(B99011003, ''), '.')::double precision,
@@ -65231,10 +65559,11 @@ NULLIF(NULLIF(B99231003, ''), '.')::double precision,
 NULLIF(NULLIF(B99232001, ''), '.')::double precision,
 NULLIF(NULLIF(B99232002, ''), '.')::double precision,
 NULLIF(NULLIF(B99232003, ''), '.')::double precision
-FROM tmp_seq0165;
+FROM tmp_seq0165
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0165_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0165_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99011001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99011002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99011003_moe, ''), '.')::double precision,
@@ -65480,10 +65809,11 @@ NULLIF(NULLIF(B99231003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232003_moe, ''), '.')::double precision
-FROM tmp_seq0165_moe;
+FROM acs2009_1yr.tmp_seq0165_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0166
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0166
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99233001, ''), '.')::double precision,
 NULLIF(NULLIF(B99233002, ''), '.')::double precision,
 NULLIF(NULLIF(B99233003, ''), '.')::double precision,
@@ -65606,10 +65936,11 @@ NULLIF(NULLIF(B992708003, ''), '.')::double precision,
 NULLIF(NULLIF(B992709001, ''), '.')::double precision,
 NULLIF(NULLIF(B992709002, ''), '.')::double precision,
 NULLIF(NULLIF(B992709003, ''), '.')::double precision
-FROM tmp_seq0166;
+FROM tmp_seq0166
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0166_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0166_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99233001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99233002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99233003_moe, ''), '.')::double precision,
@@ -65732,10 +66063,11 @@ NULLIF(NULLIF(B992708003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B992709001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B992709002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B992709003_moe, ''), '.')::double precision
-FROM tmp_seq0166_moe;
+FROM acs2009_1yr.tmp_seq0166_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0167
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0167
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07401PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B07401PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B07401PR003, ''), '.')::double precision,
@@ -65956,10 +66288,11 @@ NULLIF(NULLIF(C07401PR047, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR048, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR049, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR050, ''), '.')::double precision
-FROM tmp_seq0167;
+FROM tmp_seq0167
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0167_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0167_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07401PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07401PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07401PR003_moe, ''), '.')::double precision,
@@ -66180,10 +66513,11 @@ NULLIF(NULLIF(C07401PR047_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR048_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR049_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07401PR050_moe, ''), '.')::double precision
-FROM tmp_seq0167_moe;
+FROM acs2009_1yr.tmp_seq0167_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0168
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0168
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07408PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B07408PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B07408PR003, ''), '.')::double precision,
@@ -66364,10 +66698,11 @@ NULLIF(NULLIF(C07408PR022, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR023, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR024, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR025, ''), '.')::double precision
-FROM tmp_seq0168;
+FROM tmp_seq0168
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0168_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0168_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07408PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07408PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07408PR003_moe, ''), '.')::double precision,
@@ -66548,10 +66883,11 @@ NULLIF(NULLIF(C07408PR022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR023_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07408PR025_moe, ''), '.')::double precision
-FROM tmp_seq0168_moe;
+FROM acs2009_1yr.tmp_seq0168_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0169
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0169
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05001PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B05001PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B05001PR003, ''), '.')::double precision,
@@ -66776,10 +67112,11 @@ NULLIF(NULLIF(C05003D012, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D013, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D014, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D015, ''), '.')::double precision
-FROM tmp_seq0169;
+FROM tmp_seq0169
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0169_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0169_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05001PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05001PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05001PR003_moe, ''), '.')::double precision,
@@ -67004,10 +67341,11 @@ NULLIF(NULLIF(C05003D012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D013_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D014_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05003D015_moe, ''), '.')::double precision
-FROM tmp_seq0169_moe;
+FROM acs2009_1yr.tmp_seq0169_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0170
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0170
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05003E001, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E002, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E003, ''), '.')::double precision,
@@ -67247,10 +67585,11 @@ NULLIF(NULLIF(C05005PR010, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR011, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR012, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR013, ''), '.')::double precision
-FROM tmp_seq0170;
+FROM tmp_seq0170
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0170_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0170_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B05003E001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B05003E003_moe, ''), '.')::double precision,
@@ -67490,10 +67829,11 @@ NULLIF(NULLIF(C05005PR010_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR011_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR012_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C05005PR013_moe, ''), '.')::double precision
-FROM tmp_seq0170_moe;
+FROM acs2009_1yr.tmp_seq0170_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0171
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0171
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06001PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B06001PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B06001PR003, ''), '.')::double precision,
@@ -67716,10 +68056,11 @@ NULLIF(NULLIF(C06010PR044, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR045, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR046, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR047, ''), '.')::double precision
-FROM tmp_seq0171;
+FROM tmp_seq0171
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0171_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0171_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06001PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06001PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06001PR003_moe, ''), '.')::double precision,
@@ -67942,10 +68283,11 @@ NULLIF(NULLIF(C06010PR044_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR045_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR046_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06010PR047_moe, ''), '.')::double precision
-FROM tmp_seq0171_moe;
+FROM acs2009_1yr.tmp_seq0171_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0172
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0172
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06007PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B06007PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B06007PR003, ''), '.')::double precision,
@@ -68176,10 +68518,11 @@ NULLIF(NULLIF(C06008PR022, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR023, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR024, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR025, ''), '.')::double precision
-FROM tmp_seq0172;
+FROM tmp_seq0172
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0172_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0172_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B06007PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06007PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B06007PR003_moe, ''), '.')::double precision,
@@ -68410,10 +68753,11 @@ NULLIF(NULLIF(C06008PR022_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR023_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR024_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C06008PR025_moe, ''), '.')::double precision
-FROM tmp_seq0172_moe;
+FROM acs2009_1yr.tmp_seq0172_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0173
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0173
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07001PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B07001PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B07001PR003, ''), '.')::double precision,
@@ -68648,10 +68992,11 @@ NULLIF(NULLIF(C07001PR057, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR058, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR059, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR060, ''), '.')::double precision
-FROM tmp_seq0173;
+FROM tmp_seq0173
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0173_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0173_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07001PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07001PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07001PR003_moe, ''), '.')::double precision,
@@ -68886,10 +69231,11 @@ NULLIF(NULLIF(C07001PR057_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR058_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR059_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07001PR060_moe, ''), '.')::double precision
-FROM tmp_seq0173_moe;
+FROM acs2009_1yr.tmp_seq0173_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0174
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0174
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07007PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B07007PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B07007PR003, ''), '.')::double precision,
@@ -69118,10 +69464,11 @@ NULLIF(NULLIF(C07008PR027, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR028, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR029, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR030, ''), '.')::double precision
-FROM tmp_seq0174;
+FROM tmp_seq0174
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0174_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0174_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07007PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07007PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07007PR003_moe, ''), '.')::double precision,
@@ -69350,10 +69697,11 @@ NULLIF(NULLIF(C07008PR027_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR028_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR029_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07008PR030_moe, ''), '.')::double precision
-FROM tmp_seq0174_moe;
+FROM acs2009_1yr.tmp_seq0174_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0175
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0175
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07013PR001, ''), '.')::double precision,
 NULLIF(NULLIF(B07013PR002, ''), '.')::double precision,
 NULLIF(NULLIF(B07013PR003, ''), '.')::double precision,
@@ -69536,10 +69884,11 @@ NULLIF(NULLIF(C07204PR006, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR007, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR008, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR009, ''), '.')::double precision
-FROM tmp_seq0175;
+FROM tmp_seq0175
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0175_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0175_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B07013PR001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07013PR002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B07013PR003_moe, ''), '.')::double precision,
@@ -69722,10 +70071,11 @@ NULLIF(NULLIF(C07204PR006_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR007_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR008_moe, ''), '.')::double precision,
 NULLIF(NULLIF(C07204PR009_moe, ''), '.')::double precision
-FROM tmp_seq0175_moe;
+FROM acs2009_1yr.tmp_seq0175_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0176
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0176
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99011001, ''), '.')::double precision,
 NULLIF(NULLIF(B99011002, ''), '.')::double precision,
 NULLIF(NULLIF(B99011003, ''), '.')::double precision,
@@ -69971,10 +70321,11 @@ NULLIF(NULLIF(B99231003, ''), '.')::double precision,
 NULLIF(NULLIF(B99232001, ''), '.')::double precision,
 NULLIF(NULLIF(B99232002, ''), '.')::double precision,
 NULLIF(NULLIF(B99232003, ''), '.')::double precision
-FROM tmp_seq0176;
+FROM tmp_seq0176
+JOIN geoheader g USING (stusab, logrecno);
 
-INSERT INTO seq0176_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+INSERT INTO acs2009_1yr.seq0176_moe
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
 NULLIF(NULLIF(B99011001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99011002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99011003_moe, ''), '.')::double precision,
@@ -70220,5 +70571,6 @@ NULLIF(NULLIF(B99231003_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232001_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232002_moe, ''), '.')::double precision,
 NULLIF(NULLIF(B99232003_moe, ''), '.')::double precision
-FROM tmp_seq0176_moe;
+FROM acs2009_1yr.tmp_seq0176_moe
+JOIN acs2009_1yr.geoheader g USING (stusab, logrecno);
 
