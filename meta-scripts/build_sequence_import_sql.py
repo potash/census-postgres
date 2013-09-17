@@ -9,21 +9,23 @@ sequence_tables_sql_root = '.'
 
 def write_one_seq_table(sql_file, sqn, cell_columns):
     sql_file.write("""INSERT INTO seq%04d
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid
 """ % (sqn,))
     sql_file.write(',\n'.join(cell_columns))
     sql_file.write("""
-FROM tmp_seq%04d;\n\n""" % (sqn,))
+FROM tmp_seq%04d
+JOIN geoheader g USING (stusab, logrecno);\n\n""" % (sqn,))
 
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = [t.replace(", ''", "_moe, ''") for t in cell_columns]
 
     sql_file.write("""INSERT INTO seq%04d_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int,
+SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid
 """ % (sqn,))
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write("""
-FROM tmp_seq%04d_moe;\n\n""" % (sqn,))
+FROM tmp_seq%04d_moe
+JOIN geoheader g USING (stusab, logrecno);\n\n""" % (sqn,))
 
 
 def run(data_root, working_dir, config):
