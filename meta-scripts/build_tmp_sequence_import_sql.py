@@ -4,7 +4,7 @@ import os
 from os.path import join
 
 
-def run(data_root, working_dir, config):
+def run(data_root, working_dir, release, config):
     sql_file = open("%s/import_sequences.sql" % working_dir, 'w')
 
     for root, dirs, files in os.walk(data_root):
@@ -17,11 +17,11 @@ def run(data_root, working_dir, config):
                 # Write out the estimate COPY lines
                 sqn = int(fname[8:12])
                 sql_file.write(
-                    "COPY tmp_seq%04d FROM '%s' WITH CSV;\n" % (sqn, fpath))
+                    "COPY %s.tmp_seq%04d FROM '%s' WITH CSV;\n" % (release, sqn, fpath))
             elif fname.startswith('m') and fname.endswith('.txt'):
                 # Write out the MOE COPY lines
                 sqn = int(fname[8:12])
                 sql_file.write(
-                    "COPY tmp_seq%04d_moe FROM '%s' WITH CSV;\n" % (sqn, fpath))
+                    "COPY %s.tmp_seq%04d_moe FROM '%s' WITH CSV;\n" % (release, sqn, fpath))
 
     sql_file.close()

@@ -7,10 +7,10 @@ acs_root = '/mnt/tmp/acs2010_1yr'
 sequence_tables_sql_root = '.'
 
 
-def write_one_seq_table(sql_file, sqn, cell_columns):
-    sql_file.write("""INSERT INTO seq%04d
+def write_one_seq_table(sql_file, sqn, cell_columns, release):
+    sql_file.write("""INSERT INTO %s.seq%04d
 SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid
-""" % (sqn,))
+""" % (release, sqn,))
     sql_file.write(',\n'.join(cell_columns))
     sql_file.write("""
 FROM tmp_seq%04d
@@ -19,16 +19,16 @@ JOIN geoheader g USING (stusab, logrecno);\n\n""" % (sqn,))
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = [t.replace(", ''", "_moe, ''") for t in cell_columns]
 
-    sql_file.write("""INSERT INTO seq%04d_moe
+    sql_file.write("""INSERT INTO %s.seq%04d_moe
 SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid
-""" % (sqn,))
+""" % (release, sqn,))
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write("""
-FROM tmp_seq%04d_moe
-JOIN geoheader g USING (stusab, logrecno);\n\n""" % (sqn,))
+FROM %s.tmp_seq%04d_moe
+JOIN %s.geoheader g USING (stusab, logrecno);\n\n""" % (release, sqn, release,))
 
 
-def run(data_root, working_dir, config):
+def run(data_root, working_dir, release, config):
     sqn_col_name = config['sequence_number_column_name']
     line_no_col_name = config['line_number_column_name']
 
@@ -59,5 +59,5 @@ def run(data_root, working_dir, config):
             cell_names.append("NULLIF(NULLIF(%s%03d, ''), '.')::double precision" % (table_id, line_number))
             prev_line_number = line_number
 
-        write_one_seq_table(sql_file, sqn, cell_names)
+        write_one_seq_table(sql_file, sqn, cell_names, release)
         cell_names = []

@@ -92,12 +92,12 @@ acs_root = "%s/%s" % (data_root, which_acs)
 # ... drop_import_tables.sql: drops any existing tmp_* or tmp_*_moe tables
 #                             in preparation for importing new ones
 import build_drop_import_tables_sql
-build_drop_import_tables_sql.run(acs_root, working_dir, config[which_acs])
+build_drop_import_tables_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 # ... create_import_tables.sql: builds the tmp_* and tmp_*_moe tables
 #                               that will be imported into with COPY commands
 import build_tmp_sequence_sql
-build_tmp_sequence_sql.run(acs_root, working_dir, config[which_acs])
+build_tmp_sequence_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 ##
 ## The generated SQL in this section actually performs the loading into the tables
@@ -106,11 +106,11 @@ build_tmp_sequence_sql.run(acs_root, working_dir, config[which_acs])
 
 # ... import_geoheader.sql: COPYs the geometry files to the tmp_geoheader table
 import build_geoheader_import_sql
-build_geoheader_import_sql.run(acs_root, working_dir, config[which_acs])
+build_geoheader_import_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 # ... import_sequences.sql: COPYs the estimate and moe data into the tmp_* and tmp_*_moe tables
 import build_tmp_sequence_import_sql
-build_tmp_sequence_import_sql.run(acs_root, working_dir, config[which_acs])
+build_tmp_sequence_import_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 # ... parse_tmp_geoheader.sql: parses the tmp_geoheader table into the geoheader table
 # (Should be copied from another year)
@@ -121,13 +121,13 @@ build_tmp_sequence_import_sql.run(acs_root, working_dir, config[which_acs])
 #                          author did it so he could experiment with other storage
 #                          idioms and I wanted to be flexible like that too.
 import build_sequence_sql
-build_sequence_sql.run(acs_root, working_dir, config[which_acs])
+build_sequence_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 # ... insert_into_tables.sql: inserts the data from the tmp_* tables into the
 #                             appropriate seq_* tables.
 import build_sequence_import_sql
-build_sequence_import_sql.run(acs_root, working_dir, config[which_acs])
+build_sequence_import_sql.run(acs_root, working_dir, which_acs, config[which_acs])
 
 # ... view_stored_by_tables.sql: creates views for each ACS table based on the sequences
 import build_views_sql
-build_views_sql.run(acs_root, working_dir, config[which_acs])
+build_views_sql.run(acs_root, working_dir, which_acs, config[which_acs])

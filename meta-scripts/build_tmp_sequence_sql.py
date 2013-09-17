@@ -4,15 +4,15 @@ import csv
 from itertools import groupby
 
 
-def write_one_seq_table(sql_file, sqn, cell_columns):
-    sql_file.write("""CREATE TABLE tmp_seq%04d (
+def write_one_seq_table(sql_file, sqn, cell_columns, release):
+    sql_file.write("""CREATE TABLE %s.tmp_seq%04d (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
 logrecno int,
-""" % (sqn,))
+""" % (release, sqn,))
     sql_file.write(',\n'.join(cell_columns))
     sql_file.write("""
 )
@@ -21,21 +21,21 @@ WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = [t.replace(' v', '_moe v') for t in cell_columns]
 
-    sql_file.write("""CREATE TABLE tmp_seq%04d_moe (
+    sql_file.write("""CREATE TABLE %s.tmp_seq%04d_moe (
 fileid varchar(6),
 filetype varchar(6),
 stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
 logrecno int,
-""" % (sqn,))
+""" % (release, sqn,))
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write("""
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 
 
-def run(data_root, working_dir, config):
+def run(data_root, working_dir, release, config):
     sqn_col_name = config['sequence_number_column_name']
     line_no_col_name = config['line_number_column_name']
 
@@ -66,5 +66,5 @@ def run(data_root, working_dir, config):
             cell_names.append("%s%03d varchar" % (table_id, line_number))
             prev_line_number = line_number
 
-        write_one_seq_table(sql_file, sqn, cell_names)
+        write_one_seq_table(sql_file, sqn, cell_names, release)
         cell_names = []

@@ -4,24 +4,24 @@ import csv
 from itertools import groupby
 
 
-def write_one_seq_view(sql_file, table_id, sqn, cell_columns):
-    sql_file.write("""CREATE VIEW %s AS SELECT
+def write_one_seq_view(sql_file, table_id, sqn, cell_columns, release):
+    sql_file.write("""CREATE VIEW %s.%s AS SELECT
 geoid,
-""" % (table_id,))
+""" % (release, table_id,))
     sql_file.write(',\n'.join(cell_columns))
-    sql_file.write("\nFROM seq%04d;\n\n" % sqn)
+    sql_file.write("\nFROM %s.seq%04d;\n\n" % (release, sqn))
 
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = ["%s, %s_moe" % (t, t) for t in cell_columns]
 
-    sql_file.write("""CREATE VIEW %s_moe AS SELECT
+    sql_file.write("""CREATE VIEW %s.%s_moe AS SELECT
 geoid,
-""" % (table_id,))
+""" % (release, table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
-    sql_file.write("\nFROM seq%04d JOIN seq%04d_moe USING (stusab, logrecno);\n\n" % (sqn, sqn))
+    sql_file.write("\nFROM %s.seq%04d JOIN %s.seq%04d_moe USING (stusab, logrecno);\n\n" % (release, sqn, release, sqn))
 
 
-def run(data_root, working_dir, config):
+def run(data_root, working_dir, release, config):
     sqn_col_name = config['sequence_number_column_name']
     line_no_col_name = config['line_number_column_name']
 
@@ -52,5 +52,5 @@ def run(data_root, working_dir, config):
             cell_names.append("%s%03d" % (table_id, line_number))
             prev_line_number = line_number
 
-        write_one_seq_view(sql_file, table_id, sqn, cell_names)
+        write_one_seq_view(sql_file, table_id, sqn, cell_names, release)
         cell_names = []
