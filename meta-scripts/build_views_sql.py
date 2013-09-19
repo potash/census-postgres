@@ -18,7 +18,7 @@ geoid,
 geoid,
 """ % (release, table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
-    sql_file.write("\nFROM %s.seq%04d JOIN %s.seq%04d_moe USING (stusab, logrecno);\n\n" % (release, sqn, release, sqn))
+    sql_file.write("\nFROM %s.seq%04d JOIN %s.seq%04d_moe USING (geoid);\n\n" % (release, sqn, release, sqn))
 
 
 def run(data_root, working_dir, release, config):
