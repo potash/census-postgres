@@ -14,4 +14,6 @@ def run(data_root, working_dir, release, config):
         sql_file.write("DROP TABLE IF EXISTS %s.tmp_seq%04d;\n" % (release, sqn,))
         sql_file.write("DROP TABLE IF EXISTS %s.tmp_seq%04d_moe;\n" % (release, sqn,))
 
+    sql_file.write("DROP TABLE IF EXISTS %s.tmp_geoheader;\n" % (release,))
+
     sql_file.close()
