@@ -11,9 +11,19 @@
 # The comments below that begin with ... represent the various SQL files that need
 # to be generated to complete the import and how they're built in this script.
 
-which_acs = 'acs2010_1yr'
-data_root = '/mnt/tmp'
-working_dir = '.'
+import argparse
+import sys
+
+parser = argparse.ArgumentParser(description="Build SQL for an ACS release")
+parser.add_argument('release', help='Which ACS release to use.')
+parser.add_argument('--data_root', default='/mnt/tmp', help='The root directory for the raw data.')
+parser.add_argument('--working_dir', default='.', help='The directory to store finished and working files.')
+
+args = parser.parse_args()
+
+which_acs = args.release
+data_root = args.data_root
+working_dir = args.working_dir
 
 # Each ACS release tends to do things just a bit differently,
 # so we'll throw that stuff in here.
@@ -75,6 +85,10 @@ config = {
         'line_number_column_name': 'Line Number'
     }
 }
+
+if which_acs not in config:
+    print "Config for release '%s' is not specified." % which_acs
+    sys.exit(1)
 
 acs_root = "%s/%s" % (data_root, which_acs)
 
