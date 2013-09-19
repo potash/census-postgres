@@ -9,23 +9,23 @@ sequence_tables_sql_root = '.'
 
 def write_one_seq_table(sql_file, sqn, cell_columns, release):
     sql_file.write("""INSERT INTO %s.seq%04d
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
+SELECT s.fileid, s.filetype, upper(s.stusab), s.chariter, s.seq, s.logrecno::int, g.geoid,
 """ % (release, sqn,))
     sql_file.write(',\n'.join(cell_columns))
     sql_file.write("""
-FROM %s.tmp_seq%04d
-JOIN %s.geoheader g USING (stusab, logrecno);\n\n""" % (release, sqn, release,))
+FROM %s.tmp_seq%04d s
+JOIN %s.geoheader g ON (lower(s.stusab)=lower(g.stusab), s.logrecno=g.logrecno);\n\n""" % (release, sqn, release,))
 
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = [t.replace(", ''", "_moe, ''") for t in cell_columns]
 
     sql_file.write("""INSERT INTO %s.seq%04d_moe
-SELECT fileid, filetype, upper(stusab), chariter, seq, logrecno::int, g.geoid AS geoid,
+SELECT s.fileid, s.filetype, upper(s.stusab), s.chariter, s.seq, s.logrecno::int, g.geoid,
 """ % (release, sqn,))
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write("""
-FROM %s.tmp_seq%04d_moe
-JOIN %s.geoheader g USING (stusab, logrecno);\n\n""" % (release, sqn, release,))
+FROM %s.tmp_seq%04d_moe s
+JOIN %s.geoheader g ON (lower(s.stusab)=lower(g.stusab), s.logrecno=g.logrecno);\n\n""" % (release, sqn, release,))
 
 
 def run(data_root, working_dir, release, config):
@@ -56,7 +56,7 @@ def run(data_root, working_dir, release, config):
                 # We also want to let the line number reset back to 1 mid-sequence
                 continue
 
-            cell_names.append("NULLIF(NULLIF(%s%03d, ''), '.')::double precision" % (table_id, line_number))
+            cell_names.append("NULLIF(NULLIF(s.%s%03d, ''), '.')::double precision" % (table_id, line_number))
             prev_line_number = line_number
 
         write_one_seq_table(sql_file, sqn, cell_names, release)
