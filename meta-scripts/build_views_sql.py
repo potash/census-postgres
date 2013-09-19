@@ -4,12 +4,19 @@ import csv
 from itertools import groupby
 
 
-def write_one_seq_view(sql_file, table_id, sqn, cell_columns, release):
+def write_one_seq_view(sql_file, table_id, sequences, cell_columns, release):
     sql_file.write("""CREATE VIEW %s.%s AS SELECT
 geoid,
 """ % (release, table_id,))
     sql_file.write(',\n'.join(cell_columns))
-    sql_file.write("\nFROM %s.seq%04d;\n\n" % (release, sqn))
+
+    sql_file.write("\nFROM %s.seq%04d" % (release, sequences[0]))
+
+    if len(sequences) > 1:
+        for sequence in sequences[1:]:
+            sql_file.write("\nJOIN %s.seq%04d USING (geoid)" % (release, sequence))
+
+    sql_file.write(";\n\n")
 
     # A tiny hack to append "_moe" to the name of the column
     cell_moe_columns = ["%s, %s_moe" % (t, t) for t in cell_columns]
@@ -18,7 +25,13 @@ geoid,
 geoid,
 """ % (release, table_id,))
     sql_file.write(',\n'.join(cell_moe_columns))
-    sql_file.write("\nFROM %s.seq%04d JOIN %s.seq%04d_moe USING (geoid);\n\n" % (release, sqn, release, sqn))
+    sql_file.write("\nFROM %s.seq%04d JOIN %s.seq%04d_moe USING (geoid)" % (release, sequences[0], release, sequences[0]))
+
+    if len(sequences) > 1:
+        for sequence in sequences[1:]:
+            sql_file.write("\nJOIN %s.seq%04d USING (geoid) JOIN %s.seq%04d_moe USING (geoid)" % (release, sequence, release, sequence))
+
+    sql_file.write(";\n\n")
 
 
 def run(data_root, working_dir, release, config):
@@ -29,6 +42,7 @@ def run(data_root, working_dir, release, config):
 
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
+    sequences = set()
     prev_line_number = 0
     for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
         for row in rows:
@@ -49,8 +63,10 @@ def run(data_root, working_dir, release, config):
                 # We also want to let the line number reset back to 1 mid-sequence
                 continue
 
+            sequences.add(sqn)
             cell_names.append("%s%03d" % (table_id, line_number))
             prev_line_number = line_number
 
-        write_one_seq_view(sql_file, table_id, sqn, cell_names, release)
+        write_one_seq_view(sql_file, table_id, sorted(sequences), cell_names, release)
+        sequences = set()
         cell_names = []
