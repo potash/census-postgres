@@ -67,6 +67,19 @@ config = {
         'line_number_column_name': 'Line Number'
     },
 
+    'acs2010_1yr': {
+        'sequence_number_column_name': 'Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+    'acs2010_3yr': {
+        'sequence_number_column_name': 'Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+    'acs2010_5yr': {
+        'sequence_number_column_name': 'Sequence Number',
+        'line_number_column_name': 'Line Number'
+    },
+
     'acs2011_1yr': {
         'sequence_number_column_name': 'seq',
         'line_number_column_name': 'Line Number Decimal M Lines'
@@ -75,15 +88,15 @@ config = {
         'sequence_number_column_name': 'seq',
         'line_number_column_name': 'Line Number Decimal M Lines'
     },
+    'acs2011_5yr': {
+        'sequence_number_column_name': 'seq',
+        'line_number_column_name': 'Line Number Decimal M Lines'
+    },
 
-    'acs2010_1yr': {
+    'acs2012_1yr': {
         'sequence_number_column_name': 'Sequence Number',
         'line_number_column_name': 'Line Number'
     },
-    'acs2010_3yr': {
-        'sequence_number_column_name': 'Sequence Number',
-        'line_number_column_name': 'Line Number'
-    }
 }
 
 if which_acs not in config:
