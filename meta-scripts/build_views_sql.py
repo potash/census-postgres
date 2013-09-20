@@ -43,8 +43,14 @@ def run(data_root, working_dir, release, config):
     sqn_lookup_file = csv.DictReader(open("%s/Sequence_Number_and_Table_Number_Lookup.txt" % data_root, 'rU'))
     cell_names = []
     sequences = set()
+    tables_written = {}
     prev_line_number = 0
     for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
+
+        if table_id in tables_written:
+            print "Skipping table %s in sqn %s because it was already written from sqn %s." % (table_id, row[0][sqn_col_name], tables_written[table_id])
+            continue
+
         for row in rows:
             sqn = int(row[sqn_col_name])
             line_number = row[line_no_col_name]
@@ -66,6 +72,8 @@ def run(data_root, working_dir, release, config):
             sequences.add(sqn)
             cell_names.append("%s%03d" % (table_id, line_number))
             prev_line_number = line_number
+
+        tables_written[table_id] = sqn
 
         write_one_seq_view(sql_file, table_id, sorted(sequences), cell_names, release)
         sequences = set()
