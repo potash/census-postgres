@@ -23,10 +23,10 @@ def run(data_root, working_dir, release, config):
                 sqn = int(fname[8:12])
                 moe_sequences.append((sqn, fpath))
 
-    for (sqn, fpath) in estimate_sequences.sort():
+    for (sqn, fpath) in sorted(estimate_sequences):
         sql_file.write("COPY %s.tmp_seq%04d FROM '%s' WITH CSV;\n" % (release, sqn, fpath))
 
-    for (sqn, fpath) in moe_sequences.sort():
+    for (sqn, fpath) in sorted(moe_sequences):
         sql_file.write("COPY %s.tmp_seq%04d_moe FROM '%s' WITH CSV;\n" % (release, sqn, fpath))
 
     sql_file.close()
