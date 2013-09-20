@@ -48,7 +48,7 @@ def run(data_root, working_dir, release, config):
     for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
 
         if table_id in tables_written:
-            print "Skipping table %s in sqn %s because it was already written from sqn %s." % (table_id, rows[0][sqn_col_name], tables_written[table_id])
+            print "Skipping table %s in this sqn because it was already written from sqn %s." % (table_id, tables_written[table_id])
             continue
 
         for row in rows:
