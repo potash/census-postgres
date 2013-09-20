@@ -12,7 +12,7 @@ stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
 logrecno int,
-geoid varchar(20),
+geoid varchar(40),
 """ % (release, sqn,))
     sql_file.write(',\n'.join(cell_columns))
     sql_file.write(""",
@@ -30,7 +30,7 @@ stusab varchar(2),
 chariter varchar(3),
 seq varchar(4),
 logrecno int,
-geoid varchar(20),
+geoid varchar(40),
 """ % (release, sqn,))
     sql_file.write(',\n'.join(cell_moe_columns))
     sql_file.write(""",
