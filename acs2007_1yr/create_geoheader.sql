@@ -38,7 +38,7 @@ CREATE TABLE acs2007_1yr.geoheader (
 	blank2 varchar(6),
 	blank3 varchar(3),
 	zcta5 varchar(5),
-	submcd varchar(5),
+	submcd varchar(2),
 	sdelm varchar(5),
 	sdsec varchar(5),
 	sduni varchar(5),
@@ -49,10 +49,8 @@ CREATE TABLE acs2007_1yr.geoheader (
 	puma5 varchar(5),
 	blank7 varchar(5),
 	geoid varchar(40),
-	name varchar(1000),
-	bttr varchar(6),
-	btbg varchar(1),
-	blank8 varchar(44),
+	name varchar(200),
+	blank8 varchar(50),
 	PRIMARY KEY (stusab, logrecno)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);

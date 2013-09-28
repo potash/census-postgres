@@ -48,6 +48,4 @@ COMMENT ON COLUMN acs2007_1yr.geoheader.puma5 IS 'Public Use Microdata Area - 5%
 COMMENT ON COLUMN acs2007_1yr.geoheader.blank7 IS 'Reserved for future use';
 COMMENT ON COLUMN acs2007_1yr.geoheader.geoid IS 'Geographic Identifier';
 COMMENT ON COLUMN acs2007_1yr.geoheader.name IS 'Area Name';
-COMMENT ON COLUMN acs2007_1yr.geoheader.bttr IS 'Tribal Tract';
-COMMENT ON COLUMN acs2007_1yr.geoheader.btbg IS 'Tribal Block Group';
 COMMENT ON COLUMN acs2007_1yr.geoheader.blank8 IS 'Reserved for future use';
