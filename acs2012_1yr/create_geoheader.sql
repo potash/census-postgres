@@ -53,6 +53,6 @@ CREATE TABLE acs2012_1yr.geoheader (
 	bttr varchar(6),
 	btbg varchar(1),
 	blank8 varchar(50),
-	PRIMARY KEY (stusab, logrecno)
+	PRIMARY KEY (geoid)
 )
 WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);
