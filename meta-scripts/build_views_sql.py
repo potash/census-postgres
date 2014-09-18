@@ -37,6 +37,7 @@ geoid,
 def run(data_root, working_dir, release, config):
     sqn_col_name = config['sequence_number_column_name']
     line_no_col_name = config['line_number_column_name']
+    table_id_col_name = config.get('table_id_column_name', 'Table ID')
 
     sql_file = open("%s/view_stored_by_tables.sql" % (working_dir,), 'w')
 
@@ -45,7 +46,7 @@ def run(data_root, working_dir, release, config):
     sequences = set()
     tables_written = {}
     prev_line_number = 0
-    for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row['Table ID']):
+    for table_id, rows in groupby(sqn_lookup_file, key=lambda row: row[table_id_col_name]):
 
         if table_id in tables_written:
             print "Skipping table %s in this sqn because it was already written from sqn %s." % (table_id, tables_written[table_id])

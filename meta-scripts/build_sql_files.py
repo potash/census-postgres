@@ -103,8 +103,9 @@ config = {
     },
 
     'acs2013_1yr': {
-        'sequence_number_column_name': 'Sequence Number',
-        'line_number_column_name': 'Line Number'
+        'sequence_number_column_name': 'Sequence\nNumber',
+        'line_number_column_name': 'Line\nNumber',
+        'table_id_column_name': 'Table\nID'
     },
 }
 

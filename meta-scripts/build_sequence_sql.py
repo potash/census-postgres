@@ -42,6 +42,7 @@ WITH (autovacuum_enabled = FALSE, toast.autovacuum_enabled = FALSE);\n\n""")
 def run(data_root, working_dir, release, config):
     sqn_col_name = config['sequence_number_column_name']
     line_no_col_name = config['line_number_column_name']
+    table_id_col_name = config.get('table_id_column_name', 'Table ID')
 
     sql_file = open("%s/store_by_tables.sql" % (working_dir,), 'w')
 
@@ -50,7 +51,7 @@ def run(data_root, working_dir, release, config):
     prev_line_number = 0
     for sqn, rows in groupby(sqn_lookup_file, key=lambda row: int(row[sqn_col_name])):
         for row in rows:
-            table_id = row['Table ID']
+            table_id = row[table_id_col_name]
             line_number = row[line_no_col_name]
 
             if not line_number or line_number.endswith('.5') or line_number.endswith('.7') or line_number == '.' or line_number == ' ':
