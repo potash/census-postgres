@@ -1,5 +1,6 @@
 #!/bin/python
 
+import sys
 import os
 from os.path import join
 
@@ -22,6 +23,10 @@ def run(data_root, working_dir, release, config):
             elif fname.startswith('m') and fname.endswith('.txt'):
                 sqn = int(fname[8:12])
                 moe_sequences.append((sqn, fpath))
+
+    if not estimate_sequences:
+        print "ERROR: No estimate sequences found. You probably forgot to unzip the All_Geographies.zip file."
+        sys.exit(1)
 
     for (sqn, fpath) in sorted(estimate_sequences):
         sql_file.write("COPY %s.tmp_seq%04d FROM '%s' WITH CSV;\n" % (release, sqn, fpath))
