@@ -107,6 +107,11 @@ config = {
         'line_number_column_name': 'Line\nNumber',
         'table_id_column_name': 'Table\nID'
     },
+    'acs2013_3yr': {
+        'sequence_number_column_name': 'Sequence\nNumber',
+        'line_number_column_name': 'Line\nNumber',
+        'table_id_column_name': 'Table\nID'
+    },
 }
 
 if which_acs not in config:
