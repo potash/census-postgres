@@ -17,6 +17,24 @@ $set_census_upload_root$ LANGUAGE plpgsql;
 
 --SELECT set_census_upload_root('/your/upload/path');
 
+DROP FUNCTION IF EXISTS set_data_product(text);
+CREATE FUNCTION set_data_product(data_year int, data_span int) RETURNS void AS $set_data_product$
+DECLARE
+	getter TEXT;
+BEGIN
+	DROP FUNCTION IF EXISTS get_data_product();
+	getter := E'CREATE FUNCTION get_data_product() RETURNS text AS $get_data_product$
+	BEGIN
+		RETURN \'' || data_year::text || data_span::text || E'\';
+	END;
+	$get_data_product$ LANGUAGE plpgsql;';
+	EXECUTE getter;
+END;
+$set_data_product$ LANGUAGE plpgsql;
+
+--example for ACS 2013, 5 year summaries
+--SELECT set_census_upload_root(2013, 5)
+
 DROP FUNCTION IF EXISTS join_sequences(text[]);
 CREATE FUNCTION join_sequences(seq_id text[]) RETURNS text AS $function$
 DECLARE 

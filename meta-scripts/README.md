@@ -38,6 +38,14 @@ This function sets the root for all Census data staged for uploading. The user n
 
 Returns the path to the root folder, set by set_census_upload_root(). Called by various data functions, not usually called by the user.
 
+	set_data_product(data_year int, data_span int)
+    
+Indicates the year and span of the ACS data product that is to be uploaded (e.g. ACS 2013 5-year summaries, which would be defined as such: `set_data_product(2013, 5)`).  The user must call this function once per time the import process is carried out.
+
+	get_data_product()
+   
+Returns the data product in a format that is used within the ACS data file names.  Called by data functions and not intended to be called by the user.
+
     join_sequences(seq_id text array)
 
 seq_id: An array of sequence/segment names.
@@ -173,9 +181,15 @@ The general procedure is:
 
 1. Run the meta-scripts (previous section). These create functions and support tables. This only needs to be done once, laying the ground for import of multiple Census products.
 2. Run set_census_upload_root(). This also only needs to be run once, as long as you download each data product to a subfolder of this root.
-3. Create the schema to hold your data (e.g. acs2010_5yr). Change the search_path to that schema.
-4. Run the data dictionary functions (next subsection). These functions create tables and views which hold support information relevant to a specific data product, including field names of the geoheader, sequences/segments, and subject tables.
-5. Run the data functions. These generate (and optionally execute) the scripts listed in the previous section. They must be run in a specific order.
+3. Run set_data_product().  Only needs to be run once as a part of this work flow.  If multiple data products are being imported each step of this guide need to be carried out in order for each product.
+4. Create the schema to hold your data (e.g. acs2010_5yr). Change the search_path to that schema.
+5. Download the data dictionary for your data product from the following url: http://www2.census.gov/acs10_5yr/summaryfile/Sequence_Number_and_Table_Number_Lookup.txt (change the 'acs10_5yr' portion of the url to match the year and span you are working with) and save it in `census_upload_root/acs10_5yr`, with the subfolder matching the current data product.
+6.  If the data dictionary is from 2012 or later extra whitespace must be removed from it in order for it to work with the function.  One such method to achieve this is to use the bash command: 
+```sh
+sed -i='original' -r 's/,\s+/,/g' "d_dict_path"
+```
+7. Run the script "ACS 2010 Data Dictionary.sql" or similar, whichever matches your data product (details about those scripts can be found in the next subsection). The scripts can be found in the corresponding data product folders that are at the root of this repo.  The  functions within create tables and views which hold support information relevant to a specific data product, including field names of the geoheader, sequences/segments, and subject tables.
+8. Run the data functions. These generate (and optionally execute) the scripts listed in the previous section. They must be run in a specific order.
 
 ## The Product-Specific Data Dictionary Script
 
@@ -184,7 +198,7 @@ Each product has a product-specific script which imports the data dictionary and
 1. Creates a schema named acs2010_5yr (uncomment line to execute).
 2. Creates a geoheader_schema table. The geoheader changes from year to year, so the schema is a list of field names and start and end positions, allowing the creation of a geoheader table with the appropriate structure and the parsing of the fixed length geoheader files.
 3. Creates the data_dictionary table.
-4. Imports the data dictionary file from <census_upload_root>/acs2010_5yr.
+4. Imports the data dictionary file from `census_upload_root/acs2010_5yr`.
 5. Creates views which extract the sequences, subject tables, and subject table cells from data_dictionary.
 
 ## Run the Data Functions
